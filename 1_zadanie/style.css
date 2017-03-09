@@ -1,0 +1,26 @@
+
+
+h1 {
+  text-align: center;
+ }
+
+.wrapper {
+	width: 700px;
+	margin: 0 auto;
+}
+
+div.imgAlign {
+	text-align: center;
+}
+
+.wrapper p {
+	margin-left: 30px;
+	padding: 0;
+}
+
+
+
+.border {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
