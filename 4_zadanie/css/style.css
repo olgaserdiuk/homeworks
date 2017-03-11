@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Tahoma;
+    src: url('fonts/Tahoma.ttf');
+}
+
+body {
+	width: 1282px;
+	margin: auto;
+	font-family: Tahoma;
+	font-size: 14px;
+	background: url(../img/bg.jpg) repeat-x;
+}
+
+.logo a {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/*COLUMNS*/
+.columns {
+	width: 1000px;
+	overflow: hidden; /* чтобы лишнее обрезалось */
+	margin: 0 auto;
+	
+}
+
+.sidebarleft {
+	width: 210px;
+	float: left;
+	
+	background: #3d2af0;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+
+.content {
+	width: 580px;
+	height:100%
+	float: left;
+	
+	background: #e34456;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+
+.sidebarright {
+	width: 210px;
+	float: right;
+
+	
+	background: #e3e244;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+
