@@ -29,35 +29,24 @@ div .topmenu ul {
 div .topmenu li {
   display: inline;
   float: left;
-  width: 143px;
 }
 
 div .topmenu a {
   display: block;
   padding-left: 25px;
-  padding-right: 60px;
+  padding-right: 25px;
   margin: 0 auto;
   line-height: 40px;
   text-decoration: none; 
   color: #ffffff;
+  border-left: 1 px solid transparent;
+  border-right: 1px solid transparent;
 }
 
-div .topmenu li.active {
-  
-  
-}
-
-div .topmenu li.active a:hover {
-  display: block;
-  padding-right: 25px;
+div .topmenu li a:hover {
   border-right: 1px solid #838383;
   border-left: 1px solid #838383;
-  width: 100px;
   background: url(../img/topmenuitembg.jpg) repeat-x;
-}
-
-div .topmenu li:nth-child(3) {
-  padding-left: 63px;
 }
 
 /*BODYCONTENT*/
