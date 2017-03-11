@@ -7,13 +7,163 @@ body {
 	width: 1282px;
 	margin: auto;
 	font-family: Tahoma;
-	font-size: 14px;
 	background: url(../img/bg.jpg) repeat-x;
+	background-color: #0c739f;
 }
 
-.logo a {
+div.wrapper {
+	background-color: #fff;
+	box-shadow: 0 0 10px #000000;/*<сдвиг по x> <сдвиг по y> <радиус размытия> <растяжение> <цвет>*/
+}
+
+/*HEADER*/
+div.header {
+	background: #fff;
+	height: 175px;
+	position: relative;
+}
+
+div.logo {
+	float: left;
+	position: absolute;
+	top: 13px;
+}
+
+div.logo a,
+div.logo img {
 	display: block;
 }
+
+div.contacts {
+	float: right;
+	position: absolute;
+	right: 34px;
+	top: 12px;
+}
+	
+.contacts p {
+	color: #128aa7;
+	font-size: 12px;
+	font-family: Tahoma;
+}
+
+div.flag {
+	float: right;
+	position: absolute;
+	right: 34px;
+	bottom: 12px;
+}
+
+div.flag a,
+div.flag img {
+	display: block;
+}
+
+div.flag li {
+	display: block;
+	float: left;
+}
+
+/*HEADERIMG*/
+div.headerimg {
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+
+div.headerimg img {
+	padding-bottom: 0;
+	width: 100%
+}
+
+/*MENU*/
+div .topmenu {
+  	display: block;
+  	overflow: hidden;
+  	background: #323232;
+  	color: #fff;
+  	font-size: 14px;
+}
+
+div .topmenu ul {
+  	list-style: none; 
+}
+
+div .topmenu ul:after {
+	display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu > li {
+	float: left;
+	position: relative;
+}
+
+ul.menu > li > a {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	background-color: red;
+	text-decoration: none;
+}
+
+ul.menu > li > a:hover {
+	background-color: black
+}
+
+ul.submenu {
+	display: none;
+	position: absolute;
+	width: 150px;
+	top: 40px;
+	left: 0;
+	background-color: red;
+	border: 1px solid red;
+}
+
+ul.submenu > li {
+	display: block;
+}
+
+ul.submenu > li > a {
+	display: block;
+	padding: 10px;
+	color: red;
+	background-color: green;
+	text-decoration: none;
+}
+
+ul.submenu > li > a:hover {
+	text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+	display: block;
+}
+
+
+
+
+
+div .topmenu li {
+  display: inline-block;
+  float: left;
+  list-style-type: none;
+}
+
+div .topmenu a {
+  display: block;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-decoration: none; 
+  color: #ffffff;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
 
 
 
@@ -25,39 +175,87 @@ body {
 
 
 /*COLUMNS*/
-.columns {
-	width: 1000px;
-	overflow: hidden; /* чтобы лишнее обрезалось */
+div.columns {
+	width: 100%;
+	overflow: hidden; /* лишнее обрезается */
 	margin: 0 auto;
-	
 }
 
 .sidebarleft {
-	width: 210px;
+	width: 20%;
 	float: left;
-	
-	background: #3d2af0;
+	text-overflow: clip;
+	background: #edeef0;
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 }
 
 .content {
-	width: 580px;
-	height:100%
+	width: 60%;
 	float: left;
-	
-	background: #e34456;
+	background: #fff;
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 }
 
 .sidebarright {
-	width: 210px;
+	width: 20%;
 	float: right;
-
-	
-	background: #e3e244;
+	background: #edeef0;
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 }
 
+div.wrapperlc {
+	width: 200px;
+	padding-right: 25px;
+	padding-left: 15px;
+}
+
+div.wrapperlc h5 {
+	text-align: center;
+	font-size: 18px;
+	padding: 5px;
+	color: #424c43;
+}
+
+div.wrapperlc p {
+	padding: 5px;
+    padding-right: 20px;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+div.wrapperrc {
+	width: 200px;
+	padding-right: 25px;
+	padding-left: 15px;
+}
+
+div.wrapperrc p {
+	padding: 5px;
+    padding-right: 20px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+div.wrapperrc h5 {
+	text-align: center;
+	font-size: 18px;
+	padding: 5px;
+	color: #424c43;
+}
+
+/*FOOTER*/
+.footer {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.footer p {
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+}

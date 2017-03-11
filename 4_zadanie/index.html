@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="body">
+	<div class="wrapper">
 		<div class="header"> <!-- панель с лого и контактами-->
 			<div class="logo">
 				<a href="#"><img src="img/logo.jpg" alt="Logo Asia-Holidays"></a>
@@ -18,7 +18,7 @@
 				<p>+9-0123-456-890</p>
 				<p>info@asia-holidays.com</p>
 			</div>
-			<div>
+			<div class="flag">
 				<ul>
 					<li><a href="#"><img src="img/flag_india.jpg" alt="Flag India">Индия</a></li>
 					<li><a href="#"><img src="img/flag_nepal.jpg" alt="Flag Nepal">Непал</a></li>
@@ -32,8 +32,8 @@
 		<div class="headerimg"> <!-- картинка с пальмами -->
 			<img src="img/headerimg.jpg" alt="Palm">
 		</div>
-		<div class="menu">  <!-- выпадающая менюшка -->
-			<ul>
+		<div class="topmenu">  <!-- выпадающая менюшка -->
+			<ul class="menu"></ul>
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Путешествие</a></li>
 					<ul class="submenu">
@@ -66,45 +66,49 @@
 		</div>
 		<div class="columns"> <!-- блок родитель для колонок -->
 			<div class="sidebarleft"> <!-- левое меню Информация -->
-				<h1>Информация</h1> <!-- ???или увеличить размер + bold?? -->
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+				<div class="wrapperlc">
+					<h5>Информация</h5> <!-- ???или увеличить размер + bold?? -->
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+				</div>
 			</div>
 			<div class="content"> <!-- центральная пустая часть --> <!-- растянуть по вертикали!!!! -->
 			</div>
 			<div class="sidebarright"> <!-- правая менюшка Новости -->
-				<h1>Новости</h1> <!-- ???или увеличить размер + bold?? -->
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+				<div class="wrapperrc">
+					<h5>Новости</h5> <!-- ???или увеличить размер + bold?? -->
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus explicabo repudiandae repellat inventore neque expedita, tempora odit, amet ullam illo distinctio, et animi aut id facilis quo eligendi. Cupiditate, perspiciatis.</p>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="footer"> <!-- подвал копи райтс -->
+	<div class="footer">
 		<p>Copyright(C) asia-holidays.com. 2010</p>
 	</div>
 </body>
