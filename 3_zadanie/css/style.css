@@ -14,7 +14,6 @@ body {
 
 div .topmenu {
   display: block;
-  position: relative;
   overflow: hidden;
   background: #585858;
   background: url(../img/topmenuitembg2.jpg) repeat-x;
@@ -34,24 +33,27 @@ div .topmenu li {
 }
 
 div .topmenu a {
+  display: block;
   padding-left: 25px;
   padding-right: 60px;
-  width: 100px;
+  margin: 0 auto;
   line-height: 40px;
   text-decoration: none; 
   color: #ffffff;
 }
 
 div .topmenu li.active {
-  background: url(../img/topmenuitembg.jpg) repeat-x;
+  
+  
+}
+
+div .topmenu li.active a:hover {
+  display: block;
+  padding-right: 25px;
   border-right: 1px solid #838383;
   border-left: 1px solid #838383;
   width: 100px;
-}
-
-div .topmenu li.active a {
-  width: 100px;
-  padding-right: 25px;
+  background: url(../img/topmenuitembg.jpg) repeat-x;
 }
 
 div .topmenu li:nth-child(3) {
@@ -86,7 +88,7 @@ div.sidebar a {
   color: #656363;
 }
 
-li.sidebaractive a {
+li.sidebaractive a:hover {
   padding-left: 20px;
   text-decoration: none; 
   color: #2c2c2c;
@@ -105,6 +107,8 @@ div.contentimg {
   text-align: center;
   padding-top: 70px;
   border: 1px solid #c8c8c8;
+  top: 30px;
+  overflow: hidden;
 }
 
 div.contenttxt {
@@ -144,7 +148,7 @@ div.contenttxt {
   padding-right: 65px;
 }
 
-.footer a.borderbottom {
+.footer a.borderbottom:hover {
   text-decoration: underline;
 }
 
