@@ -17,6 +17,7 @@ div.wrapper {
 }
 
 /*HEADER*/
+
 div.header {
 	background: #fff;
 	height: 175px;
@@ -65,6 +66,7 @@ div.flag li {
 }
 
 /*HEADERIMG*/
+
 div.headerimg {
 	border-top: 1px solid #128aa7;
 	border-bottom: 1px solid #128aa7;
@@ -77,92 +79,82 @@ div.headerimg img {
 
 /*MENU*/
 div .topmenu {
-  	display: block;
-  	overflow: hidden;
-  	background: #323232;
-  	color: #fff;
-  	font-size: 14px;
+ 
+  background: #343434;
+  font-size: 14.667px;
 }
 
 div .topmenu ul {
-  	list-style: none; 
+  
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 40px;
 }
 
-div .topmenu ul:after {
-	display: block;
+
+
+
+ ul:after {
+    display: block;
     content: ' ';
     clear: both;
     float: none;
 }
-
 ul.menu > li {
-	float: left;
-	position: relative;
+    float: left;
+    position: relative;
 }
-
 ul.menu > li > a {
-	display: block;
-	padding: 10px;
-	color: #fff;
-	background-color: red;
-	text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #343434;
+    text-decoration: none;
 }
-
 ul.menu > li > a:hover {
-	background-color: black
+    background-color: #343434;
 }
-
 ul.submenu {
-	display: none;
-	position: absolute;
-	width: 150px;
-	top: 40px;
-	left: 0;
-	background-color: red;
-	border: 1px solid red;
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: #343434;
+    border: 1px solid #343434;
 }
-
 ul.submenu > li {
-	display: block;
+    display: block;
 }
-
 ul.submenu > li > a {
-	display: block;
-	padding: 10px;
-	color: red;
-	background-color: green;
-	text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #343434;
+    text-decoration: none;
 }
-
 ul.submenu > li > a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 ul.menu > li:hover > ul.submenu {
-	display: block;
+    display: block;
+}
+
+
+div.topmenu ul:hover {
+	  display: block;
 }
 
 
 
 
 
-div .topmenu li {
-  display: inline-block;
-  float: left;
-  list-style-type: none;
-}
 
-div .topmenu a {
-  display: block;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin: 0 auto;
-  line-height: 40px;
-  text-decoration: none; 
-  color: #ffffff;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-}
+
+
+
+
 
 
 
@@ -177,7 +169,7 @@ div .topmenu a {
 /*COLUMNS*/
 div.columns {
 	width: 100%;
-	overflow: hidden; /* лишнее обрезается */
+	overflow: hidden;  /*лишнее обрезается */
 	margin: 0 auto;
 }
 
@@ -185,7 +177,7 @@ div.columns {
 	width: 20%;
 	float: left;
 	text-overflow: clip;
-	background: #edeef0;
+	/*background: #edeef0;*/
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 }
@@ -193,7 +185,7 @@ div.columns {
 .content {
 	width: 60%;
 	float: left;
-	background: #fff;
+	/*background: #fff;*/
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 }
@@ -208,7 +200,7 @@ div.columns {
 
 div.wrapperlc {
 	width: 200px;
-	padding-right: 25px;
+	padding-right: 27px;
 	padding-left: 15px;
 }
 
@@ -222,7 +214,7 @@ div.wrapperlc h5 {
 div.wrapperlc p {
 	padding: 5px;
     padding-right: 20px;
-    white-space: nowrap; /* Запрещаем перенос строк */
+    white-space: nowrap;  /*Запрещаем перенос строк */
     overflow: hidden;
     text-overflow: clip;
 }
