@@ -14,6 +14,7 @@ body {
 div.wrapper {
 	background-color: #fff;
 	box-shadow: 0 0 10px #000000;/*<сдвиг по x> <сдвиг по y> <радиус размытия> <растяжение> <цвет>*/
+	z-index: 1;
 }
 
 /*HEADER*/
@@ -39,12 +40,18 @@ div.contacts {
 	float: right;
 	position: absolute;
 	right: 34px;
-	top: 12px;
 }
 	
-.contacts p {
+.contacts h5 {
+	padding-top: 10px;
+	font-size: 10px;
 	color: #128aa7;
-	font-size: 12px;
+}
+
+.contacts p {
+	padding-top: 10px;
+	font-size: 10px;
+	color: #128aa7;
 	font-family: Tahoma;
 }
 
@@ -58,6 +65,11 @@ div.flag {
 div.flag a,
 div.flag img {
 	display: block;
+	padding: 5px;
+	font-size: 10px;
+	color: #128aa7;
+	text-align: center;
+	text-decoration: underline;
 }
 
 div.flag li {
@@ -79,60 +91,74 @@ div.headerimg img {
 
 /*MENU*/
 div .topmenu {
- 
-  background: #343434;
-  font-size: 14.667px;
+	position: relative;
+	width: 100%;
+  	font-size: 14.667px;
+  	background: #343434;
+  	border-bottom: 1px solid #000;
+  	box-shadow: 0 3px 10px #000000;
+  	z-index: 999;
+}
+div.topmenu img {
+	padding-left: 10px;
 }
 
-div .topmenu ul {
-  
-    margin: 0 auto;
+div.topmenu ul {
+  	margin: 0 auto;
     padding-left: 0px;
     padding-right: 40px;
 }
 
-
-
-
- ul:after {
+ul:after {
     display: block;
     content: ' ';
     clear: both;
     float: none;
 }
+
 ul.menu > li {
     float: left;
     position: relative;
+    margin: 0 auto;
+    padding-left: 70px;
+    padding-right: 10px;
 }
+
 ul.menu > li > a {
     display: block;
     padding: 10px;
-    color: white;
+    color: #fff;
     background-color: #343434;
     text-decoration: none;
 }
+
 ul.menu > li > a:hover {
     background-color: #343434;
 }
+
 ul.submenu {
     display: none;
     position: absolute;
-    width: 120px;
+    width: 150px;
     top: 37px;
-    left: 0;
+    left: 70px;
     background-color: #343434;
     border: 1px solid #343434;
+    box-shadow: 0 5px 10px #000000;/*<сдвиг по x> <сдвиг по y> <радиус размытия> <растяжение> <цвет>*/
 }
+
 ul.submenu > li {
     display: block;
 }
+
 ul.submenu > li > a {
     display: block;
-    padding: 10px;
-    color: white;
+    padding: 15px;
+    color: #fff;
     background-color: #343434;
     text-decoration: none;
 }
+
 ul.submenu > li > a:hover {
     text-decoration: underline;
 }
@@ -141,33 +167,13 @@ ul.menu > li:hover > ul.submenu {
     display: block;
 }
 
-
 div.topmenu ul:hover {
-	  display: block;
+	display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*COLUMNS*/
 div.columns {
+	position: relative;
 	width: 100%;
 	overflow: hidden;  /*лишнее обрезается */
 	margin: 0 auto;
@@ -177,7 +183,7 @@ div.columns {
 	width: 20%;
 	float: left;
 	text-overflow: clip;
-	/*background: #edeef0;*/
+	background: #edeef0;
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 }
@@ -185,7 +191,7 @@ div.columns {
 .content {
 	width: 60%;
 	float: left;
-	/*background: #fff;*/
+	background: #fff;
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 }
@@ -212,8 +218,7 @@ div.wrapperlc h5 {
 }
 
 div.wrapperlc p {
-	padding: 5px;
-    padding-right: 20px;
+	padding: 15px 20px 5px 5px;
     white-space: nowrap;  /*Запрещаем перенос строк */
     overflow: hidden;
     text-overflow: clip;
@@ -226,8 +231,7 @@ div.wrapperrc {
 }
 
 div.wrapperrc p {
-	padding: 5px;
-    padding-right: 20px;
+	padding: 15px 20px 5px 5px;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: clip;
