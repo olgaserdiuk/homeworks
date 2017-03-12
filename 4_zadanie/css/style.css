@@ -49,10 +49,9 @@ div.contacts {
 }
 
 .contacts p {
-	padding-top: 10px;
+	padding-top: 5px;
 	font-size: 10px;
 	color: #128aa7;
-	font-family: Tahoma;
 }
 
 div.flag {
@@ -205,7 +204,7 @@ div.columns {
 }
 
 div.wrapperlc {
-	width: 200px;
+	width: 78%;
 	padding-right: 27px;
 	padding-left: 15px;
 }
@@ -225,7 +224,7 @@ div.wrapperlc p {
 }
 
 div.wrapperrc {
-	width: 200px;
+	width: 78%;
 	padding-right: 25px;
 	padding-left: 15px;
 }
