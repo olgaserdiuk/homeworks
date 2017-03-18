@@ -1,19 +1,14 @@
-@font-face {
-    font-family: Tahoma;
-    src: url('fonts/Tahoma.ttf');
-}
-
 body {
 	width: 1000px;
 	margin: auto;
-	font-family: Tahoma;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
 	background: url(../img/bg.jpg) repeat-x;
 	background-color: #0c739f;
 }
 
 div.wrapper {
 	background-color: #fff;
-	box-shadow: 0 0 10px #000000;/*<сдвиг по x> <сдвиг по y> <радиус размытия> <растяжение> <цвет>*/
+	box-shadow: 0 0 10px #000000;
 	z-index: 1;
 }
 
@@ -58,22 +53,60 @@ div.flag {
 	float: right;
 	position: absolute;
 	right: 34px;
-	bottom: 12px;
+	bottom: 5px;
+	height: 60px;
+	width: 330px;
 }
 
-div.flag a,
-div.flag img {
+div.flag li {
 	display: block;
-	padding: 5px;
+	float: left;
+	width: 55px
+}
+
+div.flag a {
+	display: block;
+	height: 60px;
 	font-size: 10px;
 	color: #128aa7;
 	text-align: center;
 	text-decoration: underline;
 }
 
-div.flag li {
-	display: block;
-	float: left;
+div.india {
+	width: 55px;
+	height: 45px;
+	background: url(../img/flags.png) 6px 0 no-repeat;
+}
+
+div.nepal {
+	width: 55px;
+	height: 45px;
+	background: url(../img/flags.png) -51px 0 no-repeat;
+}
+
+div.tibet {
+	width: 55px;
+	height: 45px;
+	background: url(../img/flags.png) -107px 0 no-repeat;
+}
+
+div.bhutan {
+	width: 55px;
+	height: 45px;
+	background: url(../img/flags.png) -162px 0 no-repeat;
+}
+
+div.srilanka {
+	width: 55px;
+	height: 45px;
+	background: url(../img/flags.png) -218px 0 no-repeat;
+}
+
+div.maldives {
+	width: 55px;
+	height: 45px;
+	background: url(../img/flags.png) -275px 0 no-repeat;
 }
 
 /*HEADERIMG*/
@@ -89,6 +122,7 @@ div.headerimg img {
 }
 
 /*MENU*/
+
 div .topmenu {
 	position: relative;
 	width: 100%;
@@ -98,25 +132,15 @@ div .topmenu {
   	box-shadow: 0 3px 10px #000000;
   	z-index: 999;
 }
+
 div.topmenu img {
 	padding-left: 10px;
 }
 
-/*
-
-.menu {
-     display: table; position: relative;
-     width: 100%; height: 50px;
-}
-.menu a {
-    display: table-cell;
-    text-align: center; vertical-align: middle;
-}*/
-
 div.topmenu ul {
   	margin: 0 auto;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 ul:after {
@@ -155,7 +179,7 @@ ul.submenu {
     background-color: #343434;
     border: 1px solid #343434;
     border-top: 1px solid black;
-    box-shadow: 0 5px 10px #000000;/*<сдвиг по x> <сдвиг по y> <радиус размытия> <растяжение> <цвет>*/
+    box-shadow: 0 5px 10px #000000;
 }
 
 ul.submenu > li {
@@ -183,10 +207,11 @@ div.topmenu ul:hover {
 }
 
 /*COLUMNS*/
+
 div.columns {
 	position: relative;
 	width: 100%;
-	overflow: hidden;  /*лишнее обрезается */
+	overflow: hidden;
 	margin: 0 auto;
 }
 
@@ -230,7 +255,7 @@ div.wrapperlc h5 {
 
 div.wrapperlc p {
 	padding: 15px 20px 5px 5px;
-    white-space: nowrap;  /*Запрещаем перенос строк */
+    white-space: nowrap; 
     overflow: hidden;
     text-overflow: clip;
 }
@@ -256,6 +281,7 @@ div.wrapperrc h5 {
 }
 
 /*FOOTER*/
+
 footer {
 	display: block;
 	margin-top: 10px;
