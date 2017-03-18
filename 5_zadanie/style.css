@@ -2,15 +2,15 @@ div.wrapper {
 	width: 500px;
 	height: 540px;
 	margin: 20px auto;
-	background: #000;
 }
 
 table {
 	width: 500px;
 	height: 540px;
-	border-spacing: 10px;	
+	border-spacing: 0;	
 	margin: 0;
 	padding: 0;
+	border-collapse: collapse;
 }
 
 tr,
@@ -19,6 +19,7 @@ td {
 	margin: 0; 
 	padding: 0;
 	background: #fff;
+	border: 10px solid #000;
 }
 
 #red {
@@ -35,4 +36,12 @@ td {
 
 #blue {
 	background: #0c4c8b;
+}
+
+td.height {
+	height: 30px;
+}
+
+td.width {
+	width: 40px;
 }
