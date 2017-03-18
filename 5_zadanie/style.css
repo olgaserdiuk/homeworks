@@ -1,0 +1,38 @@
+div.wrapper {
+	width: 500px;
+	height: 540px;
+	margin: 20px auto;
+	background: #000;
+}
+
+table {
+	width: 500px;
+	height: 540px;
+	border-spacing: 10px;	
+	margin: 0;
+	padding: 0;
+}
+
+tr,
+td {
+	text-align: center; 
+	margin: 0; 
+	padding: 0;
+	background: #fff;
+}
+
+#red {
+	background: #ff5632;
+}
+
+#yellow {
+	background: #fff562;
+}
+
+#black {
+	background: #000;
+}
+
+#blue {
+	background: #0c4c8b;
+}
