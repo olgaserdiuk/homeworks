@@ -14,15 +14,16 @@ body {
     width: 1215px;
     height: 1065px;
     font-family: "Helvetica Neue"; 
-    /*background-color: #90b0bb; */
+    background-color: #90b0bb; 
     margin: 0 auto;
 }
 
 div.wrapper {
     width: 1215px;
     height: 1065px;
-  /*  background-image: url(../img/bg.png);
-    background-repeat: no-repeat;*/
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    padding-top: 36px;
 }
 
 /*TOPMENU*/
@@ -84,11 +85,45 @@ div .topmenu ul>li:last-child p {
 div.cadastre {
     width: 560px;
     height: 62px;
-    /*background-color: rgb(14, 14, 14, 0,5);*/
-    background: rgba(255, 0, 0, 0,5); 
+    background: rgba(14, 14, 14, 0.7); 
     margin: 0 auto;
     margin-top: 213px;
+    margin-bottom: 2px;
 }
 
+div.cadastre p {
+    text-align: center;
+    padding: 19px;
+    font-size: 24px;
+    color: #fff;
+}
 
+form {
+    width: 560px;
+    height: 550px;
+    background: rgba(14, 14, 14, 0.7); 
+    margin: 0 auto;
+}
 
+button {
+    margin-top: 35px;
+    margin-left: 142px;
+    margin-right: 142px;
+    margin-bottom: 32px;
+    width: 275px;
+    height: 35px;
+    background: #355192;
+}
+
+button p {
+    color: #fff;
+}
+
+img.line {
+    float:right;
+}
+
+fieldset {
+    color: #fff;
+    margin: 0 auto;
+}
