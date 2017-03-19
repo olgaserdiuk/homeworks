@@ -45,15 +45,32 @@ div .topmenu li {
 }
 
 div .topmenu a {
-    display: block;
-    padding-left: 13px;
-    padding-right: 25px;
     margin: 0 auto;
     line-height: 36px;
-    text-decoration: none; 
     color: #60b5ed;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
+}
+
+div .topmenu li>div .line {
+    display: inline;
+    float: left;
+    color: #56a2dc;
+    width: 1px;
+    height: 31px;
+    padding: 3px 0 2px;
+}
+
+div .topmenu a.firstchild {
+    display: block;
+    padding-left: 13px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+div .topmenu a.lastchild {
+    text-decoration: underline;
+    color: #fff;
 }
 
 div .topmenu li a:hover {
