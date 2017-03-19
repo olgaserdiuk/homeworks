@@ -12,14 +12,14 @@
 			<div class="topmenu">
 				<nav>
 		            <ul>
-		                <li><a class="firstchild" href="#">Meu YouBike</a></li>
+		                <li><a href="#">Meu YouBike</a></li>
 		                <li class="active"><a chref="#">Vender</a></li>
-		                <li><a class="firstchild" href="#">Forum</a></li>
-		                <li><a class="firstchild" href="#">Contato</a></li>
-		                <li><a class="firstchild" href="#">Ajuda</li>
+		                <li><a href="#">Forum</a></li>
+		                <li><a href="#">Contato</a></li>
+		                <li><a href="#">Ajuda</a></li>
 		                <li><div class="line"></div></li>
-		                <li><a class="firstchild" href="#"><img src="../cadastre/img/flag.png" alt="flag">Minhas Ofertas</a></li>
-		                <li><p>Ola!<a class="lastchild" href="#">Entrar</a>ou<a class="lastchild" href="#">Cadastre-se</a></p></li>
+		                <li><a href="#"><img class="flag" src="../cadastre/img/flag.png" alt="flag">Minhas Ofertas</a></li>
+		                <li><p>Ola! <a class="lastchild" href="#">Entrar</a> ou<a class="lastchild" href="#"> Cadastre-se</a></p></li>
 		            </ul>
 				</nav>
 			</div>
@@ -29,19 +29,27 @@
 		</div>
 		<div class="form">
 			<form action=# method="post">
-				<button type="submit">
+				<button class="fb" type="submit">
 					<p>f<img class="line" src="../cadastre/img/button_line.png"></p><p><strong>Log In </strong>with <strong>Facebook</strong></p>
 				</button>
 				<div>
 					<fieldset>
-					<legend>OU</legend>
-					<p><input type="text" name="first_name" placeholder="First Name" required></p>
-					<p><input type="text" name="last_name" placeholder="Last Name" required></p>
-					<p><input type="email" name="email" placeholder="Email Address" required></p>
-					<p><input type="password" name="password" placeholder="Choose Password" required></p>
-					<p><input type="password" name="password_confirm" placeholder="Password Confirm" required></p>
-
-				</fieldset>
+						<legend>OU</legend>
+						<p><input type="text" name="first_name" placeholder="First Name" required></p>
+						<p><input type="text" name="last_name" placeholder="Last Name" required></p>
+						<p><input type="email" name="email" placeholder="Email Address" required></p>
+						<p><input type="password" name="password" placeholder="Choose Password" required></p>
+						<p><input type="password" name="password_confirm" placeholder="Password Confirm" required></p>
+					</fieldset>
+					<div class="checkbox"> 
+						<input type="checkbox" id="updates"> 
+						<label for="updates">Send me Youbike updates and tips</label>
+					</div>
+					<button class="create" type="submit"><p>Create my Account</p></button>
+				</div>
+				<div class="privacy">
+					<p>By clicking the button above, you agree to the Terms of Service</p>
+					<p>Xiew our Privacy Policy.</p>
 				</div>
 			</form>
 		</div>

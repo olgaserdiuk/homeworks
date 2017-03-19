@@ -45,6 +45,10 @@ div .topmenu li {
 }
 
 div .topmenu a {
+    display: block;
+    padding-left: 13px;
+    padding-right: 25px;
+    text-decoration: none;
     margin: 0 auto;
     line-height: 36px;
     color: #60b5ed;
@@ -52,45 +56,42 @@ div .topmenu a {
     border-right: 1px solid transparent;
 }
 
-div .topmenu li>div .line {
-    display: inline;
+div .topmenu li div.line {
+    display: block;
     float: left;
-    color: #56a2dc;
+    background-color: #56a2dc;
     width: 1px;
-    height: 31px;
-    padding: 3px 0 2px;
+    height: 23px;
+    padding: 3px 0 2px 0;
+    margin-top: 3px
 }
 
-div .topmenu a.firstchild {
-    display: block;
-    padding-left: 13px;
-    padding-right: 25px;
-    text-decoration: none;
+div .topmenu li img.flag {
+    float: left;
+    padding-top: 7px;
+    padding-right: 10px;
 }
 
 div .topmenu a.lastchild {
+    display: inline;
     text-decoration: underline;
     color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+div .topmenu li p {
+    text-align: center;
+    padding-left: 13px;
+    padding-right: 13px;
 }
 
 div .topmenu li a:hover {
     background: #4eabda;
-    opacity: 0,5; 
     color: #fff;
 }
 
-div .topmenu ul>li:nth-child(5) img {  /*!!!!!!проверить!!!!!!*/
-    float: right;
-  /*  padding: 3px 1px 3px 23px;*/
-}
-
-div .topmenu ul>li:nth-child(6) img {  /*!!!!!!проверить!!!!!!*/
-    float: left;
-   /* padding: 6px 10px 7px 0;*/
-}
-
 div .topmenu ul>li:last-child p {
-    
     background: #4eabda;
     opacity: 0,5; 
     color: #fff;
@@ -116,19 +117,20 @@ div.cadastre p {
 
 form {
     width: 560px;
-    height: 550px;
+    height: 575px;
     background: rgba(14, 14, 14, 0.7); 
     margin: 0 auto;
 }
 
-button {
+button.fb {
     margin-top: 35px;
     margin-left: 142px;
     margin-right: 142px;
-    margin-bottom: 32px;
     width: 275px;
     height: 35px;
     background: #355192;
+    border-radius: 5px;
+    border: 1px solid transparent;
 }
 
 button p {
@@ -141,5 +143,77 @@ img.line {
 
 fieldset {
     color: #fff;
+    width: 275px;
     margin: 0 auto;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+legend {
+    width: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    color: #666666;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 255px;
+    height: 35px;
+    margin-bottom: 17px;
+    background: #000;
+    color: #fff;
+    padding-left: 20px;
+    border: 1px solid transparent;
+}
+
+div.checkbox {
+    width: 275px;
+    margin: 0 auto;
+}
+
+label[for="updates"] {
+    width: 200px;
+    color: #fff;
+    text-align: center
+}
+
+button.create {
+    width: 150px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background: #2f7bc5;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+button.create p {
+    color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover,
+input[type="email"]:focus,
+input[type="email"]:hover,
+input[type="password"]:focus,
+input[type="password"]:hover {
+    border: 1px solid #487795;
+    background: #1b5288;
+}
+
+div.privacy {
+    width: 560px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+div.privacy p {
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
 }
