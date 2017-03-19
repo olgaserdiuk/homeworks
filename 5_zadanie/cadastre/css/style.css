@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-webfont.eot');
+    src: url('../fonts/helveticaneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-size: 14px;
+    width: 1215px;
+    height: 1065px;
+    font-family: "Helvetica Neue"; 
+    /*background-color: #90b0bb; */
+    margin: 0 auto;
+}
+
+div.wrapper {
+    width: 1215px;
+    height: 1065px;
+  /*  background-image: url(../img/bg.png);
+    background-repeat: no-repeat;*/
+}
+
+/*TOPMENU*/
+
+div .topmenu {
+    display: block;
+    overflow: hidden;
+    background: #074885;
+    padding-right: 21px;
+}
+
+div .topmenu ul {
+    list-style: none; 
+    float: right;
+}
+
+div .topmenu li {
+    display: inline;
+    float: left;
+}
+
+div .topmenu a {
+    display: block;
+    padding-left: 13px;
+    padding-right: 25px;
+    margin: 0 auto;
+    line-height: 36px;
+    text-decoration: none; 
+    color: #60b5ed;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+div .topmenu li a:hover {
+    background: #4eabda;
+    opacity: 0,5; 
+    color: #fff;
+}
+
+div .topmenu ul>li:nth-child(5) img {  /*!!!!!!проверить!!!!!!*/
+    float: right;
+  /*  padding: 3px 1px 3px 23px;*/
+}
+
+div .topmenu ul>li:nth-child(6) img {  /*!!!!!!проверить!!!!!!*/
+    float: left;
+   /* padding: 6px 10px 7px 0;*/
+}
+
+div .topmenu ul>li:last-child p {
+    
+    background: #4eabda;
+    opacity: 0,5; 
+    color: #fff;
+}
+    
+/*CONTENT*/
+
+div.cadastre {
+    width: 560px;
+    height: 62px;
+    /*background-color: rgb(14, 14, 14, 0,5);*/
+    background: rgba(255, 0, 0, 0,5); 
+    margin: 0 auto;
+    margin-top: 213px;
+}
+
+
+
