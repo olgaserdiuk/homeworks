@@ -128,17 +128,32 @@ button.fb {
     margin-right: 142px;
     width: 275px;
     height: 35px;
-    background: #355192;
+    background: #294d92;
+    border-color: rgba(0,0,0,0.2);
     border-radius: 5px;
     border: 1px solid transparent;
 }
 
-button p {
+button.fb p {
     color: #fff;
+    line-height: 30px;
 }
 
-img.line {
-    float:right;
+img.arrow {
+    float: right;
+    padding-top: 8px;
+    padding-right: 25px;
+}
+
+button.fb::before {
+    content: "f";
+    float: left;
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    width: 35px;
+    height: 30px;
+    border-right: 1px solid rgba(0,0,0,0.2);
 }
 
 fieldset {
@@ -204,6 +219,7 @@ input[type="password"]:focus,
 input[type="password"]:hover {
     border: 1px solid #487795;
     background: #1b5288;
+    box-shadow: 0 0 10px 5px rgba(82, 141, 183, 1);
 }
 
 div.privacy {
