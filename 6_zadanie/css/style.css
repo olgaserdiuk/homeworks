@@ -213,15 +213,13 @@ aside.left {
 	float: left;
 	text-overflow: clip;
 	background: #fff;
-	padding-bottom: 20000px;
-	margin-bottom: -20000px;
 }
 
 div.bodycontent {
 	width: 526px;
+	height: 627px;
 	background: #e4e7e8;
-	padding-bottom: 20000px;
-	margin-bottom: -20000px;
+	border-radius: 10px;
 	margin-left: 191px;
 	margin-right: 9px;
 }
@@ -230,8 +228,6 @@ aside.right {
 	width: 182px;
 	float: right;
 	background: #fff;
-	padding-bottom: 20000px;
-	margin-bottom: -20000px;
 }
 
 /*ASIDE_LEFT*/
@@ -337,13 +333,53 @@ div.name a:hover {
 }
 
 
+/*BODYCONTENT*/
 
 
 
+div.contentcolumns {
+	width: 175px;
+	height: 627px;
+	float: left;
+}
 
+div.cells {
+	margin-top: 15px;
+	margin-bottom: 12px;
+	text-align: center;
+}
 
+div.cells p.name {
+	font-size: 14px;
+	color: #206988;
+}
 
+div.cells p.model {
+	font-size: 13px;
+	color: #1f2528;
+}
 
+div.cells img {
+	border: 1px solid #b0b9bc;
+	border-radius: 10px;
+	width: 137px;
+	height: 127px;
+	margin-top: 2px;
+}
+
+div.cells p.price {
+	font-family: Arial;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 16px;
+	color: #114165;
+}
+
+/*ASIDERIGHT*/
+
+aside.right {
+	float: right;
+}
 
 
 /*FOOTER*/
@@ -357,4 +393,45 @@ div.logo {
 div.logo img {
 	display: block;
     margin: 0 auto;
+}
+
+div.navigation {
+	width: 910px;
+	height: 100px;
+	background-color: #213a4d;
+	margin: 0 auto;
+	padding-top: 13px;
+}
+
+nav.footermenu {
+	width: 450px;
+	height: 24px;
+	margin: 0 auto;
+}
+
+div.navigation nav p {
+	float: left;
+	line-height: 23px;
+}
+
+div.navigation a {
+    display: block;
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    line-height: 23px;
+    color: #8d989f;
+    text-decoration: none;
+}
+
+div.navigation a:hover {
+    color: #3e7e98;
+}
+
+p.rights {
+	font-family: Arial;
+	font-size: 10px;
+	color: #7f4740;
+	text-align: center;
+	padding-top: 17px;
 }
