@@ -340,8 +340,8 @@ div.contentcolumns {
 }
 
 div.cells {
-	margin-top: 15px;
-	margin-bottom: 12px;
+	margin-top: 16px;
+	margin-bottom: 31px;
 	text-align: center;
 }
 
@@ -484,9 +484,11 @@ div.navigation {
 }
 
 nav.footermenu {
-	width: 450px;
+	width: 320px;
 	height: 24px;
 	margin: 0 auto;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
 }
 
 div.navigation nav p {
