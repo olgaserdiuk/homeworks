@@ -44,8 +44,8 @@ div.login {
 	height: 26px;
 	float: left;
 	font-size: 11px;
-	background: linear-gradient(to bottom, #1f6685, #0c3357);
 	border-radius: 5px;
+	background: linear-gradient(to bottom, #1f6685, #0c3357);
 }
 
 div.login img {
@@ -87,6 +87,11 @@ div.icons {
 	margin-left: 17px;
 }
 
+div.icons a>img {
+	padding-left: 6px;
+	padding-top: 4px;
+}
+
 div.headerimg {
 	margin-top: 10px;
 	width: 100%;
@@ -98,9 +103,9 @@ div .topmenu {
 	width: 908px;
 	height: 34px;
 	font-size: 14px;
-  	background: linear-gradient(to bottom, #505860, #020202);
   	border: 1px solid #2c345a;
   	border-radius: 5px;
+  	background: linear-gradient(to bottom, #505860, #020202);
   	box-shadow: 0 3px 5px #2c345a;
 }
 
@@ -174,7 +179,7 @@ div.leftform {
 	height: 134px;
 	float: left;
 	border: 1px solid #b6b6b7;
-	border-radius: 5px;
+	border-radius: 20px;
 	box-shadow: 0 3px 5px #b4b4b4;
 }
 
@@ -185,7 +190,7 @@ div.centralform {
 	margin-right: 8px;
 	margin-left: 15px;
 	border: 1px solid #b6b6b7;
-	border-radius: 5px;
+	border-radius: 20px;
 	box-shadow: 0 3px 5px #b4b4b4;
 }
 
@@ -194,7 +199,7 @@ div.rightform {
 	height: 134px;
 	float: left;
 	border: 1px solid #b6b6b7;
-	border-radius: 5px;
+	border-radius: 20px;
 	box-shadow: 0 3px 5px #b4b4b4;
 }
 
@@ -308,7 +313,6 @@ div.name li:before {
     border: 1px solid #465961;
     border-radius: 3px;
     margin-right: 5px;
-    
 }
 
 div.name a {
@@ -321,16 +325,13 @@ div.name a:hover {
 	line-height: 25px;
 	text-decoration: underline;
 	font-family: "Arial";
-	font-style: bold;
 	font-style: italic;
+	font-weight: bold;
 	font-size: 14px;
 	color: #0c3256;
 }
 
-
 /*BODYCONTENT*/
-
-
 
 div.contentcolumns {
 	width: 175px;
@@ -376,18 +377,91 @@ aside.right {
 	float: left;
 }
 
+div.catalog {
+	width: 180px;
+	height: 25px;
+	border-radius: 20px;
+    border: 1px solid #b6b6b7;
+    font-size: 14px;
+	color: #114165;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
 
+div.img {
+	float: left;
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, #25617b, #0d3458);
+	margin-left: 3px;
+    margin-top: 3px;
+    margin-right: 5px;
+} 
 
+div.img a.iconbrand {
+	display: block;
+	width: 180px;
+	padding-left: 23px;
+	font-size: 14px;
+	color: #114165;
+	background: url(../img/iconbrand.png) 4px 2px no-repeat;
+}
 
+div.radio {
+	width: 148px;
+	height: 25px;
+	border-radius: 20px;
+    border: 1px solid #b6b6b7;
+    font-size: 14px;
+	color: #114165;
+	line-height: 25px;
+	margin-left: 15px;
+}
 
+div.imgradio_check {
+	float: left;
+	width: 148px;
+	height: 25px;
+	border-radius: 10px;
+	margin-left: 4px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+} 
 
+div.imgradio_check>a.radio {
+	display: block;
+	width: 115px;
+	padding-left: 25px;
+	font-size: 14px;
+	color: #114165;
+	background: url(../img/radio.png) 0 0 no-repeat;
+}
 
+div.name_check {
+	width: 90px;
+	margin-left: 25px;
+	font-size: 13px;
+	color: #114165;
+}
 
+div.name_check input[type=checkbox] {
+	color: #114165;
+	margin-bottom: 13px;
+}
 
-
-
-
-
+button {
+	width: 83px;
+	height: 27px;
+	margin-top: 6px;
+	margin-left: 24px;
+	background: linear-gradient(to bottom, #25617b, #0d3458);
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+	color: #e5e9ea;
+	border-radius: 20px;
+}
+	
 /*FOOTER*/
 
 div.logo {
