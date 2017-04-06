@@ -11,18 +11,17 @@
 
 body {
     font-size: 14px;
-    width: 1215px;
-    height: 1065px;
-    font-family: "Helvetica Neue"; 
+    font-family: "Helvetica Neue", Arial, sans-serif; 
     background-color: #90b0bb; 
     margin: 0 auto;
 }
 
 div.wrapper {
-    width: 1215px;
-    height: 1065px;
-    background-image: url(../img/bg.png);
-    background-repeat: no-repeat;
+   width: 100%;
+   height: 100%;
+   background-image: url(../img/bg.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
 }
 
 /*TOPMENU*/
@@ -99,7 +98,7 @@ div .topmenu ul>li:last-child p {
     
 /*CONTENT*/
 
-div.cadastre {
+.cadastre {
     width: 560px;
     height: 62px;
     background: rgba(14, 14, 14, 0.7); 
@@ -108,7 +107,7 @@ div.cadastre {
     margin-bottom: 2px;
 }
 
-div.cadastre p {
+.cadastre p {
     text-align: center;
     padding: 19px;
     font-size: 24px;
@@ -117,35 +116,36 @@ div.cadastre p {
 
 form {
     width: 560px;
-    height: 575px;
+    height: 549px;
     background: rgba(14, 14, 14, 0.7); 
     margin: 0 auto;
+    margin-bottom: 202px;
 }
 
-button.fb {
+.fb {
     margin-top: 35px;
     margin-left: 142px;
     margin-right: 142px;
     width: 275px;
     height: 35px;
-    background: #294d92;
+    background: linear-gradient(to bottom, #3b5699, #2e4274);
     border-color: rgba(0,0,0,0.2);
     border-radius: 5px;
     border: 1px solid transparent;
 }
 
-button.fb p {
+.fb p {
     color: #fff;
     line-height: 30px;
 }
 
-img.arrow {
+.arrow {
     float: right;
     padding-top: 8px;
     padding-right: 25px;
 }
 
-button.fb::before {
+.fb::before {
     content: "f";
     float: left;
     display: inline-block;
@@ -167,8 +167,8 @@ fieldset {
 
 legend {
     width: 16px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     margin: 0 auto;
     color: #666666;
 }
@@ -178,14 +178,14 @@ input[type="email"],
 input[type="password"] {
     width: 255px;
     height: 35px;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     background: #000;
     color: #fff;
     padding-left: 20px;
     border: 1px solid transparent;
 }
 
-div.checkbox {
+.checkbox {
     width: 275px;
     margin: 0 auto;
 }
@@ -196,10 +196,10 @@ label[for="updates"] {
     text-align: center
 }
 
-button.create {
+.create {
     width: 150px;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 17px;
     margin-left: 200px;
     margin-right: 200px;
     background: #2f7bc5;
@@ -207,7 +207,7 @@ button.create {
     border: 1px solid transparent;
 }
 
-button.create p {
+.create p {
     color: #fff;
 }
 
@@ -222,13 +222,13 @@ input[type="password"]:hover {
     box-shadow: 0 0 10px 5px rgba(82, 141, 183, 1);
 }
 
-div.privacy {
+.privacy {
     width: 560px;
     margin: 0 auto;
     margin-top: 20px;
 }
 
-div.privacy p {
+.privacy p {
     color: #fff;
     text-align: center;
     font-size: 11px;

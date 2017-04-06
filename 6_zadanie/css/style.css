@@ -5,7 +5,7 @@ body {
 div.wrapper {
 	width: 908px;
     height: 1310px;
-    font-family: "Lucida Sans Unicode"; 
+    font-family: "Lucida Sans Unicode", Arial, sans-serif; 
     margin: 0 auto;
     margin-top: 19px;
 }
@@ -263,8 +263,8 @@ div.img {
 div.img a.iconbrand {
 	display: block;
 	width: 180px;
-	padding-left: 23px;
-	font-size: 13px;
+	
+	font-size: 12px;
 	color: #114165;
 	background: url(../img/iconbrand.png) 4px 2px no-repeat;
 }
@@ -324,7 +324,7 @@ div.name a {
 div.name a:hover {
 	line-height: 25px;
 	text-decoration: underline;
-	font-family: "Arial";
+	font-family: Arial, sans-serif;
 	font-style: italic;
 	font-weight: bold;
 	font-size: 14px;
@@ -337,6 +337,7 @@ div.contentcolumns {
 	width: 175px;
 	height: 627px;
 	float: left;
+	background: linear-gradient(to bottom, #e4e7e8, #94a7b0);
 }
 
 div.cells {
@@ -364,7 +365,7 @@ div.cells img {
 }
 
 div.cells p.price {
-	font-family: Arial;
+	font-family: Arial, sans-serif;
 	font-weight: bold;
 	font-style: italic;
 	font-size: 16px;
@@ -464,18 +465,18 @@ button {
 	
 /*FOOTER*/
 
-div.logo {
+.logo {
 	width: 908px;
 	height: 60px;
 	margin-top: 30px;
 }
 
-div.logo img {
+.logo img {
 	display: block;
     margin: 0 auto;
 }
 
-div.navigation {
+.navigation {
 	width: 910px;
 	height: 100px;
 	background-color: #213a4d;
@@ -483,7 +484,7 @@ div.navigation {
 	padding-top: 13px;
 }
 
-nav.footermenu {
+.footermenu {
 	width: 320px;
 	height: 24px;
 	margin: 0 auto;
@@ -491,12 +492,12 @@ nav.footermenu {
 	font-size: 12px;
 }
 
-div.navigation nav p {
+.navigation nav p {
 	float: left;
 	line-height: 23px;
 }
 
-div.navigation a {
+.navigation a {
     display: block;
     float: left;
     padding-left: 12px;
@@ -506,11 +507,11 @@ div.navigation a {
     text-decoration: none;
 }
 
-div.navigation a:hover {
+.navigation a:hover {
     color: #3e7e98;
 }
 
-p.rights {
+.rights {
 	font-family: Arial;
 	font-size: 10px;
 	color: #7f4740;
