@@ -260,15 +260,6 @@ div.img {
     margin-right: 5px;
 } 
 
-div.img a.iconbrand {
-	display: block;
-	width: 180px;
-	
-	font-size: 12px;
-	color: #114165;
-	background: url(../img/iconbrand.png) 4px 2px no-repeat;
-}
-
 div.radio {
 	width: 148px;
 	height: 25px;
@@ -287,6 +278,15 @@ div.imgradio {
 	margin-left: 4px;
     margin-top: 1px;
 } 
+
+div.img a.iconbrand {
+	display: block;
+	width: 180px;
+	padding-left: 23px;
+	font-size: 13px;
+	color: #114165;
+	background: url(../img/iconbrand.png) 4px 2px no-repeat;
+}
 
 div.imgradio>a.radio {
 	display: block;
@@ -400,15 +400,6 @@ div.img {
     margin-right: 5px;
 } 
 
-div.img a.iconbrand {
-	display: block;
-	width: 180px;
-	padding-left: 23px;
-	font-size: 14px;
-	color: #114165;
-	background: url(../img/iconbrand.png) 4px 2px no-repeat;
-}
-
 div.radio {
 	width: 148px;
 	height: 25px;
@@ -461,6 +452,8 @@ button {
 	font-size: 11px;
 	color: #e5e9ea;
 	border-radius: 20px;
+	outline: 0;
+    outline-offset: 0;
 }
 	
 /*FOOTER*/
@@ -512,7 +505,7 @@ button {
 }
 
 .rights {
-	font-family: Arial;
+	font-family: Arial, sans-serif;
 	font-size: 10px;
 	color: #7f4740;
 	text-align: center;
