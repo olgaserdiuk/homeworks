@@ -59,12 +59,12 @@ header {
 	height: 15%;
 }
 
-.wrapper {
+.header__wrapper {
 	margin: 0 auto;
 	background: url(../img/bgheader.png) 0 0 no-repeat;
-	background-size: 100%;
+	background-size: cover;
+	height: auto;
 	position: relative;
-	height: 15%;
 }
 
 .header__logo {
@@ -83,72 +83,52 @@ a.header__logo:after {
   	-webkit-text-fill-color: transparent;
 	}
 
-.menu__button {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	width: 47px;
-	margin-top: 40px;
-	margin-bottom: 4px;
-	padding-top: 10px;
-	padding-bottom: 2px;
-	color: #fff;
-	font-size: 24px;
-	text-transform: uppercase;
-	border-bottom: 2px solid #edbfff;
-	color: #fff;
-	z-index: 5;
-}
-
-.menu__submenu {
-	display: none;
-	transition: all 0.2s;
-}
-
 .slider {
-	position: relative;
-	width: 260px;
+	width: 320px;
 	height: 150px;
 	margin: 0 auto;
-	margin-top: 120px;
 	z-index: 5;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
 }
 
 .slider__arrowleft {
 	float: left;
-	margin-right: 45px;
 }
 
 .slider a {
 	display: block;
 }
 
+.slider__content {
+	float: left;
+	width: 270px;
+	text-align: center;
+}
+
 h1 {
 	font-size: 36px;
 	color: #fff;
-	text-align: left;
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-	float: left;
 }
 
 h2 {
 	font-size: 18px;
-	text-align: left;
 	margin-top: 2px;
 	color: #edbfff;
 	text-transform: uppercase;
-	float: left;
 }
 
 .slider__arrowright {
-	position: absolute;
-	right: 0;
+	float: left;
 }
 
 .pagination {
 	width: 90px;
 	margin: 0 auto;
-	padding-top: 100px;
+	padding-top: 37px;
+	padding-bottom: 100px; 
 }
 
 .pagination__slide {
@@ -163,45 +143,140 @@ h2 {
 .wrapper-about {
 	border-top: 1px solid #33253a;
 	border-bottom: 1px solid #1d2f37;
-	background: linear-gradient (to bottom, #765284, #37293e);
-	height: 20%;
-	position: relative;
-}
-
-.about {
-	min-width: 960px;
-	height: auto;
-	margin-left: 35%;
-	position: absolute;
+	background: linear-gradient(to bottom, #765284, #37293e);
+	width: 100%;
 }
 
 .about__company {
-	float: left;
-	width: 10%;
-	background: linear-gradient(to bottom, #765284, #37293e);
-	padding: 25px ;
+	padding-top: 25px;
+	width: 20%
 }
 
 .about__company img {
+	display: block;
 	float: left;
 	width: 23px;
 	height: 25px;
 }
 
 .about__company h1 {
-	font-size: 16px;
-	padding-left: 20px;
+	font-size: 24px;
+	padding-left: 40px;
 }
 
 .about__company p {
-	font-family:; "Open Sans", Tahoma, Arial, sans-serif;
+	font-family: "Open Sans", Tahoma, Arial, sans-serif;
 	font-size: 16px;
 	color: #fff;
 	padding-left: 40px;
 }
 
+.about__company h2 {
+	text-align: right;
+	font-size: 18px;
+	color: #fff;
+	padding-top: 20px;
+}
 
+.about__company a:hover {
+	text-shadow:  1px 1px 1px rgba(255, 255, 255, 0.8);
+}
 
+.content {
+	display: flex;
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.slider__content--about {
+	background-color: #fff;
+	border: 1px solid #f6f6f6;
+	margin-top: 70px;
+}
+
+.slider__content--img {
+	float: left;
+	width: 47px;
+	height: 47px;
+	margin-left: -24px;
+	padding-top: 19px;
+}
+
+.slider__about>h1 {
+	font-size: 24px;
+	color: #454545;
+	text-align: left;
+	padding: 27px 0 6px 35px;
+}
+
+.slider__about>a {
+	display: block;
+	font-size: 24px;
+	color: #edbfff;
+	text-align: left;
+	padding-left: 35px;
+}
+
+.slider__about>p {
+	font-family: "Open Sans", Tahoma, Arial, sans-serif;
+	font-size: 16px;
+	text-align: left;
+	padding: 14px 0 33px 35px;
+	color: #454545;
+}
+
+.pagination__content {
+	margin-top: 23px;
+}
+
+.content__updates {
+	min-width: 350px;
+	padding-bottom: 90px;
+}
+
+.sprite {
+	float: left;
+	width: 47px;
+	height: 47px;
+	border-radius: 47px;
+	margin-top: 22px;
+	margin-right: 18px;
+}
+
+.content__updates h1 {
+	color: #454545;
+}
+.one {
+	background: url(../img/pic320.png) 0 0;
+}
+
+.two {
+	background: url(../img/pic320.png) -47px 0 no-repeat;
+}
+
+.three {
+	background: url(../img/pic320.png) 0 -47px no-repeat;
+}
+
+.updates h2 {
+	padding-top: 27px;
+	padding-bottom: 12px;
+	font-family: "Open Sans", Tahoma, Arial, sans-serif;
+	text-transform: none;
+	color: #454545;
+}
+
+.updates p {
+	font-family: "Open Sans", Tahoma, Arial, sans-serif;
+}
+
+.more {
+	display: block;
+	text-align: right;
+	margin-top: 20px;
+	font-size: 18px;
+	color: #454545;
+}
 
 	
 

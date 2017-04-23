@@ -13,41 +13,43 @@
 </head>
 <body>
 	<header>
-		<div class="wrapper">
-			<div class="boxshadow"></div> <!-- блок с темным прозрачным фоном -->
+		<div class="header__wrapper">
 			<a class="header__logo" href="#">PINGBULL</a>
-			<menu class="menu-compact">
-				<ul class="menu">
+			<menu class="topmenu">
+				<ul class="menu nav">
 					<li class="menu__item">
-						<a class="menu__button" href="#">HOME</a>
-						<ul class="menu__submenu">
-							<li class="submenu__item">
-								<a class="submenu__link" href=#>ABOUT</a>
-							</li>
-							<li class="submenu_item">
-								<a class="submenu__link" href=#>BLOG</a>
-							</li>
-							<li class="submenu_item">
-								<a class="submenu__link" href=#>PRODUCTS</a>
-							</li>
-							<li class="submenu_item">
-								<a class="submenu__link" href=#>LOREM IPSUM</a>
-							</li>
-							<li class="submenu_item">
-								<a class="submenu__link" href=#>DOLOR SIT AMET</a>
-							</li>
-						</ul>
+						<a class="menu__link menu__button" href="#">HOME</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href=#>ABOUT</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href=#>BLOG</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href=#>PRODUCTS</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href=#>LOREM IPSUM</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href=#>DOLOR SIT AMET</a>
 					</li>
 				</ul>
 			</menu>
-		<div class="slider">
-			<div class="slider__arrowleft">
-				<a href="#"><img src="img/arrowleft.png" alt="arrowleft"></a>
-			</div>
-			<h1>Lorem Ipsum Dolor</h1>
-			<h2>IT WILL MAKE ALL OF YOUR DREAMS COME</h2>
-			<div class="slider__arrowright">	
-				<a href="#"><img src="img/arrowright.png" alt="arrowright"></a>
+			<div class="boxshadow"> <!-- блок с темным прозрачным фоном -->	
+				<div class="slider">
+					<div class="slider__arrowleft">
+						<a href="#"><img src="img/arrowleft.png" alt="arrowleft"></a>
+					</div>
+					<div class="slider__content">
+						<h1>Lorem Ipsum Dolor</h1>
+						<h2>IT WILL MAKE ALL OF YOUR DREAMS COME</h2>
+					</div>
+					<div class="slider__arrowright">	
+						<a href="#"><img src="img/arrowright.png" alt="arrowright"></a>
+					</div>
+				</div>
 			</div>
 			<div class="pagination">
 				<i class="pagination__slide"></i>
@@ -56,26 +58,76 @@
 				<i class="pagination__slide"></i>
 			</div>
 		</div>
-		</div>
 		<div class="wrapper-about">
 			<div class="about">
 				<div class="about__company">
 					<img src="img/key.png" alt="key">
 					<h1>ABOUT OUR COMPANY</h1>
 					<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu</p>
+					<a href="#"><h2>READ MORE</h2></a>
 				</div>
 				<div class="about__company">
-					<img src="img/key.png" alt="key">
+					<img src="img/cloud.png" alt="key">
 					<h1>ABOUT OUR COMPANY</h1>
 					<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu</p>
+					<a href="#"><h2>READ MORE</h2></a>
 				</div>
 				<div class="about__company">
-					<img src="img/key.png" alt="key">
+					<img src="img/notes.png" alt="key">
 					<h1>ABOUT OUR COMPANY</h1>
 					<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu</p>
+					<a href="#"><h2>READ MORE</h2></a>
 				</div>
 			</div>
 		</div>
 	</header>
+	<div class="content">
+		<div class="slider__content--about">
+				<img class="slider__content--img" src="img/photo320.png" alt="photo">
+				<div class="slider__about">
+					<h1>PINGBULLER</h1>
+					<a href="#">STARTS HERE</a>
+					<p>“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
+			</div>
+		</div>
+		<div class="pagination">
+			<i class="pagination__slide"></i>
+			<i class="pagination__slide"></i>
+			<i class="pagination__slide"></i>
+			<i class="pagination__slide"></i>
+		</div>
+		<div class="content__updates">
+			<h1>RECENT UPDATES</h1>
+			<div class="updates">
+				<div class="sprite one"></div>
+				<a href="#"><h2>Nunc turpis neque feugiat eget</h2></a>
+				<p>Posted by Admin on March 13 2012</p>
+			</div>
+			<div class="updates">
+				<div class="sprite two"></div>
+				<a href="#"><h2>Nunc turpis neque feugiat eget</h2></a>
+				<p>Posted by Admin on March 13 2012</p>
+			</div>
+			<div class="updates">
+				<div class="sprite three"></div>
+				<a href="#"><h2>Nunc turpis neque feugiat eget</h2></a>
+				<p>Posted by Admin on March 13 2012</p>
+			</div>
+			<a class="more" href="#">MORE BLOG POSTS</a>
+		</div>
+	</div>
+	<footer>
+		<div class="content__logo">
+			<div class="content__logo">
+				<img src="img/logo1.png" alt="logo1">
+			</div>
+			<div class="content__logo">
+				<img src="img/logo2.png" alt="logo2">
+			</div>
+			<div class="content__logo">
+				<img src="img/logo3.png" alt="logo3">
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
