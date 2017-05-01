@@ -91,9 +91,11 @@ div .topmenu li a:hover {
 }
 
 div .topmenu ul>li:last-child p {
+     color: #fff;
+}
+
+.topmenu ul>li:last-child p:hover {
     background: #4eabda;
-    opacity: 0,5; 
-    color: #fff;
 }
     
 /*CONTENT*/
@@ -102,9 +104,7 @@ div .topmenu ul>li:last-child p {
     width: 560px;
     height: 62px;
     background: rgba(14, 14, 14, 0.7); 
-    margin: 0 auto;
-    margin-top: 213px;
-    margin-bottom: 2px;
+    margin: 213px auto 2px;
 }
 
 .cadastre p {
@@ -118,14 +118,11 @@ form {
     width: 560px;
     height: 549px;
     background: rgba(14, 14, 14, 0.7); 
-    margin: 0 auto;
-    margin-bottom: 202px;
+    margin: 0 auto 202px;
 }
 
 .fb {
-    margin-top: 35px;
-    margin-left: 142px;
-    margin-right: 142px;
+    margin: 35px 142px 0;
     width: 275px;
     height: 35px;
     background: linear-gradient(to bottom, #3b5699, #2e4274);
@@ -199,16 +196,11 @@ label[for="updates"] {
 .create {
     width: 150px;
     height: 35px;
-    margin-top: 17px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: 17px 200px 0;
+    color: #fff;
     background: #2f7bc5;
     border-radius: 5px;
     border: 1px solid transparent;
-}
-
-.create p {
-    color: #fff;
 }
 
 input[type="text"]:focus,
@@ -224,8 +216,7 @@ input[type="password"]:hover {
 
 .privacy {
     width: 560px;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px 0 auto;
 }
 
 .privacy p {
