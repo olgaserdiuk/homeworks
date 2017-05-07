@@ -6,8 +6,7 @@ div.wrapper {
 	width: 908px;
     height: 1310px;
     font-family: "Lucida Sans Unicode", Arial, sans-serif; 
-    margin: 0 auto;
-    margin-top: 19px;
+    margin: 19px auto;
 }
 
 /*HEADER*/
@@ -117,10 +116,7 @@ div.menu{
 
 div.topmenu ul {
   	margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 4px;
-    padding-bottom: 4px;
+  	padding: 4px 0;
     height: 24px;
 }
 
@@ -161,8 +157,7 @@ div.basket a {
 }
 
 div.basket img {
-	padding-top: 7px;
-	padding-right: 7px;
+	padding: 7px 7px 0;
 	float: left;
 }
 
@@ -209,8 +204,7 @@ div.content {
 	width: 100%;
 	height: 627px;
 	overflow: hidden;
-	margin: 0 auto;
-	margin-top: 17px;
+	margin: 17px 0 auto;
 }
 
 aside.left {
@@ -249,15 +243,13 @@ div.catalog {
 	margin-bottom: 13px;
 }
 
-div.img {
+.img {
 	float: left;
 	height: 20px;
 	width: 20px;
 	border-radius: 10px;
 	background: linear-gradient(to bottom, #25617b, #0d3458);
-	margin-left: 3px;
-    margin-top: 3px;
-    margin-right: 5px;
+	margin: 3px 5px 5px 3px;
 } 
 
 div.radio {
@@ -300,8 +292,8 @@ div.imgradio>a.radio {
 div.name {
 	width: 149px;
 	height: 100px;
-	padding-left: 35px;
 	padding-top: 8px;
+	padding-left: 35px;
 }
 
 div.name li:before {
@@ -311,7 +303,7 @@ div.name li:before {
 	height: 6px;
     background-color: #fff;
     border: 1px solid #465961;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-right: 5px;
 }
 
@@ -329,6 +321,13 @@ div.name a:hover {
 	font-weight: bold;
 	font-size: 14px;
 	color: #0c3256;
+}
+
+.name li:hover::before {
+	width: 4px;
+	height: 4px;
+	border-radius: 4px;
+	border: 2px solid #0c3256;
 }
 
 /*BODYCONTENT*/
@@ -389,15 +388,13 @@ div.catalog {
 	margin-bottom: 10px;
 }
 
-div.img {
+.img {
 	float: left;
 	height: 20px;
 	width: 20px;
 	border-radius: 10px;
 	background: linear-gradient(to bottom, #25617b, #0d3458);
-	margin-left: 3px;
-    margin-top: 3px;
-    margin-right: 5px;
+	margin: 3px 5px 5px 3px;
 } 
 
 div.radio {
@@ -416,9 +413,7 @@ div.imgradio_check {
 	width: 148px;
 	height: 25px;
 	border-radius: 10px;
-	margin-left: 4px;
-    margin-top: 1px;
-    margin-bottom: 10px;
+	margin: 1px 0 10px 4px;
 } 
 
 div.imgradio_check>a.radio {
