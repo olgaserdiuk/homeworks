@@ -3,6 +3,135 @@
 		background-color: rgba(158, 153, 154, .5);
 		z-index: 1;
 		width: 100%;
-	    height: 50%;
+	    height: 245px;
 	}
+
+	.slider {
+		width: 480px;
+	}
+
+	.slider__content {
+		width: 436px;
+	}
+
+	.iphone {
+		height: 260px;
+		width: 183px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 2;
+	}
+
+	.iphone img {
+		display: block;
+		margin: 0 auto;
+		margin-top: -10px;
+		float: right;
+	}
+
+	.about__footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 670px;
+	}
+
+	.about__company--footer {
+		width: 440px;
+		height: 128px;
+	}
+
+	.about__company--footer h1 {
+		font-size: 24px;
+		color: #454545;
+	}
+
+	.about__company--footer p {
+		font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+		font-size: 16px;
+		line-height: 22px;
+		color: #787878;
+	}
+
+	.topmenu__footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		min-height: 65px;
+		padding-top: 48px;
+	}
+
+
+
+
+	
+/*
+	.menu__footer {
+		position: absolute;
+		z-index: 5;
+	}
+
+	.menu:hover {
+		visibility: visible;
+	}*/
+
+	.menu__link__footer {
+		display: block;
+		margin-right: 25px;
+	}
+
+	/*.menu:hover .menu__button {
+		text-shadow: none;
+		 border: 0; 
+	}*/
+
+	.nav__footer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		border: none;
+		border-radius: 0;
+	}
+
+	.menu__item__footer {
+		padding-top: 1px;
+	}
+
+	.menu__link__footer {
+		height: 17px;
+		color: #fff;
+		font-size: 24px;
+		line-height: 17px;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 0 0 10px rgba(255, 255, 255, .6);
+	}
+
+	/*.menu__link:hover {
+		display: block;
+		background-color: #13070C;
+		background-color: rgba(0, 0, 0, .3);
+	}*/
+
+	/*.menu__link:hover .menu__button {
+		text-shadow: 0 0 10px rgba(255, 255, 255, .6);
+		border-bottom: 2px solid #edbfff;
+	}*/
+
+	/*.menu__button {
+		visibility: visible;
+		padding-left: 0 5px;
+		border-bottom: 2px solid #edbfff;
+		text-shadow: 0 0 10px rgba(255,255,255, .6);
+	}*/
+
+
+
+
+
+
 }
