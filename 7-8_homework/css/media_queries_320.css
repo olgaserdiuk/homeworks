@@ -1,4 +1,4 @@
-/*@media only screen and (max-width: 320px) {*/
+@media screen and (max-width: 479px) {
 	.topmenu {
 		display: flex;
 		justify-content: center;
@@ -22,7 +22,7 @@
 
 	.menu:hover .menu__button {
 		text-shadow: none;
-		 border: 0; 
+		border: 0; 
 	}
 
 	.nav {
@@ -76,6 +76,27 @@
 		display: visible;
 	}
 
+	.slider {
+		width: 324px;
+		margin: 132px auto 0;
+	}
+
+	.slider__content {
+		margin: 20px 20px auto;
+	}
+
+	.slider__arrowright {
+		right: 27px;
+	}
+
+	.iphone {
+		display: none;
+	}
+
+	.pagination {
+		padding-top: 100px;
+	}
+
 	.about {
 		display: flex;
 		width: 100%;
@@ -83,6 +104,24 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+	
+	.about__company {
+		width: 264px;
+	}
+
+	.about__company h1{
+		width: 235px;
+	}
+
+	.about__text {
+		width: 264px;
+		line-height: 21px;
+	}
+
+	.about__text a {
+		display: block;
+		float: right;
 	}
 	
 	.content {
@@ -100,6 +139,32 @@
 	.slider__content--about {
 		width: 255px;
 		height: 273px;
+	}
+
+	.slider__text {
+		width: 174px;
+		height: 158px;
+		margin: 14px 0 33px 35px;
+		overflow: hidden;
+		line-height: 26px;
+		font-family: "Open Sans", Tahoma, Arial, sans-serif;
+	}
+
+	.pagination__about {
+		width: 90px;
+		margin: 0 auto;
+		padding-top: 25px;
+		padding-bottom: 100px; 
+	}
+
+	.updates p {
+		padding-left: 65px;
+		width: 265px;
+	}
+
+	.more {
+		width: 90px;
+		float: right;
 	}
 
 	.content__logo {
@@ -136,6 +201,10 @@
 	}
 
 	.about__footer {
-		/*display: none;*/
+		display: none;
+	}
+
+	.topmenu__footer {
+		display: none;
 	}
 }

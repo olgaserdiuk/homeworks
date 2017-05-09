@@ -64,11 +64,16 @@ header {
 	position: relative;
 }
 
+.header__logoconteiner {
+	width: 152px;
+	padding-top: 70px;
+	margin: 0 auto;
+}
+
 .header__logo {
 	display: block;
 	text-align: center;
 	margin: 0 auto;
-	padding-top: 70px;
 	font-size: 35px;
 	color: #fff;	
 	}
@@ -81,8 +86,6 @@ a.header__logo:after {
 	}
 
 .slider {
-	min-width: 320px;
-	max-width: 960px;
 	height: 100%;
 	margin: 0 auto;
 	display: flex;
@@ -157,7 +160,6 @@ a.header__logo:after {
 }
 
 .about__company {
-	padding-top: 25px;
 	width: 20%;
 	height: 132px;
 }
@@ -166,7 +168,6 @@ a.header__logo:after {
 	display: block;
 	float: left;
 	width: 23px;
-	height: 25px;
 }
 
 .about__company h1 {
@@ -250,7 +251,7 @@ a.header__logo:after {
 }
 
 .content__updates {
-	min-width: 350px;
+	min-width: 320px;
 	padding-bottom: 90px;
 }
 
@@ -355,7 +356,6 @@ a.header__logo:after {
 footer {
 	margin: 0 auto;
 	background: url(../img/bgfooter320.png) bottom center no-repeat;
-	background-size: cover;
 }
 
 .design {
