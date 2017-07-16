@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset {
+	margin: 20px;
+	width: 700px;
+}
+
+.wrappinput {
+	position: relative;
+	padding: 20px 20px;
+}
+
+label {
+	display: inline-block;
+	width: 70px;
+}
+
+.help {
+	display: none;
+	position: absolute;
+	left: 270px;
+	top: 5px;
+	float: right;
+	width: 150px;
+	height: 40px;
+	opacity: 0.7;
+	border: 2px solid grey;
+	border-radius: 4px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Шаблонизатор</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<script type="text/template" id="item_tmpl">
+		<h1><%= name %></h1>
+		<h2><%= study %></h2>
+		<ul>
+			<li><%= cont1 %></li>
+			<li><%= cont2 %></li>
+			<li><%= cont3 %></li>
+		</ul>
+		<div class="border">
+			<h2><%= telephone %></h2>
+			<p><%= numtel %></p>
+			<h2><%= profile %></h2>
+			<p><a href="https://www.facebook.com"><%= link %></a></p>
+		</div class="feedback">
+		<h2><%= feedback %></h2>
+		<p><%= text %></p>
+	</script>
+</body>
+</html>
+
+
+
+

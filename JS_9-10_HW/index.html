@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW 9-10 JS</title>
+	<link rel="stylesheet" href="css/jquery.jcarousel.min.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/jquery.selectbox.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+</head>
+<body>
+	<div class="mainmenu">
+		<ul>
+			<li>
+				<a href="#">Nav 1</a>
+			</li>
+			<li>
+				<a href="#">Nav 2</a>
+			</li>
+			<li class="parent">
+				<a href="#">Nav 3  <img src="img/white_triangles.png"></a>
+				<ul class="submenu">
+					<li><a href="#">Nav 3.1</a></li>
+					<li><a href="#">Nav 3.2</a></li>
+					<li><a href="#">Nav 3.3</a></li>
+					<li class="parent">
+						<a href="#">Nav 3.4   <img src="img/white_triangles.png"></a>
+						<ul class="submenu">
+							<li><a href="#">Nav 3.4.1</a></li>
+							<li class="parent">
+								<a href="#">Nav 3.4.2   <img src="img/white_triangles.png"></a>
+								<ul class="submenu">
+									<li><a href="#">3.4.2.1</a></li>
+									<li><a href="#">3.4.2.2</a></li>
+									<li><a href="#">3.4.2.3</a></li>
+									<li><a href="#">3.4.2.4</a></li>
+									<li><a href="#">3.4.2.5</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Nav 3.4.3</a></li>
+							<li><a href="#">Nav 3.4.4</a></li>
+							<li><a href="#">Nav 3.4.5</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Nav 3.5</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Nav4</a></li>
+			<li><a href="#">Nav5</a></li>
+		</ul>
+	</div>
+	<div class="demoTarget">
+		<select id="default-usage-select">
+			<option value="--">Please select your favorite color</option>
+			<option value="01">Red</option>
+			<option value="02">Orange</option>
+			<option value="03">Yellow</option>
+			<option value="04">Green</option>
+			<option value="05">Blue</option>
+			<option value="06">Magenta</option>
+			<option value="07">Violet</option>
+			<option value="08">Ultra-violet</option>
+		</select>
+		<div class="clr"></div>
+	</div>
+	<div class="wrapper">
+		<div class="jcarousel-wrapper">
+			<div class="jcarousel">
+				<ul>
+					<li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+					<li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+					<li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+					<li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+					<li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+					<li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
+				</ul>
+			</div>
+			<p class="photo-credits">
+				Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
+			</p>
+			<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+			<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+			<p class="jcarousel-pagination"></p>
+		</div>
+	</div>
+	<div class="checkbox_box">
+		<ul class="none">                
+			<li>
+				<label for="first">label 1</label>
+				<div class="checked">
+					<input id="first" type="checkbox" value="first"> <!-- hidden -->
+				</div>
+			</li>
+			<li>
+				<label for="second">label 2</label>
+				<div class="checked">
+					<input checked id="second" type="checkbox" value="second"> <!-- checked hidden> -->
+				</div>
+			</li>
+			<li>
+				<label for="third">label 3</label>
+				<div class="checked">
+					<input id="third" type="checkbox" value="third" disabled="disabled"> <!-- hidden disabled -->
+				</div>
+			</li>
+		</ul>
+    </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+	<script src="js/jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

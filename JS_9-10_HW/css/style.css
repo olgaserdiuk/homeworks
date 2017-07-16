@@ -1,0 +1,136 @@
+a {
+	text-decoration: none; 
+}
+
+a:hover, a:active {
+    outline: none;
+}
+
+/* MENU */
+.mainmenu {
+	position: relative;
+	background-color: rgb(255, 100, 100);
+	height: 50px;
+	margin: auto;
+	padding: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.mainmenu ul,
+.mainmenu ul ul,
+.mainmenu ul ul li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.mainmenu ul {
+	clear: left;
+	position: relative;
+	right: 70%;
+	height: 50px;
+	float: right;
+	text-align: center;
+	font: 14px Arial, Helvetica, sans-serif;
+}
+
+.mainmenu ul li {
+	position: relative;
+	left: 50%;
+	float: left;
+	height: 50px;
+}
+
+.mainmenu ul li a {
+	display: block;
+	color: #fff;
+	padding: 15px 25px;
+}
+
+.mainmenu ul>li:hover>a {
+	color: #000;
+}
+
+.mainmenu ul li ul {
+	background-color: #ff4b4b;
+	/* transition: all .2s ease-in-out; */
+	text-transform: none;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	line-height: 18px;
+	top: 40px;
+	font-size: 14px;
+	margin-top: 20px;
+	height: auto;
+	min-width: 150px;
+	width: 100%;
+}
+
+.mainmenu ul li:hover>ul {
+	opacity: 1;
+	visibility: visible;
+	margin: 0;
+	z-index: 11;
+	background-color: rgb(255, 130, 130);
+}
+
+.mainmenu ul li ul li {
+	border: none;
+	position: relative;
+	left: 0;
+	float: none;
+	height: auto;
+}
+
+.mainmenu ul li ul li a {
+	padding: 10px 5px;
+	border-bottom: 1px solid rgb(200, 50, 50);
+	margin: 0 10px;
+}
+
+.mainmenu ul li ul li:last-child a {
+	border-bottom: none;
+}
+
+.mainmenu ul li ul li ul {
+	top: 0;
+	left: 90%;
+	margin: 0 0 0 5px;
+}
+
+
+/* checkbox */
+
+ul.none {
+	list-style: none;
+}
+.checkbox_box {
+	width: 120px;
+	height: 150px;
+}
+
+li input {
+	visibility: hidden;
+}
+
+.checked {
+	width: 14px;
+	height: 14px;
+	border: 1px solid #000;
+	border-radius: 4px;
+	background-color: #418292;
+	float: right;
+
+}
+
+.active {
+	background-color: #ff6464;
+
+}
+
+.disabled {
+	background-color: #a1b9bf;
+}
