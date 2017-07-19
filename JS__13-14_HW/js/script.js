@@ -45,24 +45,34 @@ var test = {
 
     var badAns = 0;
 
+    var ansCount = 0;
+
     $('input[type=radio]:checked').each(
         function() {            
               $(this).attr('value');
               $(this).attr('for');
               if(test.data.questions[$(this).attr('for')].rightAns != $(this).attr('value'))
                 badAns++;
-        }
-      );
+
+               ansCount++;
+        });
+
+       
 
     if(badAns > 0) {
       $('.modal-body').html("Вы не прошли тест, у вас "+badAns+" ошибок ");
-    } else if(badAns <= 0) {
-      $('.modal-body').html("Вы не прошли тест, у вас "+badAns+" ошибок ");
+    } else if(ansCount != test.data.questions.length) {
+      $('.modal-body').html("Вы ответили не на все вопросы");
     } else {
       $('.modal-body').html("Поздравляем! Вы прошли тест успешно!");
     }
 
     $('#myModal').modal('show');
+
+    $('.btn-default').on('click', function(){
+      $('input[type=radio]:checked').prop('checked',false);;
+    })
+
 
   });
 });
