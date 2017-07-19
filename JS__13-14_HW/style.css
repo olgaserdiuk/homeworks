@@ -1,11 +1,10 @@
-div {
-	width: 150px;
+body {
+	width: 100%;
 	margin-left: 20px;
 }
 
-button {
+.results {
 	margin: 40px auto;
 	width: 250px;
 	height: 35px;
 }
-

@@ -1,86 +1,69 @@
-var info = {
-  title1: 'Сколько будет 2+2?',
-  answers1: ['3', '5', '4'],
-  title2: 'Сколько будет 4 х 2?,',
-  answers2: ['7', '3', '8'],
-  title3: 'Сколько будет 9 / 3?',
-  answers3: ['6', '3', '14'],
-}
-
-localStorage.setItem('info', JSON.stringify(info));
-
-localStorage.getItem('info');
-
+'use strict;'
 
 var test = {
   data: {
     title: 'Тест по какой-то теме',
     questions: [
       {
-        title: title1,
-        answers: answers1
+        title: 'Сколько будет 2+2?',
+        answers: ['3', '5', '4'],
+        rightAns: 2
       },
       {
-        title: title2,
-        answers: answers2
+        title: 'Сколько будет 4 х 2?',
+        answers: ['7', '3', '8', '15'],
+         rightAns: 2
       },
       {
-        title: title3,
-        answers: answers3
+        title: 'Сколько будет 9 / 3?',
+        answers: ['6', '3', '14'],
+         rightAns: 1
       }
     ]
-  },
-
- 
-
-  
-  myWrapper: document.querySelector('wrapper'),
-
-  genHtml: function() {
-    var title = document.createElement('h1');
-    title.appendChild(document.createTextNode(this.data.title));
-    this.myWrapper.appendChild(title);
-    var questions = this.genQuestions();
-    this.myWrapper.appendChild(questions);
-    this.myWrapper.appendChild(this.addButton());
-  },
-
-  genQuestions: function(){
-      var div = document.createElement('div');
-      this.data.questions.forEach(function(oneQuestion, i) {
-        var questionTitle = document.createElement('h3');
-        questionTitle.appendChild(document.createTextNode(oneQuestion.title));
-        div.appendChild(questionTitle);
-
-        var divCheck = document.createElement('div');
-
-        oneQuestion.answers.forEach(function(oneAnswer, n) {
-          var checkbox = document.createElement('input');
-          checkbox.type = "checkbox";
-          checkbox.id = "check" + n;
-
-          var label = document.createElement('label')
-          label.htmlFor = checkbox.id;
-          label.appendChild(document.createTextNode(oneAnswer));
-
-          divCheck.appendChild(checkbox);
-          divCheck.appendChild(label);
-        });
-
-        div.appendChild(divCheck);
-      });
-
-      return div;     
-  },
-
-  addButton: function() {
-    var button = document.createElement('button');
-    button.type = "submit";
-    button.appendChild(document.createTextNode( 'Проверить мои результаты'));
-
-    return button;
-  },
-
+  }
 };
 
-test.genHtml();
+
+  localStorage.setItem('test', JSON.stringify(test));
+    console.log(JSON.stringify(test));
+
+  var test = JSON.parse(localStorage.getItem('test'));
+  
+
+
+  $(function() {
+  
+  var html = $('#item_tmpl').html();
+
+  var content = tmpl(html, test.data);
+
+  $('body').append(content);
+
+
+
+    $('.results').on('click', function(){
+
+    var badAns = 0;
+
+    $('input[type=radio]:checked').each(
+        function() {            
+              $(this).attr('value');
+              $(this).attr('for');
+              if(test.data.questions[$(this).attr('for')].rightAns != $(this).attr('value'))
+                badAns++;
+        }
+      );
+
+    if(badAns > 0) {
+      $('.modal-body').html("Вы не прошли тест, у вас "+badAns+" ошибок ");
+    } else if(badAns <= 0) {
+      $('.modal-body').html("Вы не прошли тест, у вас "+badAns+" ошибок ");
+    } else {
+      $('.modal-body').html("Поздравляем! Вы прошли тест успешно!");
+    }
+
+    $('#myModal').modal('show');
+
+  });
+});
+

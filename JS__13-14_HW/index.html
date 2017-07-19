@@ -3,51 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<title>13-14 JS Homework</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./style.css">
-</head>
-<body>
-	<wrapper>
-	<!-- <h1>Тест по программированию</h1>
-	<h3>1. Вопрос №1</h3>
-	<div class="check">
-		<input type="checkbox" id="checkbox1">
-		<label for="checkbox1">Вариант ответа №1</label>
-		<input type="checkbox" id="checkbox2">
-		<label for="checkbox2">Вариант ответа №2</label><br>
-		<input type="checkbox" id="checkbox3">
-		<label for="checkbox3">Вариант ответа №3</label>
-	</div>
-	<h3>2. Вопрос №2</h3>
-	<div class="check">
-		<input type="checkbox" id="checkbox1">
-		<label for="checkbox1">Вариант ответа №1</label>
-		<input type="checkbox" id="checkbox2">
-		<label for="checkbox2">Вариант ответа №2</label><br>
-		<input type="checkbox" id="checkbox3">
-		<label for="checkbox3">Вариант ответа №3</label>
-	</div>
-	<h3>2. Вопрос №3</h3>
-	<div class="check">
-		<input type="checkbox" id="checkbox1">
-		<label for="checkbox1">Вариант ответа №1</label><br>
-		<input type="checkbox" id="checkbox2">
-		<label for="checkbox2">Вариант ответа №2</label><br>
-		<input type="checkbox" id="checkbox3">
-		<label for="checkbox3">Вариант ответа №3</label>
-	</div>
-	<div class="check">
-		<h3>2. Вопрос №3</h3>
-		<input type="checkbox" id="checkbox1">
-		<label for="checkbox1">Вариант ответа №1</label><br>
-		<input type="checkbox" id="checkbox2">
-		<label for="checkbox2">Вариант ответа №2</label><br>
-		<input type="checkbox" id="checkbox3">
-		<label for="checkbox3">Вариант ответа №3</label>
-	</div>
-	<button type="submit">Проверить мои результаты</button> -->
-	</wrapper>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/template.js"></script>
 	<script src="js/script.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Результаты теста</h4>
+				</div>
+				<div class="modal-body">
+					<p></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/template" id="item_tmpl">
+			<h1><%= title %></h1>
+			<% for ( var i = 0; i < questions.length; i++ ) { %>
+			<h3><%= questions[i].title %></h3>
+			<div class="check">
+				<% for ( var j = 0; j < questions[i].answers.length; j++ ) {  %>
+				<input type="radio" name="rb<%=i%>" for="<%=i%>" value="<%=j%>" >
+				<%= questions[i].answers[j]  %><br>
+				<% } %>
+			</div>
+			<% } %>
+			<button class="results" type="submit">Проверить мои результаты</button>
+	</script>
 </body>
 </html>
