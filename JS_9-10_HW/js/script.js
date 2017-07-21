@@ -39,13 +39,3 @@ $('.checked').on('click', function() {
 });
 
 
-/*var str = '{"name": "John Doe"}';
-
-try {
-	JSON.parse(str);
-	console.log('obj.name', obj.name); /*- если правильный код*/
-/*} catch (e) {
-	console.log('error is here'); /*- если есть ошибка*/
-/*} finally {
-	console.log('finally'); /*- выведется в любом случае*/
-/*}*/

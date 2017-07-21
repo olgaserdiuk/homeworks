@@ -113,7 +113,8 @@ ul.none {
 }
 
 li input {
-	visibility: hidden;
+	/* visibility: hidden; */
+	display: none;
 }
 
 .checked {
