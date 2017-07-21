@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	margin-left: 20px;
+}
+
+form {
+	margin: 20px;
+}
+
+input {
+	float: left;
+	margin-left: 10px;
+	width: 300px;
+}
+
+.checktype {
+	width: 60px;
+	height: 40px;
+	margin: 0 10px;
+	float: left;
+}
+
+p {
+	float: left;
+	width: 30px;
+}
+
+.insert {
+	width: 10px;
+}
+
+.mybutton {
+	margin: 0 10px;
+}
+
+.buttonsave {
+	margin: 0 10px;
+}
