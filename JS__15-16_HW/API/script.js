@@ -1,7 +1,4 @@
-$(document).ready(function(){
-
-
-
+$(function(){
 
 $('.myButton').click( function() {
 	event.preventDefault();
