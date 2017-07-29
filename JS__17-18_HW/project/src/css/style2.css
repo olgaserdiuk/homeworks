@@ -1,0 +1,17 @@
+button {
+	width: 150px;
+	height: 40px;
+	float: right;
+}
+
+#output {
+	min-width: 300px;
+	max-width: 600px;
+	height: auto;
+	margin: 0 auto;
+}
+
+img {
+	width: 150px;
+	margin: 20px;
+}
