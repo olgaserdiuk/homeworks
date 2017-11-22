@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('../fonts/LeagueGothicRegular/LeagueGothicRegular.eot');
+    src: url('../fonts/LeagueGothicRegular/LeagueGothicRegular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/LeagueGothicRegular/LeagueGothicRegular.woff2') format('woff2'),
+         url('../fonts/LeagueGothicRegular/LeagueGothicRegular.woff') format('woff'),
+         url('../fonts/LeagueGothicRegular/LeagueGothicRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSansLight/OpenSansLight.eot');
+    src: url('../fonts/OpenSansLight/OpenSansLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSansLight/OpenSansLight.woff2') format('woff2'),
+         url('../fonts/OpenSansLight/OpenSansLight.woff') format('woff'),
+         url('../fonts/OpenSansLight/OpenSansLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OpenSansExtrabold';
+    src: url('../fonts/OpenSansExtrabold/OpenSansExtrabold.eot');
+    src: url('../fonts/OpenSansExtrabold/OpenSansExtrabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSansExtrabold/OpenSansExtrabold.woff2') format('woff2'),
+         url('../fonts/OpenSansExtrabold/OpenSansExtrabold.woff') format('woff'),
+         url('../fonts/OpenSansExtrabold/OpenSansExtrabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
