@@ -1,0 +1,212 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* Don't kill focus outline for keyboard users: http://24ways.org/2009/dont-lose-your-focus */
+a:hover, a:active {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'Ubuntu Condensed Regular';
+  src: url("font/ubuntu-c-webfont.woff2") format("woff2"), url("font/ubuntu-c-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu Light';
+  src: url("font/ubuntu-l-webfont.woff2") format("woff2"), url("font/ubuntu-l-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu Medium';
+  src: url("font/ubuntu-m-webfont.woff2") format("woff2"), url("font/ubuntu-m-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/* HEADER */
+.wrapper {
+  width: 100%;
+  margin: 0 auto; }
+  .wrapper header {
+    width: 90%;
+    margin: 0 auto;
+    height: 74px; }
+    .wrapper header .header_logo {
+      width: 230px;
+      height: 36px;
+      float: left;
+      margin-top: 37px; }
+      .wrapper header .header_logo img {
+        float: left;
+        margin-right: 11px; }
+      .wrapper header .header_logo h2 {
+        color: #434343;
+        font-family: "Ubuntu Medium", Arial, sans-serif;
+        font-size: 30px; }
+      .wrapper header .header_logo p {
+        font-family: "Ubuntu Light", Arial, sans-serif;
+        color: #9d9d9d;
+        font-size: 12px;
+        letter-spacing: 3px; }
+    .wrapper header .header_social {
+      float: right;
+      margin-top: 48px; }
+      .wrapper header .header_social a {
+        display: block;
+        float: left; }
+      .wrapper header .header_social img {
+        margin-right: 10px; }
+      .wrapper header .header_social .facebook,
+      .wrapper header .header_social .twitter,
+      .wrapper header .header_social .rss,
+      .wrapper header .header_social .linkedin,
+      .wrapper header .header_social .skype {
+        width: 16px;
+        padding-top: 5px; }
+
+/* MENU */
+.topmenu {
+  margin-top: 37px;
+  margin: 0 auto;
+  width: 90%;
+  height: 56px;
+  background: #2a2d32; }
+  .topmenu .menu {
+    width: 53%;
+    float: left; }
+    .topmenu .menu ul {
+      margin: 0 auto;
+      height: 56px; }
+      .topmenu .menu ul li {
+        float: left;
+        height: 56px;
+        border-right: 1px solid #181a1d; }
+        .topmenu .menu ul li a {
+          display: block;
+          padding: 21px 37px;
+          font-family: "Ubuntu Condensed Regular", Arial, sans-serif;
+          font-size: 14px;
+          color: #fff; }
+          .topmenu .menu ul li a:hover {
+            color: #f4b60d; }
+  .topmenu .search {
+    float: right;
+    width: 239px;
+    height: 37px;
+    margin: 9px;
+    border: 1px solid #181a1d;
+    background-color: #35383c; }
+    .topmenu .search .searchline {
+      width: 237px; }
+    .topmenu .search .myinput {
+      width: 190px;
+      height: 35px;
+      border: none;
+      float: left;
+      padding-left: 15px;
+      background-color: #35383c; }
+      .topmenu .search .myinput:focus {
+        outline: none; }
+    .topmenu .search .mybutton {
+      width: 30px;
+      height: 35px;
+      border: none;
+      float: right;
+      background-color: #35383c; }
+      .topmenu .search .mybutton:focus {
+        outline: none; }
+      .topmenu .search .mybutton .searchimg {
+        width: 15px;
+        height: 35px;
+        border: none; }
+
+/* SLIDER */
+.slider {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px; }
+  .slider img {
+    width: 100%; }
+
+/* ABOUT */
+.wrapper_about {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch; }
+  .wrapper_about .about {
+    flex-basis: auto;
+    margin-right: 10px; }
+    .wrapper_about .about .number {
+      float: left;
+      margin-right: 20px;
+      font-family: "Ubuntu Medium", Arial, sans-serif;
+      font-size: 90px;
+      color: #efeff0;
+      height: 100%; }
+    .wrapper_about .about article .caption {
+      color: #2a2b2e; }
+      .wrapper_about .about article .caption h2 {
+        font-family: "Ubuntu Medium", Arial, sans-serif;
+        font-size: 20px; }
+    .wrapper_about .about article p {
+      margin-top: 26px;
+      font: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 20px;
+      color: #9d9d9d; }
+    .wrapper_about .about article .linkmore {
+      display: block;
+      color: #2a2b2e;
+      margin-top: 26px; }
+      .wrapper_about .about article .linkmore:hover {
+        color: #248cec; }
+      .wrapper_about .about article .linkmore img {
+        width: 10px;
+        height: 10px;
+        margin-left: 9px; }
+
+/* SERVICES */
+.wrapper__services {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 88px;
+  background-color: #2a2d32; }
+
+/*# sourceMappingURL=style.css.map */
