@@ -39,20 +39,26 @@ q:before, q:after {
 a:hover, a:active {
   outline: none; }
 
-@media screen and (max-width: 479px) {
-  .list-inline .chld {
-    color: red; } }
 body {
   font-family: 'PT Sans', Arial, sans-serif;
   color: #666666;
   max-width: 100%; }
 
+.wrapper {
+  width: 100%; }
+
 a {
   color: #458cc9;
   font-size: 14px; }
 
+.btn-up {
+  display: none; }
+
 /*HEADER*/
 /*MENU*/
+.dropdown {
+  display: none; }
+
 .wrap-menu {
   background-color: #bacf92;
   height: 40px;
@@ -68,7 +74,10 @@ a {
 
 .topmenu {
   width: 940px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  /* @media screen and (max-width: 600px) {
+  	display: none;
+  } */ }
 
 .list-inline {
   width: 720px; }
@@ -160,7 +169,7 @@ a {
 
 .time {
   width: 260px;
-  height: 81px;
+  /* height: 81px; */
   float: left;
   padding-top: 24px; }
   .time .clock {
@@ -181,6 +190,9 @@ a {
     clear: both;
     padding-top: 7px;
     padding-left: 30px; }
+
+.compare-mob {
+  display: none; }
 
 .compare {
   width: 220px;
@@ -247,10 +259,15 @@ a {
     .wrap-basket form input[type="search"] {
       -webkit-appearance: none; }
 
+.catalog {
+  display: none; }
+
+.search-img {
+  display: none; }
+
 /*CONTENT*/
 .wrap-content {
   width: 940px;
-  height: 50px;
   margin: 0 auto; }
 
 /* SIDEBAR LEFT */
@@ -269,7 +286,8 @@ fieldset {
   border-top: 1px solid;
   border-color: #e08a13;
   margin-top: 19px;
-  padding: 0; }
+  padding: 0;
+  z-index: 2; }
 
 legend {
   text-transform: uppercase;
@@ -277,7 +295,11 @@ legend {
   color: #e08a13;
   font-weight: bold;
   font-size: 14px;
-  position: relative; }
+  /* position: relative; */
+  z-index: 2; }
+
+.about {
+  display: none; }
 
 .lc {
   margin: 13px 0 19px 0; }
@@ -717,7 +739,7 @@ h1 {
   padding: 20px 0px 1px;
   border-radius: 4px 4px 4px 4px;
   margin: 14px 0px 28px 0px;
-  position: relative;
+  /* position: relative; */
   width: 220px; }
   .green_spec .news1 {
     width: 220px;
@@ -752,14 +774,15 @@ footer {
 
 .footer-wrap {
   width: 940px;
-  height: 258px;
   margin: 0 auto;
   font-size: 12px; }
   .footer-wrap a {
     font-size: 12px; }
+  .footer-wrap .share-mob {
+    display: none; }
   .footer-wrap .time {
     width: 240px;
-    height: 234px; }
+    /* height: 234px; */ }
     .footer-wrap .time p.load {
       width: 80px;
       font-size: 12px; }
@@ -794,7 +817,7 @@ footer {
     color: #666666;
     width: 220px;
     float: right; }
-    .footer-wrap .copy a {
+    .footer-wrap .copy .up-bs {
       display: block;
       position: absolute;
       top: -21px;

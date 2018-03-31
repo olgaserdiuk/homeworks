@@ -1,5 +1,5 @@
 @import 'reset.scss';
-@import 'media_queries_320.scss';
+
 
 $lightgrey: #9c9c9c;
 $darkgrey:#666666;
@@ -12,15 +12,26 @@ body {
 	max-width: 100%;
 }
 
+.wrapper {
+	width: 100%;
+}
+
 a {
 	color: $linkcolor;
 	font-size: 14px;
+}
+
+.btn-up {
+	display: none;
 }
 
 
 /*HEADER*/
 
 /*MENU*/
+.dropdown {
+	display: none;
+}
 .wrap-menu {
 	background-color: #bacf92;
 	height: 40px;
@@ -34,7 +45,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bed7a1', end
 .topmenu {
 	width: 940px;
 	margin: 0 auto;
+	/* @media screen and (max-width: 600px) {
+		display: none;
+	} */
 }
+
+
 
 .list-inline {
 	width: 720px;
@@ -162,7 +178,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bed7a1', end
 
 .time {
 	width: 260px;
-	height: 81px;
+	/* height: 81px; */
 	float: left;
 	padding-top: 24px;
 
@@ -194,6 +210,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bed7a1', end
 		padding-top: 7px;
 		padding-left: 30px;
 	}
+}
+
+.compare-mob {
+	display: none;
 }
 
 .compare {
@@ -289,12 +309,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bed7a1', end
 		}
 	}
 }
+.catalog {
+	display: none;
+}
+.search-img {
+	display: none; 
+}
 
 /*CONTENT*/
 
 .wrap-content {
 	width: 940px;
-	height: 50px;
 	margin:0 auto;
 }
 
@@ -316,6 +341,7 @@ fieldset {
     border-color: $fieldset;
     margin-top: 19px;
     padding: 0;
+    z-index: 2;
 }
 
 legend {
@@ -324,7 +350,12 @@ legend {
 	color: $fieldset;
 	font-weight: bold;
 	font-size: 14px;
-	position: relative;
+	/* position: relative; */
+	z-index: 2;
+}
+
+.about {
+	display: none;
 }
 
 .lc { 
@@ -878,7 +909,7 @@ h1 {
 	padding:20px 0px 1px;
 	border-radius: 4px 4px 4px 4px;
 	margin: 14px 0px 28px 0px;
-	position: relative; 
+	/* position: relative; */ 
 	width:220px;
 	
 	.news1 {
@@ -932,17 +963,18 @@ footer {
 
 .footer-wrap {
 	width: 940px;
-	height: 258px;
 	margin: 0 auto;
 	font-size: 12px;
 
 	a {
 		font-size: 12px;
 	}
-
+	.share-mob {
+		display: none;
+	}
 	.time {
 		width: 240px;
-		height: 234px;
+		/* height: 234px; */
 
 		p.load {
 			width: 80px;
@@ -997,7 +1029,7 @@ footer {
 		color: $darkgrey;
 		width: 220px;
 		float: right;
-		a {
+		.up-bs {
 			display: block;
 			position: absolute;
 			top: -21px;
