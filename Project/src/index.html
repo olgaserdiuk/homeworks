@@ -44,152 +44,160 @@
                 </menu>
                 <!-- mobile start -->
                 <menu class="dropdown">
-                    <nav class="nav">
+                    <nav class="nav1">
                         <a href="#" id="menu-icon"></a>
                         <ul>
-                            <li><a href="#" class="bold">как сделать заказ</a></li>
+                            <li><a href="#" class="bold pos">как сделать заказ</a></li>
                             <li><a href="#" class="bold">доставка</a></li>
                             <li><a href="#" class="bold">акции</a></li>
                             <li><a href="#" class="bold">контакты</a></li>
-                        <li>
-                            <div class="call">
-                                <img src="img/phone.gif" alt="phone">
-                                <a href="#">8 (495) 786 1707</a>
-                                <a href="#">8 (925) 203 6525</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="time">
-                                <a href="#">Обратная связь</a>
-                                <div class="sm-icon">
-                                    <img class="clock" src="img/wt.gif" alt="clock">
-                                    <p class="load">Время работы:</p>
+                            <li>
+                                <div class="call">
+                                    <img src="img/phone.gif" alt="phone">
+                                    <a href="#">8 (495) 786 1707</a>
+                                    <a href="#">8 (925) 203 6525</a>
                                 </div>
-                                <div class="sm-icon">
-                                    <img class="load" src="img/wt3.gif" alt="load">
-                                    <p class="graf">09:00-22:00</p>
-                                    <p>09:00-22:00</p>
+                            </li>
+                            <li>
+                                <div class="time">
+                                    <a href="#">Обратная связь</a>
+                                    <div class="sm-icon">
+                                        <img class="clock" src="img/wt.gif" alt="clock">
+                                        <p class="load">Время работы:</p>
+                                    </div>
+                                    <div class="sm-icon down">
+                                        <img class="load" src="img/wt3.gif" alt="load">
+                                        <p class="graf">09:00-22:00</p>
+                                        <p>09:00-22:00</p>
+                                    </div>
                                 </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="nav2">
+                        <a href="#" id="enter">Вход</a>
+                        <ul>
+                            <li>
+                                <form action="#"" method="post">
+                                    <div class="inf dec">
+                                        <p>Ваш логин</p>
+                                        <a href="#">Регистрация</a>
+                                        <input type="text" name="login" placeholder="" required></p>
+                                    </div>
+                                    <div class="inf">
+                                        <p>Пароль</p>
+                                        <a href="#">Забыли?</a>
+                                        <input type="text" name="last_name" placeholder="" required>
+                                    </div>
+                                    <div class="inf">
+                                        <input type="checkbox" id="remember" checked> 
+                                        <label for="remember">Запомнить</label>
+                                        <button class="enter" type="submit">
+                                            <p>Войти</p>
+                                        </button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="nav2">
+                        <a href="#" id="enter">Регистрация</a>
+                        <ul>
+                            <li>
+                                <form action="#"" method="post">
+                                    <div class="inf dec">
+                                        <p>Ваш логин</p>
+                                        <a href="#">Регистрация</a>
+                                        <input type="text" name="login" placeholder="" required></p>
+                                    </div>
+                                    <div class="inf">
+                                        <p>Пароль</p>
+                                        <a href="#">Забыли?</a>
+                                        <input type="text" name="last_name" placeholder="" required>
+                                    </div>
+                                    <div class="inf">
+                                        <input type="checkbox" id="remember" checked> 
+                                        <label for="remember">Запомнить</label>
+                                        <button class="enter" type="submit">
+                                            <p>Войти</p>
+                                        </button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                </menu>
+                    <!-- mobile end -->
+                </div>
+                <div class="contacts">
+                    <div class="contacts-wrap">
+                        <div class="logo">
+                        <a href="#"><img src="img/logo.gif" alt="logo"></a>
+                    </div>
+                    <div class="call none">
+                        <img src="img/phone.gif" alt="phone">
+                        <a href="#">8 (495) 786 1707</a>
+                        <a href="#">8 (925) 203 6525</a>
+                    </div>
+                    <div class="time none">
+                        <img class="clock" src="img/wt.gif" alt="clock">
+                        <p class="load">Время работы:</p>
+                        <img class="load" src="img/wt3.gif" alt="load">
+                        <p class="graf">09:00-22:00</p>
+                        <p>09:00-22:00</p>
+                        <a href="#">Обратная связь</a>
+                    </div>
+                    <div class="compare none">
+                        <img src="img/compare.gif" alt="compare">
+                        <p>К сравнению:&nbsp;</p>
+                        <a href="#">
+                            <span id="numcompare">--</span>товара</a>
+                        </div>
+                        <!-- mobile start -->
+                        <div class="compare-mob">
+                            <a href="#">
+                                <img src="img/bask_ico.gif" alt="compare">
+                                <span id="numcompare">28</span>
+                            </a>
+                        </div>
+                        <div class="compare-mob belt">
+                            <a href="#">
+                                <img src="img/compare.gif" alt="compare">
+                                <span id="numcompare">12</span>
+                            </a>
+                        </div>
+                        <!-- mobile end -->
+                    </div>
+                    <div class="wrap-basket">
+                        <div class="banner none">
+                            <img src="img/banner.gif" alt="">
+                        </div>
+                        <div class="basket none">
+                            <div>В корзине 
+                                <a href="/order/">
+                                    <span id="num">0</span> товаров
+                                </a>
                             </div>
-
-
-
-            <!-- <div class="time">
-                <p class="load">Время работы:</p>
-                <div class="load-img"><img class="load" src="img/wt3.gif" alt="load"></div>
-                <div class="load-time">
-                    <p class="graf">09:00-22:00</p>
-                    <p>09:00-22:00</p>
-                </div> -->
-
-
-
-
-                        </li>
-                    </ul>
-                </nav>
-            </menu>
-            <!-- mobile end -->
-            <!-- <menu class="dropdown">
-                <nav class="nav">
-                    <ul>
-                        <li class="current"><a href="#"></a></li>
-                        <li><a href="#">как сделать заказ</a></li>
-                        <li><a href="#">доставка</a></li>
-                        <li><a href="#">акции</a></li>
-                        <li><a href="#">контакты</a></li>
-                    </ul>
-                </nav>
-            </menu>
-            <menu class="dropdown">
-                <nav class="nav">
-                    <ul>
-                        <li class="current"><a href="#"></a></li>
-                        <li><a href="#">как сделать заказ</a></li>
-                        <li><a href="#">доставка</a></li>
-                        <li><a href="#">акции</a></li>
-                        <li><a href="#">контакты</a></li>
-                    </ul>
-                </nav>
-            </menu>
-            <div class="small-icons">
-                <a href="№" id="unistor-compare-total" title="Регистрация">Регистрация</a>
-                <img src="img/usico.gif" alt="pic">
-                <a href="№" id="unistor-wishlist-total" title="Вход">Вход</a> или 
-            </div> -->
-
-
-        
-    </div>
-    <div class="contacts">
-        <div class="contacts-wrap">
-            <div class="logo">
-                <a href="#"><img src="img/logo.gif" alt="logo"></a>
-            </div>
-            <div class="call none">
-                <img src="img/phone.gif" alt="phone">
-                <a href="#">8 (495) 786 1707</a>
-                <a href="#">8 (925) 203 6525</a>
-            </div>
-            <div class="time none">
-                <img class="clock" src="img/wt.gif" alt="clock">
-                <p class="load">Время работы:</p>
-                <img class="load" src="img/wt3.gif" alt="load">
-                <p class="graf">09:00-22:00</p>
-                <p>09:00-22:00</p>
-                <a href="#">Обратная связь</a>
-            </div>
-            <div class="compare none">
-                <img src="img/compare.gif" alt="compare">
-                <p>К сравнению:&nbsp;</p>
-                <a href="#">
-                    <span id="numcompare">--</span>товара</a>
-            </div>
-            <!-- mobile start -->
-           <div class="compare-mob">
-                <a href="#">
-                    <img src="img/bask_ico.gif" alt="compare">
-                    <span id="numcompare">28</span>
-                </a>
-            </div>
-           <div class="compare-mob belt">
-                <a href="#">
-                    <img src="img/compare.gif" alt="compare">
-                    <span id="numcompare">12</span>
-                </a>
-            </div>
-            <!-- mobile end -->
-        </div>
-        <div class="wrap-basket">
-            <div class="banner none">
-                <img src="img/banner.gif" alt="">
-            </div>
-            <div class="basket none">
-                <div>В корзине 
-                    <a href="/order/">
-                        <span id="num">0</span> товаров
-                    </a>
-                </div>
-                <div>на сумму 
-                    <span id="sum">0</span>
+                            <div>на сумму 
+                                <span id="sum">0</span>
+                            </div>
+                        </div>
+                        <!-- mobile start -->
+                        <button class="catalog">каталог</button>
+                        <button class="catalog">фильтр</button>
+                        <a class="search-img" href="#"><img src="img/search-mob.png" alt=""></a>
+                        <!-- mobile end -->
+                        <div class="search-wrap none">
+                            <form action="" method="post" class="search">
+                                <input type="search" name="" placeholder="Поиск по сайту" class="input" />
+                                <input type="submit" name="" value="" class="submit" />
+                            </form>
+                    </div>
                 </div>
             </div>
-            <!-- mobile start -->
-            <button class="catalog">каталог</button>
-            <button class="catalog">фильтр</button>
-            <a class="search-img" href="#"><img src="img/search.png" alt=""></a>
-            <!-- mobile end -->
-            <div class="search-wrap none">
-                <form action="" method="post" class="search">
-                    <input type="search" name="" placeholder="Поиск по сайту" class="input" />
-                    <input type="submit" name="" value="" class="submit" />
-                </form>
-            </div>
-        </div>
-    </div>
-</header>
-    <div class="wrap-content">
-        <aside class="left">
+        </header>
+            <div class="wrap-content">
+                <aside class="left">
             <fieldset class="fieldset none">
                 <legend>все товары</legend>
                 <div class="lc">
