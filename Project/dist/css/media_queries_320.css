@@ -1,4 +1,4 @@
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 990px) {
 
 .wrap-menu {
 	width: 100%;
@@ -200,7 +200,15 @@ header {
 	margin-top: 36px;
 }
 /* nav2 end */
-
+.navreg {
+	display: block;
+	margin: 0 2%;
+	width: auto;
+	float: right;
+	line-height: 40px;
+	text-decoration: none;
+	color: #fff;
+}
 /* MENU end */
 /* LOGO CONTACTS start */
 .contacts {
@@ -264,8 +272,6 @@ header {
 	margin-right: 3%;
 	float: left;
 	border:  none;
-	/* box-shadow: 1px #d2e0b8; */
-	/* border: 1px solid #d2e0b8;
 	border-top: none; */
 	box-shadow: 1px 1px 5px #d2e0b8;
 	border-radius: 3px;
@@ -312,6 +318,157 @@ header {
 	margin: 0 auto;
 	float: none;
 }
+
+/* CONTENT Матрасы -> Аскона start */
+.prod-wrap-mob {
+	width: 100%;
+}
+.prod-wrap-mob .prodpics {
+	margin-right: 5%;
+}
+.prod-options-mob {
+	display: initial;
+	width: 100%;
+	line-height: 17px;
+}
+.catal_item {
+	width: 100%;
+}
+
+.catal_item a {
+	display: block;
+	padding-left: 0;
+	margin-top: 12px;
+}
+
+.catal_item .owl-nav {
+	display: none;
+}
+.carousel-hider .owl-nav {
+	width: 100%;
+}
+.carousel-hider .owl-nav .owl-next,
+.carousel-hider .owl-nav .owl-prev {
+	display: initial;
+	margin-top: -83px;
+	position: relative;
+	z-index: 2;
+	width: 30px;
+	height: 30px;
+	background: none;
+}
+
+.carousel-hider .owl-nav .owl-next img,
+.carousel-hider .owl-nav .owl-prev img {
+	width: 30px;
+	height: 30px;
+}
+
+.owl-carousel .item {
+	position: relative;
+	z-index: 1;
+}
+
+/* CONTENT Матрасы -> Аскона end */
+/* mobile carousel start */
+.carousel-hider_mob {
+	display: initial;
+}
+.owl-mobile {
+	width: 100%;
+}
+
+/* mobile carousel end */
+
+/* Content registration form start */
+.personal {
+	width: 100%;
+	clear: both;
+}
+.regnew {
+	width: 100%;
+}
+.contact {
+	width: 100%;
+}
+
+.indent {
+	margin-bottom: 10px;
+	min-height: 23px;
+}
+
+.contact p {
+	width: 30%;
+}
+
+.contact input {
+	width: 60%;
+}
+
+.contact img {
+	display: inline-block;
+	max-width: 10%;
+	height: 100%;
+}
+.contact p,
+.contact input,
+.contact img {
+	display: block;
+	float: left;
+}
+.contact .holder {
+	margin-left: 30%;
+	width: 70%;
+}
+.contact .code {
+	width: 10%;
+}
+
+.contact .telnumber {
+	width: 30%;
+}
+.contact span {
+	float: left;
+	margin: 4px 1%;
+}
+
+.contact textarea {
+	width: 60%;
+}
+.contact .capcha {
+	width: 30%;
+	float: left;
+}
+.contact .capcha .capcha-img {
+	width: 100%;
+}
+.contact .capcha .capcha-img img {
+	height: 100%;
+	width: auto;
+}
+.contact .capchakey {
+	width: 70%;
+}
+.contact .capchakey .caparea {
+	width: 80%;
+}
+.contact .capchakey img {
+	display: block;
+	max-width: 10%;
+	height: auto;
+}
+
+.comment {
+	width: 80%;
+}
+
+.contact button {
+	min-width: 30%;
+
+}
+
+
+/* Content registration form end */
 /* CONTENT end */
 
 /* ASIDE RIGHT start */

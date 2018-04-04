@@ -518,6 +518,9 @@ div.podc1:hover div  a { color:#863209;}
 }
 /* CONTENT Матрасы end */
 /* CONTENT Матрасы -> Аскона start */
+.prod-options-mob {
+	display: none;
+}
 .catal_item {
 	margin-top: 20px;
 	padding-bottom: 9px;
@@ -648,7 +651,15 @@ a.catal_item_name {
 /* Carousel start */
 .carousel-hider {
 	margin-top: 20px;
+	.owl-next,
+	.owl-prev {
+		display: none;
+	}
 }
+
+/* .carousel-hider_mob {
+	display: none;
+} */
 /* Carousel end */
 
 /*CONTENT Матрасы -> Аскона -> Terapia end */
@@ -784,7 +795,102 @@ h1 {
 	padding: 40px 0px 18px;
 	text-transform: uppercase;
 }
+/* Content registration form start */
+.personal {
+	padding: 10px;
+	width: 415px;
+	p {
+		font-weight: bold;
+		img {
+			margin: 0 5px;
+		}
+	}
+}
+.regnew {
+	width: 415px;
+}
+.contact {
+	p {
+		display: inline-block;
+		width: 110px;
+		vertical-align: middle;
+	}
+	.holder {
+		margin-left: 113px;
+		line-height: 15px;
+	}
+	img {
+		vertical-align: middle;
+	}
+	.code {
+		display: inline-block;
+		width: 54px;
+	}
+	textarea {
+		width: 273px;
+		height: 100px;
+		display: inline-block;
+		margin-left: 3px;
+	}
+	input {
+		width: 275px;
+	}
+	.telnumber {
+		width: 207px;
+	}
+	.address {
+		display: block;
+		float: left;
+		line-height: 106px;
+	}
+	.capcha {
+		width: 180px;
+		float: left;
+		.capcha-img {
+			width: 180px;
+			height: 56px;
+			img {
+				height: 100%;
+				width: auto;
+			}
+		}
+		a {
+			font-size: 12px;
+		}
+	}
+	.capchakey {
+		width: 235px;
+		height: 68px;
+		float: left;
+		padding-top: 22px;
+		.caparea {
+			width: 203px;
+			margin-left: 5px;
+		}
+	}
+	button {
+		display: block;
+		width: 166px;
+		font-size: 12px;
+		margin: 32px auto 0;
+	}
+}
 
+.indent {
+	margin-bottom: 10px;
+}
+
+.comment {
+	margin: 0 auto;
+	width: 356px;
+
+	img {
+		float: left;
+		display: inline-block;
+		margin: 0 5px;
+	}
+}
+/* Content registration form end */
 /* RIGHT ASIDE */
 .right {
 	width: 220px;
@@ -793,7 +899,7 @@ h1 {
 	font-size: 12px;
 }
 
-/* FORM */
+/* FORM Filter */
 .green_filter {
 	width: 220px;
 	background: #b9d97e url(../../src/img/green_filter.png) top left repeat-x;
