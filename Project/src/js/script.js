@@ -8,23 +8,31 @@ $(document).ready(function() {
     var owl=$(".owl-carousel");
     var owl1=$(".car1");
     var owl2=$(".car2");
-    var owlmob=$(".owl-mobile");
+    var owlmob=$(".owl-mobile1");
 
     owl.owlCarousel({
-                margin:20, //Отступ от элемента справа в 50px
-                // nav:true, //Отключение навигации
                 dots:false,
-                smartSpeed:500, //Время движения слайда
-                autoplayTimeout:500, //Время смены слайда
-                /*navText : ["",""],*/
+                margin:20,
+                /*loop:true,*/
+                smartSpeed:400, //Время движения слайда
+                autoplayTimeout:100, //Время смены слайда
                 responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
                     0:{
-                        items:3
+                        items:2,
+                        loop:true,
+                        stagePadding:40
                     },
-                    600:{
-                        items:4
+                    480:{
+                        items:3,
+                        loop:true,
+                        stagePadding:40,
                     },
-                    1000:{
+                    768:{
+                        items:5,
+                        loop:true,
+                        stagePadding:40,
+                    },
+                    992:{
                         items:4
                     }
                 }
@@ -74,7 +82,12 @@ $(document).ready(function() {
     });
 
 /*переключатель мобильной карусели*/
-
+    $(".mobnext1").click(function(){
+        owlmob.trigger("next.owl.carousel");
+    });
+    $(".mobprev1").click(function(){
+        owlmob.trigger("prev.owl.carousel");
+    });
 });
 
 $(function(){

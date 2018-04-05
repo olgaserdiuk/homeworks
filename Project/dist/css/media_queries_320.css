@@ -23,10 +23,14 @@ fieldset {
 .nav1 {
 	width: 40px;
 	float: left;
+	position: relative;
+	z-index: 5;
 }
 .nav2 {
 	width: 80px;
 	float: right;
+	position: relative;
+	z-index: 5;
 }
 
 header {
@@ -209,6 +213,12 @@ header {
 	text-decoration: none;
 	color: #fff;
 }
+.navreg img {
+	margin: auto 10px auto 10px;
+}
+.navreg  .menuarrow {
+	width: 10px;
+}
 /* MENU end */
 /* LOGO CONTACTS start */
 .contacts {
@@ -280,6 +290,11 @@ header {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #666;
+	background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 42%, rgba(237,237,237,1) 69%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 42%,rgba(237,237,237,1) 69%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 42%,rgba(237,237,237,1) 69%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 }	
 
 .search-img {
@@ -291,6 +306,11 @@ header {
 	border-radius: 3px;
 	border: none;
 	box-shadow: 1px 1px 5px #d2e0b8;
+	background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 42%, rgba(237,237,237,1) 69%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 42%,rgba(237,237,237,1) 69%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 42%,rgba(237,237,237,1) 69%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 }
 
 .search-img img {
@@ -320,6 +340,9 @@ header {
 }
 
 /* CONTENT Матрасы -> Аскона start */
+.bsnone {
+	display: block;
+}
 .prod-wrap-mob {
 	width: 100%;
 }
@@ -371,14 +394,65 @@ header {
 
 /* CONTENT Матрасы -> Аскона end */
 /* mobile carousel start */
-.carousel-hider_mob {
+.cont-mob {
 	display: initial;
 }
-.owl-mobile {
+.carousel-hider_mob {
 	width: 100%;
 }
+.fieldset_mob {
+	margin-top: 20px;
+}
 
+.cont-mob {
+	width: 100%;
+}
+.owl-mobile {
+	width: 106%;
+}
 /* mobile carousel end */
+/* Content Справка о производителе start */
+.catal_item-mob {
+	display: block; 
+	width: 100%;
+	padding-bottom: 9px;
+	border-bottom: 1px solid #666;
+}
+.catal_item-mob b {
+	font-size: 14px;
+}
+.item-mob_text {
+	display: block;
+	margin-top: 9px;
+}
+/* Content Справка о производителе end */
+
+.prodmain .prodpics {
+	/* max-width: 160px;
+	max-height: 130px; */
+	width: 50%;
+	height: auto;
+}
+.prodmain .prodpics .logopic {
+	width: 100%;
+}
+.prodmain .prodpics img {
+	height: 100%;
+	width: auto;
+	margin: 0 auto;
+}
+
+.prod-menu .prodmain .prpic-main {
+	width: 45%;
+	max-width: 70%;
+}
+.clear {
+	clear: both;
+}
+
+.content_mobile {
+	clear: both;
+}
 
 /* Content registration form start */
 .personal {

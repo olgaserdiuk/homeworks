@@ -454,7 +454,8 @@ div.podc1:hover div a {
 
 /* CONTENT ╨Ь╨░╤В╤А╨░╤Б╤Л end */
 /* CONTENT ╨Ь╨░╤В╤А╨░╤Б╤Л -> ╨Р╤Б╨║╨╛╨╜╨░ start */
-.prod-options-mob {
+.prod-options-mob,
+.bsnone {
   display: none; }
 
 .catal_item {
@@ -552,10 +553,19 @@ a.catal_item_name {
   .carousel-hider .owl-prev {
     display: none; }
 
-/* .carousel-hider_mob {
-	display: none;
-} */
+.cont-mob {
+  display: none; }
+
 /* Carousel end */
+/* Content ╨б╨┐╤А╨░╨▓╨║╨░ ╨╛ ╨┐╤А╨╛╨╕╨╖╨▓╨╛╨┤╨╕╤В╨╡╨╗╨╡ mobile start */
+.catal_item-mob {
+  display: none; }
+
+.item-mob_text {
+  display: none;
+  line-height: 15px; }
+
+/* Content ╨б╨┐╤А╨░╨▓╨║╨░ ╨╛ ╨┐╤А╨╛╨╕╨╖╨▓╨╛╨┤╨╕╤В╨╡╨╗╨╡ mobile end */
 /*CONTENT ╨Ь╨░╤В╤А╨░╤Б╤Л -> ╨Р╤Б╨║╨╛╨╜╨░ -> Terapia end */
 .content {
   width: 460px;
@@ -657,6 +667,119 @@ h1 {
   padding: 40px 0px 18px;
   text-transform: uppercase; }
 
+/* CONTENT ╨Ь╨░╤В╤А╨░╤Б╤Л -> ╨Р╤Б╨║╨╛╨╜╨░ -> Terapia -> ╨Ь╨░╤В╤А╨░╤Б ╨Р╤Б╨║╨╛╨╜╨░ Terapia Pulse start */
+.prodpics_main {
+  border: 1px solid #e08a13;
+  border-radius: 5px;
+  width: 160px;
+  height: 140px;
+  margin-right: 20px;
+  float: left; }
+  .prodpics_main .logopic {
+    display: block;
+    width: 100%;
+    height: 100%; }
+    .prodpics_main .logopic img {
+      height: 100%;
+      width: auto; }
+
+.prodmain .main_mob {
+  width: 278px;
+  height: 200px; }
+  .prodmain .main_mob .compare-ico a {
+    font-size: 12px; }
+  .prodmain .main_mob .compare-ico .det {
+    margin-top: -17px;
+    margin-left: 10px; }
+  .prodmain .main_mob .compare-ico .print {
+    display: block;
+    width: 122px;
+    margin-top: 12px; }
+
+.prodpic-content {
+  clear: both;
+  margin-top: 20px;
+  border-top: 1px solid #9c9c9c; }
+  .prodpic-content .column {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 15px; }
+    .prodpic-content .column p {
+      margin-top: 10px; }
+  .prodpic-content .col_left {
+    color: #989898; }
+
+.catal_item {
+  margin-top: 20px; }
+  .catal_item .catal_item_name {
+    font-size: 16px; }
+
+.catal_item_cont {
+  font-size: 14px;
+  line-height: 18px; }
+
+/* ╨Ю╨в╨Ч╨л╨Т start */
+.review-link {
+  text-decoration: none;
+  border-bottom: 1px dashed #458cc9;
+  font-size: 12px; }
+
+.feedback_reg {
+  font-size: 14px; }
+  .feedback_reg div {
+    margin: 37px 0 10px 0; }
+  .feedback_reg .entercomment {
+    width: 285px;
+    float: left;
+    outline: none;
+    border: 1px solid darkgray;
+    box-shadow: inset 1px 2px 33px -11px #a5a5a5;
+    border-radius: 3px;
+    padding: 5px; }
+  .feedback_reg .nb {
+    color: red;
+    width: 150px;
+    float: right;
+    line-height: 25px;
+    margin-left: 10px; }
+  .feedback_reg .entertext {
+    float: none;
+    line-height: 14px; }
+  .feedback_reg .messagearea {
+    width: 275px;
+    height: 100px;
+    outline: none;
+    box-shadow: inset 1px 2px 33px -11px #a5a5a5;
+    border-radius: 3px;
+    padding: 10px; }
+  .feedback_reg .check {
+    margin-top: 10px; }
+    .feedback_reg .check .entering {
+      width: 125px;
+      float: none; }
+    .feedback_reg .check img {
+      width: 70px;
+      height: 40px; }
+    .feedback_reg .check .textin {
+      float: none;
+      width: 125px;
+      margin-left: 10px; }
+    .feedback_reg .check button {
+      display: block;
+      width: 119px;
+      height: 20px;
+      background-color: #e08a13;
+      outline: none;
+      border: none;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: #ffffff;
+      margin-top: 20px; }
+
+/* ╨Ю╨в╨Ч╨л╨Т end */
+/* CONTENT ╨Ь╨░╤В╤А╨░╤Б╤Л -> ╨Р╤Б╨║╨╛╨╜╨░ -> Terapia -> ╨Ь╨░╤В╤А╨░╤Б ╨Р╤Б╨║╨╛╨╜╨░ Terapia Pulse end */
 /* Content registration form start */
 .personal {
   padding: 10px;
@@ -669,7 +792,7 @@ h1 {
 .regnew {
   width: 415px; }
 
-.contact p {
+.contact .log {
   display: inline-block;
   width: 110px;
   vertical-align: middle; }
@@ -693,7 +816,8 @@ h1 {
 .contact .address {
   display: block;
   float: left;
-  line-height: 106px; }
+  line-height: 106px;
+  width: 110px; }
 .contact .capcha {
   width: 180px;
   float: left; }

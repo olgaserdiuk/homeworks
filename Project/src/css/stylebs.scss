@@ -25,7 +25,6 @@ a {
 	display: none;
 }
 
-
 /*HEADER*/
 
 /*MENU*/
@@ -518,9 +517,11 @@ div.podc1:hover div  a { color:#863209;}
 }
 /* CONTENT Матрасы end */
 /* CONTENT Матрасы -> Аскона start */
-.prod-options-mob {
+.prod-options-mob,
+.bsnone {
 	display: none;
 }
+
 .catal_item {
 	margin-top: 20px;
 	padding-bottom: 9px;
@@ -656,11 +657,20 @@ a.catal_item_name {
 		display: none;
 	}
 }
-
-/* .carousel-hider_mob {
+.cont-mob {
 	display: none;
-} */
+}
 /* Carousel end */
+
+/* Content Справка о производителе mobile start */
+.catal_item-mob {
+	display: none;
+}
+.item-mob_text {
+	display: none;
+	line-height: 15px;
+}
+/* Content Справка о производителе mobile end */
 
 /*CONTENT Матрасы -> Аскона -> Terapia end */
 
@@ -795,6 +805,146 @@ h1 {
 	padding: 40px 0px 18px;
 	text-transform: uppercase;
 }
+
+/* CONTENT Матрасы -> Аскона -> Terapia -> Матрас Аскона Terapia Pulse start */
+.prodpics_main {
+	border: 1px solid #e08a13;
+	border-radius: 5px;
+	width: 160px;
+	height: 140px;
+	margin-right: 20px;
+	float: left;
+	.logopic {
+		display: block;
+		width: 100%;
+		height: 100%;
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+}
+.prodmain .main_mob {
+	width: 278px;
+	height: 200px;
+	.compare-ico {
+		a {
+			font-size: 12px;
+		}
+		.det {
+			margin-top: -17px;
+			margin-left: 10px;
+		}
+		.print {
+			display: block;
+			width: 122px;
+			margin-top: 12px;
+		}
+	}
+}
+.prodpic-content {
+	clear: both;
+	margin-top: 20px;
+	border-top: 1px solid $lightgrey;
+	.column {
+		width: 50%;
+		float: left;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		p {
+			margin-top: 10px;
+		}
+	}
+	.col_left {
+		color: #989898;
+	}
+}
+
+.catal_item {
+	margin-top: 20px;
+	.catal_item_name {
+		font-size: 16px;
+	}
+}
+
+.catal_item_cont {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+/* ОТЗЫВ start */
+.review-link {
+	text-decoration: none;
+	border-bottom: 1px dashed $linkcolor;
+	font-size: 12px;
+}
+.feedback_reg {
+	font-size: 14px;
+	div {
+		margin: 37px 0 10px 0;
+	}
+	.entercomment {
+		width: 285px;
+		float: left;
+		outline: none;
+		border: 1px solid rgb(169, 169, 169);
+		box-shadow: inset 1px 2px 33px -11px rgba(165,165,165,1);
+		border-radius: 3px;
+		padding: 5px;
+	}
+	.nb {
+		color: red;
+		width: 150px;
+		float: right;
+		line-height: 25px;
+		margin-left: 10px;
+	}
+
+	.entertext {
+		float: none;
+		line-height: 14px;
+	}
+	.messagearea {
+		width: 275px;
+		height: 100px;
+		outline: none;
+		box-shadow: inset 1px 2px 33px -11px rgba(165,165,165,1);
+		border-radius: 3px;
+		padding: 10px;
+	}
+	.check {
+		margin-top: 10px;
+		.entering {
+			width: 125px;
+			float: none;
+		}
+		img {
+			width: 70px;
+			height: 40px;
+		}
+		.textin {
+			float: none;
+			width: 125px;
+			margin-left: 10px;
+		}
+
+		button {
+			display: block;
+			width: 119px;
+			height: 20px;
+			background-color: $fieldset;
+			outline: none;
+			border: none;border-radius: 3px;
+			text-transform: uppercase;
+			font-size: 11px;
+			color: #ffffff;
+			margin-top: 20px;
+		}
+	}
+}
+/* ОТЗЫВ end */
+/* CONTENT Матрасы -> Аскона -> Terapia -> Матрас Аскона Terapia Pulse end */
+
 /* Content registration form start */
 .personal {
 	padding: 10px;
@@ -810,7 +960,7 @@ h1 {
 	width: 415px;
 }
 .contact {
-	p {
+	.log {
 		display: inline-block;
 		width: 110px;
 		vertical-align: middle;
@@ -842,6 +992,7 @@ h1 {
 		display: block;
 		float: left;
 		line-height: 106px;
+		width: 110px;
 	}
 	.capcha {
 		width: 180px;
