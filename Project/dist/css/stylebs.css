@@ -538,13 +538,11 @@ a.catal_item_name {
     .prodmain .prpic-main .tovarDivContent1 {
       padding: 7px 0 12px;
       line-height: 18px; }
-    .prodmain .prpic-main .compare-ico {
-      height: 18px; }
-      .prodmain .prpic-main .compare-ico a img {
-        padding-right: 7px; }
-      .prodmain .prpic-main .compare-ico .det {
-        color: #e26a00;
-        margin-left: 16px; }
+    .prodmain .prpic-main .compare-ico a img {
+      padding-right: 7px; }
+    .prodmain .prpic-main .compare-ico .det {
+      color: #e26a00;
+      margin-left: 16px; }
 
 /* Carousel start */
 .carousel-hider {
