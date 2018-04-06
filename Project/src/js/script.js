@@ -82,7 +82,8 @@ $(function(){
 
 
 /*обработчик событий для кнопок*/
-$('.catalog').on('click', function(){
+/*Каталог*/
+$('.category').on('click', function(){
     if($('.show').hasClass('non')){
       $('.show').removeClass('non');
       $('.show').removeClass('none');
@@ -90,7 +91,20 @@ $('.catalog').on('click', function(){
       $('.show').addClass('non');
     }
 });
-
+/*Закрыть окно*/
 $('.close').click(function(){
     $('.show').removeClass('non');
+    $('.show').addClass('none');
 });
+
+/*Фильтр*/
+/*$('.filtr').on('click', function(){
+    if($('.showfil').hasClass('non')){
+      $('.showfil').removeClass('non');
+      $('.showfil').removeClass('none');
+    } else {
+      $('.showfil').addClass('non');
+    }
+});*/
+
+

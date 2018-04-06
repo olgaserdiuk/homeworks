@@ -168,7 +168,7 @@
                             </div>
                         </div>
                         <!-- mobile start -->
-                        <button class="catalog category">все товары</button>
+                        <button class="catalog category">каталог</button>
                         <button class="catalog filtr">фильтр</button>
                         <a class="search-img" href="#"><img src="img/search-mob.png" alt=""></a>
                         <!-- mobile end -->
@@ -188,7 +188,10 @@
             </fieldset>
             <div class="show none">
                 <div class="lc box">
-                    <!-- <div class="close"><img src="img/error.png" alt=""></div> -->
+                    <p class="box_cap">каталог</p>
+                    <div class="close">
+                        <img src="img/error.png" alt="">
+                    </div>
                     <DIV class="catalog_forma" id="cat1" title="Матрасы">
                         <div>Матрасы </div>
                     </DIV>
@@ -522,6 +525,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
                     <!-- </fieldset> -->
                     <fieldset class="fieldset">
                         <legend>навигация</legend>
@@ -1638,7 +1642,7 @@
                                 <p class="caparea">Текст на картинке:</p>
                                 <img src="img/bask_ico.gif" alt="">
                                 <input class="entercomment textin" type="text" name="key" placeholder="" required>
-                                <button class="bg"><b>добавить отзыв</b></button>
+                                <button><b>добавить отзыв</b></button>
                             </div>
                         </form>
                     </div>
@@ -1747,8 +1751,9 @@
         <aside class="right">
             <fieldset class="fieldset none">
                 <legend>подбор матраса</legend>
-                <div class="green_filter">
-                    <div class="lineForm">
+            </fieldset>
+                <div class="green_filter showfil none">
+                    <div class="lineForm boxfiltr">
                         <form name="sortPodbor" id="sortPodbor" method="post" action="/selection/">
                             <label for="width">Ширина, см *:</label>
                             <div class="select-wrap">
@@ -1821,14 +1826,10 @@
                             <button type="submit" value="" name="filtermain" class="filtermain"><img src="img/filter_but.gif" alt=""></button>
                             <img src="img/ajax-loader.gif" style="visibility: hidden;">
                             <div class="instock">Выберите нужные параметры</div>
-
-
-
                         </form>
                     </div>
-
                 </div>
-            </fieldset>
+            <!-- </fieldset> -->
             <fieldset class="fieldset">
                 <legend>акции</legend>
                 <div class="green_spec">
