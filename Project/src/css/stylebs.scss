@@ -20,17 +20,20 @@ a {
 	color: $linkcolor;
 	font-size: 14px;
 }
-
-.btn-up {
+.dropdown,
+.btn-up,
+.tovarabout,
+.review_mob,
+.feedbk,
+.nb_mob {
 	display: none;
 }
+
 
 /*HEADER*/
 
 /*MENU*/
-.dropdown {
-	display: none;
-}
+
 .wrap-menu {
 	background-color: #bacf92;
 	height: 40px;
@@ -617,8 +620,10 @@ a.catal_item_name {
 
 		.select-wrap {
 			clear: both;
+			label {
+			margin-right: 10px;
+			}
 			select {
-				margin-left: 10px;
 				width: 97px;
 				font-size: 12px;
 				color: $darkgrey;
@@ -825,7 +830,6 @@ h1 {
 }
 .prodmain .main_mob {
 	width: 278px;
-	height: 200px;
 	.compare-ico {
 		a {
 			font-size: 12px;
@@ -837,29 +841,32 @@ h1 {
 		.print {
 			display: block;
 			width: 122px;
-			margin-top: 12px;
+			margin: 12px 0;
 		}
 	}
 }
-.prodpic-content {
-	clear: both;
-	margin-top: 20px;
+.column {
+	width: 100%;
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	border-top: 1px solid $lightgrey;
-	.column {
-		width: 50%;
-		float: left;
+	p {
 		margin-top: 10px;
-		margin-bottom: 15px;
-		p {
-			margin-top: 10px;
-		}
 	}
 	.col_left {
 		color: #989898;
+		width: 50%;
+		float: left;
+	}
+	.col_right {
+		float: left;
+		width: 50%;
 	}
 }
 
 .catal_item {
+	clear: both;
 	margin-top: 20px;
 	.catal_item_name {
 		font-size: 16px;
@@ -872,15 +879,22 @@ h1 {
 }
 
 /* ОТЗЫВ start */
+
+.review h1 {
+	margin-top: 20px;
+}
 .review-link {
 	text-decoration: none;
 	border-bottom: 1px dashed $linkcolor;
 	font-size: 12px;
 }
+.feedback {
+	color: #2f2f2f;
+}
 .feedback_reg {
 	font-size: 14px;
 	div {
-		margin: 37px 0 10px 0;
+		margin: 37px 0 6px 0;
 	}
 	.entercomment {
 		width: 285px;
@@ -890,6 +904,9 @@ h1 {
 		box-shadow: inset 1px 2px 33px -11px rgba(165,165,165,1);
 		border-radius: 3px;
 		padding: 5px;
+	}
+	p:first-child {
+		padding-top: 5px;
 	}
 	.nb {
 		color: red;

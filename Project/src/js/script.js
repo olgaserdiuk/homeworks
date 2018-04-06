@@ -8,7 +8,8 @@ $(document).ready(function() {
     var owl=$(".owl-carousel");
     var owl1=$(".car1");
     var owl2=$(".car2");
-    var owlmob=$(".owl-mobile1");
+    var owlmob1=$(".owl-mobile1");
+    var owlmob2=$(".owl-mobile2");
 
     owl.owlCarousel({
                 dots:false,
@@ -37,34 +38,7 @@ $(document).ready(function() {
                     }
                 }
             });
-
-    /*owlmob.owlCarousel ({
-        stagePadding: 40,
-        loop:true,
-        margin:10,
-        nav:true,
-        center: true
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true
-            },
-            320:{
-                items:2,
-                nav:false
-            },
-            600:{
-                items:4,
-                nav:false
-            },
-            1000:{
-                items:5,
-                nav:true,
-                loop:false
-            }
-        }
-    });*/
+    
 /*переключатель первой карусели*/
     $(".next1").click(function(){
         owl1.trigger("next.owl.carousel");
@@ -81,13 +55,22 @@ $(document).ready(function() {
         owl2.trigger("prev.owl.carousel");
     });
 
-/*переключатель мобильной карусели*/
+/*переключатель первой мобильной карусели*/
     $(".mobnext1").click(function(){
-        owlmob.trigger("next.owl.carousel");
+        owlmob1.trigger("next.owl.carousel");
     });
     $(".mobprev1").click(function(){
-        owlmob.trigger("prev.owl.carousel");
+        owlmob1.trigger("prev.owl.carousel");
     });
+
+/*переключатель второй мобильной карусели*/
+    $(".mobnext2").click(function(){
+        owlmob2.trigger("next.owl.carousel");
+    });
+    $(".mobprev2").click(function(){
+        owlmob2.trigger("prev.owl.carousel");
+    });
+
 });
 
 $(function(){
@@ -97,3 +80,17 @@ $(function(){
 });
 
 
+
+/*обработчик событий для кнопок*/
+$('.catalog').on('click', function(){
+    if($('.show').hasClass('non')){
+      $('.show').removeClass('non');
+      $('.show').removeClass('none');
+    } else {
+      $('.show').addClass('non');
+    }
+});
+
+$('.close').click(function(){
+    $('.show').removeClass('non');
+});

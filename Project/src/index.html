@@ -100,8 +100,17 @@
                             </li>
                         </ul>
                     </nav>
-                    <a class="navreg" href="#" id="enter">Регистрация</a>
-                    <a class="navreg" href="#" id="enter"><img src="img/usico.gif" alt="">Василий<img class="menuarrow" src="img/drop-down-arrow.png" alt=""></a>
+                    <a class="navreg" href="#" id="">Регистрация</a>
+                    <nav class="nav3">
+                        <div class="usico-wrap"><img class="usico" src="img/usico.gif" alt=""></div>
+                        <a class="navreg" href="#" id="vasya">Василий<img class="menuarrow" src="img/drop-down-arrow.png" alt=""></a>
+                        <ul>
+                            <li><a href="#" class="pos">Отследить заказ</a></li>
+                            <li><a href="#">Уведомление о товарах</a></li>
+                            <li><a href="#">Связь с менеджерами</a></li>
+                            <li><a class="pos1"href="#"><img src="img/power-button.png" alt="">Выход</a></li>
+                        </ul>
+                    </nav>
                 </menu>
                     <!-- mobile end -->
                 </div>
@@ -159,7 +168,7 @@
                             </div>
                         </div>
                         <!-- mobile start -->
-                        <button class="catalog">каталог</button>
+                        <button class="catalog category">все товары</button>
                         <button class="catalog filtr">фильтр</button>
                         <a class="search-img" href="#"><img src="img/search-mob.png" alt=""></a>
                         <!-- mobile end -->
@@ -176,8 +185,11 @@
                 <aside class="left">
             <fieldset class="fieldset none">
                 <legend>все товары</legend>
-                <div class="lc">
-                    <DIV style="cursor:pointer;" onClick="window.location.replace('/shop/CID_1.html');" class="catalog_forma" id="cat1" title="Матрасы">
+            </fieldset>
+            <div class="show none">
+                <div class="lc box">
+                    <!-- <div class="close"><img src="img/error.png" alt=""></div> -->
+                    <DIV class="catalog_forma" id="cat1" title="Матрасы">
                         <div>Матрасы </div>
                     </DIV>
                     <div id="m1" class="podcatalog_forma">
@@ -277,10 +289,10 @@
                         <div class="podcatalog_forma2" >
                         </div>
                     </div>
-                    <DIV style="cursor:pointer;" onClick="window.location.replace('/shop/CID_1028.html');" class="catalog_forma" id="cat1028" title="Круглые матрасы">
+                    <DIV class="catalog_forma" id="cat1028" title="Круглые матрасы">
                         <div>Круглые матрасы </div>
                     </DIV>
-                    <DIV style="cursor:pointer;" onClick="window.location.replace('/shop/CID_161.html');" class="catalog_forma" id="cat161" title="Детские матрасы">
+                    <DIV class="catalog_forma" id="cat161" title="Детские матрасы">
                         <div>Детские матрасы </div>
                     </DIV>
                         <div id="m161" class="podcatalog_forma">
@@ -352,7 +364,7 @@
                             <div class="podcatalog_forma2" >
                             </div>
                         </div>
-                        <DIV style="cursor:pointer;" onClick="window.location.replace('/shop/CID_177.html');" class="catalog_forma" id="cat177" title="Наматрасники">
+                        <DIV class="catalog_forma" id="cat177" title="Наматрасники">
                             <div>Наматрасники </div>
                         </DIV>
                         <div id="m177" class="podcatalog_forma">
@@ -416,7 +428,7 @@
                                 <div class="podcatalog_forma2" >
                                 </div>
                             </div>
-                            <DIV style="cursor:pointer;" onClick="window.location.replace('/shop/CID_5.html');" class="catalog_forma" id="cat5" title="Кровати">
+                            <DIV class="catalog_forma" id="cat5" title="Кровати">
                                 <div>Кровати </div>
                             </DIV>
                             <div id="m5" class="podcatalog_forma">
@@ -451,7 +463,7 @@
                                 <div class="podcatalog_forma2" >
                                 </div>
                             </div>
-                            <DIV style="cursor:pointer;" onClick="window.location.replace('/shop/CID_497.html');" class="catalog_forma" id="cat497" title="Основания">
+                            <DIV class="catalog_forma" id="cat497" title="Основания">
                                 <div>Основания </div>
                             </DIV>
                             <div id="m497" class="podcatalog_forma">
@@ -493,7 +505,7 @@
                                 <div class="podcatalog_forma2" >
                                 </div>
                             </div>
-                            <DIV style="cursor:pointer;" onClick="pressbutt(9,100,'/phpshop/templates/matras/','i','m');" class="catalog_forma" id="cat9" title="Аксессуары">
+                            <DIV class="catalog_forma" id="cat9" title="Аксессуары">
                                 <div>Аксессуары </div>
                             </DIV>
                             <div id="m9" class="podcatalog_forma">
@@ -509,7 +521,8 @@
                                 </div>
                             </div>
                         </div>
-                    </fieldset>
+                    </div>
+                    <!-- </fieldset> -->
                     <fieldset class="fieldset">
                         <legend>навигация</legend>
                         <div class="podcatalog_forma3" >
@@ -1019,7 +1032,7 @@
             <!-- carousel mobile start -->
 <div class="content cont-mob">
             <div class="carousel-hider carousel-hider_mob">
-                <div class="owl-carousel owl-theme owl-mobile1">
+                <div class="owl-carousel owl-theme owl-mobile2">
                     <div class="item">
                         <div class="prodpics">
                             <a class="logopic" href="#">
@@ -1118,8 +1131,8 @@
                     </div>
                 </div>
                 <div class="owl-nav">
-                    <div class="owl-next mobnext1"><img src="img/arrow-right.png" alt=""></div>
-                    <div class="owl-prev mobprev1"><img src="img/arrow-left.png" alt=""></div>
+                    <div class="owl-next mobnext2"><img src="img/arrow-right.png" alt=""></div>
+                    <div class="owl-prev mobprev2"><img src="img/arrow-left.png" alt=""></div>
                 </div>
             </div>
             </div>
@@ -1397,7 +1410,7 @@
                 <div class="prodmain">
                     <div class="prodpics">
                         <a class="logopic" href="#">
-                            <img src="img/br_askona.gif" alt="">
+                            <img src="img/img650_20472s.jpg" alt="">
                         </a>
                     </div>
                     <div class="prpic-main">
@@ -1440,12 +1453,20 @@
                                 <option>200 x 200</option>
                             </select>
                         </div>
-                        <div class="tovarDivContent1">Жесткость: средняя<br>Высота: 17 см.<br>Допустимый вес на 1 сп.м. - 90 кг.
+                        <div class="tovarDivContent1 none">Жесткость: средняя<br>Высота: 17 см.<br>Допустимый вес на 1 сп.м. - 90 кг.
                         </div>
-                        <div class="compare-ico">
+                        <div class="compare-ico none">
                             <a href="#">
                                 <img src="img/compare.gif" alt="compare">Добавить к сравнению
                             </a>
+                            <a href="#" class="det">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="tovarabout">
+                        <div class="tovarDivContent1">Состав: блок независимых пружин "песочные часы" Состав: блок независимых пружин "песочные часы" Состав: блок независимых пружин "песочные часы" Состав: блок независимых пружин "песочные часы" Состав: блок независимых пружин "песочные часы"Состав: блок независимых пружин "песочные часы"
+                        </div>
+                        <div class="compare-ico">
+                            <a href="#">Добавить к сравнению</a>
                             <a href="#" class="det">Подробнее</a>
                         </div>
                     </div>
@@ -1472,9 +1493,9 @@
                     <p class="catal_item_name" href="#"><b>матрас аскона terapia pulse</b></p>
                 </div>
                 <div class="prodmain">
-                    <div class="prodpics_main">
+                    <div class="prodpics prodpics_main">
                         <a class="logopic" href="#">
-                            <img src="img/br_askona.gif" alt="">
+                            <img src="img/img1354_51937s.jpg" alt="">
                         </a>
                     </div>
                     <div class="prpic-main main_mob">
@@ -1517,9 +1538,9 @@
                                 <option>200 x 200</option>
                             </select>
                         </div>
-                        <div class="tovarDivContent1">Независимый пружинный блок <i>песочные часы 5 зон,</i> войлок, пена Orto Foam&reg;. Чехол: бельгийский объемный  трикотаж, стеганый на  синтепоне.
+                        <div class="tovarDivContent1 none">Независимый пружинный блок <i>песочные часы 5 зон,</i> войлок, пена Orto Foam&reg;. Чехол: бельгийский объемный  трикотаж, стеганый на  синтепоне.
                         </div>
-                        <div class="compare-ico ico_main">
+                        <div class="compare-ico ico_main none">
                             <a href="#">
                                 <img src="img/compare.gif" alt="compare">Добавить к сравнению
                             </a>
@@ -1531,28 +1552,37 @@
                             </a>
                         </div>
                     </div>
-                    <div class="prodpic-content">
-                        <div class="column col_left">
-                            <p>Высота, см:</p>
-                            <p>Уровень жесткости:</p>
-                            <p>Макс. вес на 1 сп. место, кг:</p>
-                            <p>Основа матраса:</p>
-                            <p>Гарантия:</p>
-                            <p>Бренд:</p>
+                    <div class="tovarabout">
+                        <div class="tovarDivContent1">Независимый пружинный блок <i>песочные часы 5 зон,</i> войлок, пена Orto Foam&reg;. Чехол: бельгийский объемный  трикотаж, стеганый на  синтепоне.
                         </div>
-                        <div class="column">
-                            <p>21</p>
-                            <p>Ниже среднего</p>
-                            <p>140</p>
-                            <p>Независимые пружины</p>
-                            <p>10 лет</p>
-                            <p>Аскона</p>
+                        <div class="compare-ico">
+                            <a href="#">Добавить к сравнению</a>
+                            <a href="#" class="det">Условия доставки
+                                <img src="img/delivery.gif">
+                            </a>
+                            <a class="print" href="#">
+                                <img src="img/action_print.gif" alt="print">Версия для печати
+                            </a>
                         </div>
                     </div>
-                    <div class="catal_item">
+                    <div class="column">
+                        <p class="col_left">Высота, см:</p>
+                        <p class="col_right">21</p>
+                        <p class="col_left">Уровень жесткости:</p>
+                        <p class="col_right">Ниже среднего</p>
+                        <p class="col_left">Макс. вес на 1 сп. место, кг:</p>
+                        <p class="col_right">140</p>
+                        <p class="col_left">Основа матраса:</p>
+                        <p class="col_right">Независимые пружины</p>
+                        <p class="col_left">Гарантия:</p>
+                        <p class="col_right">10 лет</p>
+                        <p class="col_left">Бренд:</p>
+                        <p class="col_right">Аскона</p>
+                    </div>
+                    <div class="catal_item none">
                         <p class="catal_item_name" href="#">Дополнительная информация</p>
                     </div>
-                    <div class="catal_item_cont">
+                    <div class="catal_item_cont none">
                         Матрас Askona Terapia PULSE (Аскона Терапия ПУЛЬС) - самый доступный в серии и подойдет тем, кто предпочитает мягкие ощущения при достаточно упругой поддержке с высоким пределом допустимого веса.
                         <br>
                         <br>
@@ -1564,9 +1594,20 @@
                         4. Пятизональный блок независимых пружин песочные часы HourGlass Extra 5-ть зон.<br>
                         5. Плотный пенополиуретан по всему периметру для усиления бортов матраса.
                     </div>
-                    <div class="review">
-                        <h1>отзывы (матрас аскона terapia pulse)</h1>
+                    <div class="review none">
+                        <h1>Отзывы (Матрас Аскона Terapia Pulse)</h1>
                         <a class="review-link" href="#">Написать отзыв</a>
+                    </div>
+                    <div class="catal_item review_mob">
+                        <p class="catal_item_name" href="#">Отзывы (Аскона Terapia Pulse) <a href="#" class="review-link1">Отзывы</a></p>
+                    </div>
+                    <div class="feedbk">
+                        <p class="feed">Терентий Терентий, <span class="data">28 августа</span>:</p>
+                        <p class="feed1">Товаров для сна на всей территории СНГ. Товаров для сна на всей территории СНГ. Товаров для сна на всей территории СНГ. Товаров для сна на всей территории СНГ. Товаров для сна на всей территории СНГ. </p>
+                        <p class="feed">Терентий Терентий, <span class="data">28 августа</span>:</p>
+                        <p class="feed1">Товаров для сна на всей территории СНГ. Товаров для сна на всей территории СНГ. Товаров для сна на всей территории СНГ. Товаров для сна на всей территории СНГ. Товаров для сна на всей территории СНГ. </p>
+                        <p class="feed">Терентий Терентий, <span class="data">28 августа</span>:</p>
+                        <p class="feed1">Товаров для сна на всей территории СНГ. Товаров для сна на всей территории СНГ. Товаров для сна на всей территории СНГ. Товаров для сна на всей территории СНГ. </p>
                     </div>
                     <div class="feedback">
                         <div class="catal_item">
@@ -1574,14 +1615,20 @@
                         </div>
                         <form class="feedback_reg" action="#"" method="post">
                             <div>
-                                <p>Имя:</p>
+                                <div class="feed-wrap">
+                                    <p class="feedback_name">Имя:</p>
+                                    <p class="nb nb_mob">Это обязательное поле</p>
+                                </div>
                                 <input class="entercomment" type="text" name="name" placeholder="" required>
-                                <p class="nb">Это обязательное поле</p>
+                                <p class="nb none">Это обязательное поле</p>
                             </div>
                             <div>
-                                <p>E-mail (не отображается):</p>
+                                <div class="feed-wrap">
+                                    <p class="feedback_name">Email (не отображается):</p>
+                                    <p class="nb nb_mob">Это обязательное поле</p>
+                                </div>
                                 <input class="entercomment" type="text" name="email" placeholder="" required>
-                                <p class="nb">Это обязательное поле</p>
+                                <p class="nb none">Это обязательное поле</p>
                             </div>
                             <div>
                                 <p class="entertext">Комментарий:</p>
@@ -1591,7 +1638,7 @@
                                 <p class="caparea">Текст на картинке:</p>
                                 <img src="img/bask_ico.gif" alt="">
                                 <input class="entercomment textin" type="text" name="key" placeholder="" required>
-                                <button><b>добавить отзыв</b></button>
+                                <button class="bg"><b>добавить отзыв</b></button>
                             </div>
                         </form>
                     </div>

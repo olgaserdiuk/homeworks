@@ -3,6 +3,28 @@
 .wrap-menu {
 	width: 100%;
 }
+/* SHOW CLOSE start */
+/* .show.non .box {
+  margin: -50px auto 0;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  background: #000;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 999;
+} */
+/* .show.none .close {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+} */
+
+/* SHOW CLOSE end */
 
 .none {
 	display: none;
@@ -20,14 +42,15 @@ fieldset {
 	margin: 0 auto;
 }
 
-.nav1 {
+.dropdown .nav1 {
 	width: 40px;
 	float: left;
 	position: relative;
 	z-index: 5;
 }
-.nav2 {
-	width: 80px;
+.dropdown .nav2
+.dropdown .nav3 {
+	width: 120px;
 	float: right;
 	position: relative;
 	z-index: 5;
@@ -37,36 +60,52 @@ header {
 	position: relative;
 }
 
-.nav1 #menu-icon {
+.dropdown .nav1 #menu-icon {
 	display: inline-block;
 	width: 40px;
 	height: 40px;
 	background: url("../../src/img/menu-button_white.png") no-repeat 8px 7px;
 }
-.nav2 #enter {
+/* .nav3 #vasya {
+	background: url("../../src/img/drop-down-arrow.png") no-repeat 8px 7px;
+} */
+
+.dropdown .nav2 #enter,
+.dropdown .nav3 #vasya {
 	display: inline-block;
-	width: 100%;
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
 	color: #fff;
 	text-decoration: none;
 }
+.dropdown .nav2 #enter {
+	width: 100%;
+}
+.dropdown .nav3 #vasya {
+	width: 80.5%;
+	margin-left: 0;
+}
 
-.nav1 #menu-icon:hover,
-.nav1 #menu-icon:active {
+.dropdown .nav1 #menu-icon:hover,
+.dropdown .nav1 #menu-icon:active {
 	background: url("../../src/img/menu-button.png") no-repeat 8px 7px;
 	background-color: #fff;
 	box-shadow: 1px 0 10px #9c9c9c;
 }
 
-.nav2 #enter:hover,
-.nav2 #enter:active {
+.dropdown .nav2 #enter:hover,
+.dropdown .nav2 #enter:active,
+.dropdown .nav3 #vasya:hover,
+.dropdown .nav3 #vasya:active {
 	background-color: #fff;
 	color: #666666;
 }
-.nav1 ul, .nav1:active ul,
-.nav2 ul, .nav2:active ul { 
+
+
+.dropdown .nav1 ul, .nav1:active ul,
+.dropdown .nav2 ul, .nav2:active ul,
+.dropdown .nav3 ul, .nav3:active ul { 
 	display: none;
 	position: absolute;
 	background: #fff;
@@ -74,25 +113,50 @@ header {
 	box-shadow: 1px 5px 10px #9c9c9c;
 	/* width: 100%; */  /* растягивание меню на всю ширину окна */
 }
-.nav1:hover #menu-icon {
-	background: url("../../src/img/menu-button.png") no-repeat 8px 7px;
+
+.dropdown .nav1:hover #menu-icon {
 	background-color: #fff;
 	box-shadow: 1px 5px 10px #9c9c9c;
 }
-.nav2:hover #enter {
+/* .nav1:hover #menu-icon img {
+	filter: invert(55%);
+} */
+.dropdown .nav2:hover #enter {
 	background-color: #fff;
 	color: #666666;
 	box-shadow: -1px 5px 10px #9c9c9c;
 }
 
+.dropdown .nav3:hover #vasya {
+	color: #666666;
+	background-color: #fff;
+	/* box-shadow: -1px 5px 10px #9c9c9c; */
+}
+.dropdown .nav3:hover .usico,
+.dropdown .nav3:hover .menuarrow {
+	filter: invert(55%);
+}
 
-.nav2 ul, .nav2:active ul {
+.usico-wrap {
+	width: 21px;
+	height: 40px;
+	float: left;
+}
+.dropdown .nav3:hover .usico-wrap {
+	background-color: white;
+	box-shadow: -1px 5px 10px #9c9c9c;
+
+}
+
+.dropdown .nav2 ul, .nav2:active ul,
+.dropdown .nav3 ul, .nav3:active ul {
 	right: 0;
 	box-shadow: -1px 5px 10px #9c9c9c;
 }
 
-.nav1:hover ul,
-.nav2:hover ul {
+.dropdown .nav1:hover ul,
+.dropdown .nav2:hover ul,
+.dropdown .nav3:hover ul {
 	display: block;
 	width: 320px;
 }
@@ -204,6 +268,7 @@ header {
 	margin-top: 36px;
 }
 /* nav2 end */
+/* nav3  start*/
 .navreg {
 	display: block;
 	margin: 0 2%;
@@ -219,6 +284,26 @@ header {
 .navreg  .menuarrow {
 	width: 10px;
 }
+.nav3 ul li a {
+	display: inline-block;
+	margin: 5px 0 5px 55px;
+}
+.nav3 ul li .pos {
+	margin-top: 20px;
+}
+.nav3 ul li .pos1 {
+	margin-bottom: 20px;
+}
+.nav3 ul li img {
+	margin-right: 5px;
+}
+.nav3 .usico {
+	float: left;
+	width: 17px;
+	height: 23px;
+	padding: 8px 2px;
+}
+/* nav3 end */
 /* MENU end */
 /* LOGO CONTACTS start */
 .contacts {
@@ -428,24 +513,72 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /* Content Справка о производителе end */
 
 .prodmain .prodpics {
-	/* max-width: 160px;
-	max-height: 130px; */
 	width: 50%;
-	height: auto;
+	max-width: 160px;
+	height: 106px;
+	min-height: auto;
 }
 .prodmain .prodpics .logopic {
 	width: 100%;
+	height: auto;
 }
-.prodmain .prodpics img {
-	height: 100%;
-	width: auto;
+.prodmain .prodpics .logopic img {
+	display: block;
+	width: 100%;
+	height: auto;
 	margin: 0 auto;
 }
 
 .prod-menu .prodmain .prpic-main {
-	width: 45%;
+	width: 30%;
 	max-width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
+.prod-menu .prodmain .prpic-main .price-act,
+.prod-menu .prodmain .prpic-main .buy,
+.prod-menu .prodmain .prpic-main .select-wrap {
+	margin-bottom: 14px;
+}
+.prod-menu .prodmain .prpic-main .price-act{
+	order: 1;
+}
+.prod-menu .prodmain .prpic-main .buy {
+	order: 3;
+}
+.prod-menu .prodmain .prpic-main .select-wrap {
+	order: 2;
+}
+.prod-menu .prodmain .tovarabout {
+	display: block;
+	width: 100%;
+	float: left;
+	line-height: 18px;
+}
+.prod-menu .prodmain .tovarabout a {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 10px 0;
+}
+.prod-menu .prodmain .tovarabout .compare-ico a:first-child {
+	text-decoration: none;
+	border-bottom: 1px dashed #458cc9;
+}
+.prod-menu .prodmain .tovarabout .compare-ico .det {
+	color: #e08a13;
+	float: right;
+	margin-top: 11px;
+}
+.prod-menu .prodmain .tovarabout .compare-ico .print {
+	float: none;
+}
+
+.prod-menu .prodmain .tovarabout .compare-ico .print img {
+	margin-right: 5px;
+}
+
 .clear {
 	clear: both;
 }
@@ -453,6 +586,86 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .content_mobile {
 	clear: both;
 }
+.compare-ico a {
+	display: block;
+	float: left;
+	width: 120px;
+}
+/* CONTENT Матрасы -> Аскона -> Terapia -> Матрас Аскона Terapia Pulse start */
+.column .col_left,
+.column .col_right {
+	float: none;
+	width: 100%;
+}
+.column .col_right {
+	margin-top: 5px;
+}
+/* Отзывы start */
+.review_mob {
+	display: block;
+	clear: both;
+}
+.review_mob .catal_item_name {
+	color: #666666;
+	text-transform: none;
+	width: 100%;
+	float: none;
+}
+.review_mob .catal_item_name .review-link1 {
+	display: block;
+	float: right;
+	width: 40px;
+	text-decoration: none;
+	border-bottom: 1px dashed #458cc9;
+	font-size: 12px;
+	line-height: 16px;
+	margin-top: 0;
+}
+.feedbk {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	line-height: 17px;
+}
+.feedbk .feed {
+	font-weight: bold;
+	margin-top: 5px;
+}
+/* Отзывы end  */
+/* форма для отзыва start */
+.feedback_reg {
+	width: 283px;
+	margin: 0 auto;
+}
+.feedback_reg .feed-wrap {
+	width: 283px;
+}
+.feedback_reg .feedback_name {
+	float: left;
+}
+.feedback_reg .entercomment {
+	float: none;
+	width: 272px;
+}
+.feedback_reg .messagearea {
+	width: 262px;
+}
+.feedback_reg .nb_mob {
+	display: block;
+	font-size: 12px;
+	width: 122px;
+	margin-left: 0;
+	text-align: right;
+}
+.feedback_reg div {
+	margin: 11px 0 0 0;
+}
+.feedback .feedback_reg .entertext {
+	padding-bottom: 5px;
+}
+/* форма для отзыва end */
+
+/* CONTENT Матрасы -> Аскона -> Terapia -> Матрас Аскона Terapia Pulse end */
 
 /* Content registration form start */
 .personal {
@@ -540,8 +753,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	min-width: 30%;
 
 }
-
-
 /* Content registration form end */
 /* CONTENT end */
 
@@ -600,9 +811,6 @@ footer {
 .footer-wrap {
 	width: 94%;
 	display: flex;
-	/* flex-direction: column;
-	justify-content: flex-start;
-	align-items: stretch; */
 	flex-wrap: wrap;
 	align-content: flex-start;
 }
