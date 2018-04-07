@@ -3,15 +3,19 @@
 .wrap-menu {
 	width: 100%;
 }
+
+.none {
+	display: none;
+}
 /* SHOW CLOSE start */
-.show.non .box/* ,
-show.non .boxfiltr */ {
+.show.non .box {
   /* margin: -50px auto 0; */
   margin: 0;
   /* width: 320px; */
   height: auto;
   min-height: 155px;
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   padding: 20px 40px;
   background: #ffffff;
   box-shadow: 1px 0 10px #9c9c9c;
@@ -20,7 +24,10 @@ show.non .boxfiltr */ {
   right: 0;
   z-index: 999;
 }
-.show.non .close {
+
+.show.non .close,
+.showfil.non .close {
+  display: block;
   position: fixed;
   width: 30px;
   height: 30px;
@@ -28,23 +35,46 @@ show.non .boxfiltr */ {
   bottom: 0;
   left: auto;
   right: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
 }
 .box_cap {
+	display: block;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 16px;
 	margin-bottom: 25px;
+	margin-left: 25px;
 }
-.show.non .close img {
+.show.non .close img,
+.showfil.non .close img {
 	width: 30px;
 	height: 30px;
 }
 
-/* SHOW CLOSE end */
-
-.none {
-	display: none;
+.showfil.non {
+	position: fixed;
+	width: 320px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: auto;
+	z-index: 999;
 }
+
+.showfil.non .boxfiltr {
+	margin: 0 auto;
+	position: absolute;
+	width: 100%;
+	padding-top: 20px;
+	box-shadow: 1px 0 10px #9c9c9c;
+	top: 0;
+	left: 0;
+	right: auto;
+	z-index: 999;
+}
+
+/* SHOW CLOSE end */
 
 fieldset {
 	width: 100%;
@@ -559,6 +589,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	justify-content: flex-start;
 	align-items: flex-start;
 }
+.prod-menu .link-menu p {
+	display: inline-block;
+	line-height: 20px;
+}
 .prod-menu .prodmain .prpic-main .price-act,
 .prod-menu .prodmain .prpic-main .buy,
 .prod-menu .prodmain .prpic-main .select-wrap {
@@ -711,7 +745,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .contact input {
-	width: 60%;
+	width: 50%;
 }
 
 .contact img {
@@ -742,7 +776,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .contact textarea {
-	width: 60%;
+	width: 50%;
+	margin-left: 0;
 }
 .contact .capcha {
 	width: 30%;
@@ -759,7 +794,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	width: 70%;
 }
 .contact .capchakey .caparea {
-	width: 80%;
+	width: 50%;
 }
 .contact .capchakey img {
 	display: block;

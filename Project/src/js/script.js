@@ -1,8 +1,31 @@
+/*обработчик событий для кнопок*/
+/*Каталог*/
+$('.category').on('click', function(){
+    if($('.show').hasClass('non')){
+      $('.show').removeClass('non');
+      $('.show').removeClass('none');
+    } else {
+      $('.show').addClass('non');
+    }
+});
+/*Закрыть окно*/
+$('.close').click(function(){
+    $('.show').removeClass('non');
+    $('.show').addClass('none');
+    $('.showfil').removeClass('non');
+    $('.showfil').addClass('none');
+});
 
+/*Фильтр*/
+$('.filtr').on('click', function(){
+    if($('.showfil').hasClass('non')){
+      $('.showfil').removeClass('non');
+      $('.showfil').removeClass('none');
+    } else {
+      $('.showfil').addClass('non');
+    }
+});
 
-/*$(document).ready(function(){
-  $('.owl-carousel').owlCarousel();
-});*/
 
 $(document).ready(function() {
     var owl=$(".owl-carousel");
@@ -78,33 +101,5 @@ $(function(){
     $(this).owlCarousel();
   });
 });
-
-
-
-/*обработчик событий для кнопок*/
-/*Каталог*/
-$('.category').on('click', function(){
-    if($('.show').hasClass('non')){
-      $('.show').removeClass('non');
-      $('.show').removeClass('none');
-    } else {
-      $('.show').addClass('non');
-    }
-});
-/*Закрыть окно*/
-$('.close').click(function(){
-    $('.show').removeClass('non');
-    $('.show').addClass('none');
-});
-
-/*Фильтр*/
-/*$('.filtr').on('click', function(){
-    if($('.showfil').hasClass('non')){
-      $('.showfil').removeClass('non');
-      $('.showfil').removeClass('none');
-    } else {
-      $('.showfil').addClass('non');
-    }
-});*/
 
 
