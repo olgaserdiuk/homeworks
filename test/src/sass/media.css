@@ -1,0 +1,12 @@
+@media (max-width: 1023px) {
+
+	.wrapper .tabs {
+    float: none;
+    margin-bottom: 20px;
+    width: 90%;
+	}
+
+	.wrapper .basket {
+		width: 45%;
+	}
+  }

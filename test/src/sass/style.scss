@@ -1,0 +1,284 @@
+@import 'media';
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/arial-webfont.eot');
+    src: url('../fonts/arial-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/arial-webfont.woff2') format('woff2'),
+         url('../fonts/arial-webfont.woff') format('woff'),
+         url('../fonts/arial-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$white: #ffffff;
+$bkgBody: #f9f7ee;
+$lightgrey: #e0dfca;
+$borderForm: #acacac;
+$black: #000000;
+$link: #267ec1;
+$textgrey: #8d8d8d;
+
+body {
+  width: 100%;
+  background-color: $bkgBody;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  margin: 34px 5%;
+}
+
+.order {
+  font-size: 32px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #231f20;
+  margin-bottom: 12px;
+}
+
+/* TABS */
+.tabs {
+  width: 66%;
+  margin-right: 2%;
+  margin-bottom: 92px;
+  float: left;
+  overflow: hidden;
+
+  hr {
+    margin: 20px -10% 0;
+    border: 1px dotted $lightgrey;
+  }
+
+  .tabs_caption {
+
+    .caption-1 {
+      width: 120px;
+      border-radius: 3px 0 0 0;
+      border-right: none;
+    }
+
+    .caption-2 {
+      width: 200px;
+      border-radius: 0 3px 0 0;
+    }
+
+    li {
+      display: block;
+      float: left;
+      height: 56px;
+      background-color: $bkgBody;
+      border: 1px solid $lightgrey;
+      margin-bottom: -2px;
+
+      a {
+        display: block;
+        height: 56px;
+        color: $link;
+        padding: 12px 15px;
+        height: 56px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: bold;
+        text-decoration: underline dotted;
+      }
+
+    }
+
+    li.active {
+      background-color: $white;
+      border-bottom: none;
+
+      a {
+        color: $black;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .tabs-2 {
+    display: none;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .tabs-1,
+  .tabs-2 {
+    border: 1px solid $lightgrey;
+    border-radius: 0 0 5px 5px;
+    clear: both;
+    height: auto;
+    margin-top: -1px;
+    background: $white;
+  }
+}
+
+/* FORM NEW CONTACT */
+.client {
+  margin: 25px 30px 20px 28px;
+
+  .contact_log {
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: $textgrey;
+  }
+
+  .contact_text {
+    width: 50%;
+    height: 28px;
+    margin-top: 20px;
+    padding: 0 20px 0 9px;
+    border: 1px solid $borderForm;
+    border-radius: 3px;
+  }
+}
+
+.buyer {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.indent {
+  margin-top: 24px;
+
+  .comment {
+    margin-left: 150px;
+    font-size: 14px;
+    color: $link;
+  }
+
+  .comment_new {
+    width: 50%;
+    padding: 5px;
+    margin-left: 150px;
+    resize: none;
+  }
+
+  .del {
+    display: none;
+  }
+}
+
+.contact {
+  .stock {
+    width: 70%;
+  }
+
+  .buyer {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: $black;
+  }
+}
+
+.check {
+  -webkit-appearance: none;
+  background-image: url('../img/arrow.png');
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  line-height: 1em;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+}
+
+.sendOrder {
+  margin: 20px auto 20px 150px;
+  width: 195px;
+  height: 33px;
+  font-size: 20px;
+  font-weight: bold;
+  color: $white;
+  background-color: green;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+  box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.8);
+}
+
+/* Basket_order */
+.basket {
+  width: 31%;
+  border: 1px solid $lightgrey;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: $white;
+
+  .buyer {
+    vertical-align: middle;
+    line-height: 48px;
+    margin-bottom: 0;
+    margin-left: 4%;
+  }
+
+  hr {
+    clear: both;
+    border: 1px dotted $lightgrey;
+    margin: 0 -10%;
+  }
+}
+
+.basket_main {
+  margin: 20px 2%;
+  width: 100%;
+
+  .products {
+    width: 25%;
+    float: left;
+
+    img {
+      height: 100%;
+      width: auto;
+      margin: 0 auto;
+    }
+  }
+
+  .prod-wrap {
+    float: left;
+    width: 67%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+
+    .products_name {
+      display: block;
+      color: $link;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .price {
+      margin-top: 20px;
+      font-size: 14px;
+      color: $textgrey;
+
+      .price_main {
+        float: left;
+        width: 63.5%;
+      }
+      .price_total {
+        float: right;
+        width: 36.5%;
+        font-weight: bold;
+        color: $black;
+      }
+    }
+  }
+}
+
+.price_order  {
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  margin: 16px;
+}
+

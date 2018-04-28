@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Horoshop test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="order">Оформление заказа</div>
+		<div class="tabs">
+			<ul class="tabs_caption">
+				<li class="caption-1 active"><a href="tabs-1">Я новый покупатель</a></li>
+				<li class="caption-2"><a href="tabs-2">Я зарегистрированный покупатель</a></li>
+			</ul>
+			<div class="tabs-1 active">
+				<div class="client">
+					<p class="buyer">Получатель заказа</p>
+					<form class="regnew" name="sortPodbor" action="#"" method="post">
+						<div class="contact">
+							<p class="contact_log">Имя и фамилия</p>
+							<input class="contact_text" type="text" name="login_new" required>
+						</div>
+						<div class="contact">
+							<p class="contact_log">Телефон</p>
+							<input class="contact_text" type="text" name="tel_new" required>
+						</div>
+						<div class="contact">
+							<p class="contact_log">Город</p>
+							<input class="contact_text" type="text" name="city_new" placeholder="Киев" required>
+						</div>
+						<div class="contact">
+							<p class="contact_log">Эл. почта</p>
+							<input class="contact_text" type="text" name="mail_new" placeholder="user@mail.com" required>
+						</div>
+						<div class="indent">
+							<a class="comment" href="#" onclick="return false;">Добавить комментарий к заказу</a>
+							<textarea class="comment_new del" name="comment_order" id="" cols="" rows="4"></textarea>
+						</div>
+						<hr>
+						<div class="contact">
+							<label class="contact_log buyer" for="delivery">Доставка</label>
+							<select class="contact_text check" form="sortPodbor" name="delivery" action="" size="1">
+								<option selected value="" class="cuselActive">"Новая почта" &mdash; 23 грн.</option>
+								<option value="">"Новая почта" &mdash; 23 грн.</option>
+								<option value="">"Новая почта" &mdash; 23 грн.</option>
+							</select>
+						</div>
+						<div class="contact">
+							<label class="contact_log" for="address">Адрес склада</label>
+							<select class="contact_text stock check" form="sortPodbor" name="address" action="" size="1">
+								<option selected value="" class="cuselActive">Львов, Отделение №8 (до 30 кг): ул. Гетьмана И. Мазепы, 36</option>
+								<option value="">Львов, Отделение №8 (до 30 кг) ул. Гетьмана И. Мазепы, 36</option>
+								<option value="">Львов, Отделение №8 (до 30 кг) ул. Гетьмана И. Мазепы, 36</option>
+							</select>
+						</div>
+						<hr>
+						<div class="contact">
+							<label class="contact_log buyer" for="payment">Оплата</label>
+							<select class="contact_text check" form="sortPodbor" name="payment" action="" size="1">
+								<option selected value="" class="cuselActive">наложеный платеж</option>
+								<option value="">наложеный платеж</option>
+								<option value="">наложеный платеж</option>
+							</select>
+						</div>
+						<hr>
+						<button class="sendOrder" type="submit" value="" class="filtermain">Оформить заказ</button>
+					</form>
+				</div>
+			</div>
+			<div class="tabs-2">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rerum quaerat similique, cumque enim voluptate ea vero doloremque veritatis quo accusamus ipsa laudantium officia quas quasi, eligendi excepturi eaque? Quidem.
+				<br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magni odit nihil, facilis reprehenderit amet culpa, vero ipsa, a, ad assumenda. Saepe, porro id laboriosam dolorum ratione corporis. Quasi, facere.
+				<br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, aspernatur, quisquam? Magnam iusto iste quisquam, cupiditate ullam nostrum facere ducimus perferendis vitae fugiat, velit nesciunt maxime at nihil eius sequi.
+				<br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolorum assumenda possimus natus, delectus ex. Sequi nisi reprehenderit delectus aliquam beatae, dicta voluptates nesciunt, quibusdam, ducimus minima praesentium consequatur rerum.
+				<br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi aliquam veniam neque deleniti, eveniet illo vel quas est architecto! Sit ipsam numquam possimus molestias ex porro eligendi maxime aut.</p>
+			</div>
+		</div>
+		<div class="basket">
+			<p class="buyer">Ваш заказ</p>
+			<hr>
+			<div class="basket_main">
+				<div class="products">
+					<a href="#"><img src="img/camera.png" alt="camera"></a>
+				</div>
+				<div class="prod-wrap">
+					<a class="products_name" href="#">Цифровий фотоапарат Nikon D5100 kit (18-55 VR)</a>
+					<div class="price">
+						<div class="price_main">
+							<span>6 568 грн.</span> х <span>1</span> шт.
+						</div>
+						<div class="price_total">
+							<span>6 568 грн.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="basket_main">
+				<div class="products" name="goods_link">
+					<a href="#"><img src="img/mobile.png" alt="mobile"></a>
+				</div>
+				<div class="prod-wrap">
+					<a class="products_name" href="#">MP3-плеер Apple iPod Touch 5Gen 32Gb blue</a>
+					<div class="price">
+						<div class="price_main">
+							<span>3 689 грн.</span> х <span>1</span> шт.
+						</div>
+						<div class="price_total">
+							<span>3 689 грн.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="price_order"><span>9 769,15</span> грн.</div>
+		</div>
+	</div>
+</div>
+
+
+
+	<!-- //=html/order.html
+	//=html/basket.html -->
+	<script src="./js/script.js"></script>
+</body>
+</html>

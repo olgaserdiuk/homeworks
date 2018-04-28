@@ -4,17 +4,17 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
-var rigger = require('gulp-rigger');
-var autoprefixer = require('gulp-autoprefixer');
-var browserSync = require('browser-sync');
-var cssnano = require('gulp-cssnano');
-var del = require('del');
-var uglify = require('gulp-uglify');
+var rigger = require('gulp-rigger'); 
+var autoprefixer = require('gulp-autoprefixer'); // поддержка старых браузеров, добавляет css свойства 
+var browserSync = require('browser-sync'); // запускает локальный сервер
+var cssnano = require('gulp-cssnano'); // минифицирует css код в одну строку
+var del = require('del'); // очищает директорию dist от изменений
+var uglify = require('gulp-uglify'); //минифицирует js код в одну строку
 //var babel = require('gulp-babel');
 //var imagemin = require('gulp-imagemin');
 //var pngquant = require('imagemin-pngquant');
 
-// обьект путей нашего проекта
+// обьект путей проекта
 var paths = {
   src: {
     html: 'src/*.html',
