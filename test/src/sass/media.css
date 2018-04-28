@@ -9,4 +9,8 @@
 	.wrapper .basket {
 		width: 100%;
 	}
+
+	.wrapper .basket .basket_main .products {
+		width: 10%;
+	}
   }
