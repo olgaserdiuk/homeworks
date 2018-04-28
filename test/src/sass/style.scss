@@ -151,9 +151,9 @@ body {
   }
 
   .comment_new {
-    width: 50%;
+    width: 52.5%;
     padding: 5px;
-    margin-left: 150px;
+    margin-left: 155px;
     resize: none;
   }
 
@@ -196,14 +196,15 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: $white;
-  background-color: green;
   border: none;
   outline: none;
   border-radius: 15px;
-  background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
-  box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0px -1px 0px 0px #1f7f04;
+  background: #65bf20; /* Old browsers */
+background: -moz-linear-gradient(top, #65bf20 0%, #4aad11 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #65bf20 0%,#4aad11 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #65bf20 0%,#4aad11 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65bf20', endColorstr='#4aad11',GradientType=0 ); /* IE6-9 */
 }
 
 /* Basket_order */
