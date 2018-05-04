@@ -168,7 +168,9 @@ a {
   width: 220px;
   line-height: 40px;
   color: #fffcf3;
+  font-size: 14px;
   font-family: 'PT Sans', Arial, sans-serif; }
+
   .small-icons img {
     margin-left: 24px;
     margin-right: 8px;
@@ -176,6 +178,150 @@ a {
   .small-icons a {
     color: #fffcf3;
     text-decoration: underline; }
+
+/* nav2, nav3  start*/
+.small-icons .nav2 ul { 
+  display: none; }
+
+.small-icons .nav2 {
+    width: 80px;
+    float: left; }
+
+.small-icons .nav2,
+.small-icons .nav3 {
+  position: relative;
+  z-index: 5;
+}
+
+.small-icons .nav2 #enter,
+.small-icons .nav3 #vasya {
+  display: inline-block;
+  height: 40px;
+  text-align: left;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.small-icons .nav2 ul, .nav2:active ul,
+.small-icons .nav3 ul, .nav3:active ul { 
+  display: none;
+  position: absolute;
+  background: #fff;
+  top: 40px;
+  box-shadow: 1px 5px 10px #9c9c9c;
+}
+
+.small-icons .nav2 ul, .nav2:active ul,
+.small-icons .nav3 ul, .nav3:active ul {
+  right: 0;
+  box-shadow: -1px 5px 10px #9c9c9c;
+}
+
+.small-icons .nav2:hover ul,
+.small-icons .nav3:hover ul {
+  display: block;
+  width: 320px;
+}
+
+.navreg {
+  display: block;
+  margin: 0 2%;
+  width: 220px;
+  float: right;
+  line-height: 40px;
+  text-decoration: none;
+  color: #fff;
+}
+.navreg img {
+  margin: auto 10px auto 10px;
+}
+.navreg  .menuarrow {
+  width: 10px;
+}
+.nav3 ul li a {
+  display: inline-block;
+  margin: 5px 0 5px 55px;
+  color: #458cc9;
+}
+.nav3 ul li {
+  line-height: 20px;
+}
+.nav3 ul li:first-child {
+  margin-top: 20px;
+}
+.nav3 ul li:last-child {
+  margin-bottom: 20px;
+}
+.nav3 ul li img {
+  margin-right: 5px;
+}
+.nav3 .usico {
+  float: left;
+  width: 17px;
+  height: 23px;
+  padding: 8px 2px;
+}
+/* nav2, nav3 end */
+/* nav2 start */
+.nav2 form {
+  width: 70%;
+  margin:  0 auto;
+  font-size: 12px;
+  color: #666666;
+}
+
+.nav2 form a {
+  font-size: 12px;
+  display: inline-block;
+  float: right;
+  padding-bottom: 5px;
+  color: #666666;
+}
+.nav2 form input {
+  width: 98%;
+  height: 27px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+.nav2 form .inf {
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
+.nav2 form .inf p {
+  display: inline-block;
+  font-weight: bold;
+}
+.nav2 form .dec {
+  margin-top: 33px;
+  margin-bottom: 17px;
+}
+
+#remember {
+  width: 12px;
+  height: 12px;
+}
+
+.nav2 form button {
+  width: 72px;
+  height: 28px;
+  border: 1px solid #e68b22;
+  background-color: #f59e34;
+  color: #fff;
+  border-radius: 3px;
+  margin-top: 33px;
+  display: block;
+  float: right;
+  margin-bottom: 40px;
+}
+
+#remember, #remember label {
+  margin-top: 36px;
+}
+/* nav2 end */
 
 #top-menu-2 {
   display: none; }
