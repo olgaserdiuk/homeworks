@@ -64,11 +64,11 @@
 }
 
 .owl-prev{
-  background: url("arrow-left.png") 0 0 no-repeat;
+  background: url("../img/arrow-left.png") 0 0 no-repeat;
   float: left;
 }
 .owl-next{
-  background: url("arrow-right.png") 0 0 no-repeat;
+  background: url("../img/arrow-right.png") 0 0 no-repeat;
   float: right;
 }
 
