@@ -349,7 +349,8 @@ menu {
 
 .wrapper-section3 {
   width: 100%;
-  background: url("../img/bkg2.png") no-repeat;
+  background: url("../img/bkg2.png") 0 0 no-repeat;
+  background-size: cover;
   height: 1760px; }
   .wrapper-section3 .dash {
     width: 1px;
@@ -492,7 +493,7 @@ footer {
 
 .rights {
   clear: both;
-  width: 790px;
+  width: 900px;
   margin: 0 auto;
   padding-bottom: 43px; }
 
@@ -517,30 +518,14 @@ footer {
   float: right; }
 
 /* FOOTER end */
-/* POPUP */
-/* ul {list-style-type:none; margin:50px; padding:0;} */
-/* li {width:230px; height:220px; position:relative; float:left; margin:20px 10px; cursor:pointer;} */
-.day {
-  width: 230px;
-  height: 220px; }
-
-.title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 5px 10px;
-  width: 210px;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5); }
-
-/* li .txt {display:none;} */
+/* POPUP order window*/
 #popup {
   display: none;
   font-size: 13px;
   line-height: 20px;
   position: fixed;
   background-color: #fff;
-  border: 3px solid #ccc;
+  border: 2px solid #ccc;
   width: 400px;
   padding: 40px 20px 20px;
   top: 50%;
@@ -551,11 +536,15 @@ footer {
   max-height: 80%;
   overflow: auto; }
 
-#popup .popup_info {
+#popup.popup_info {
   display: block; }
 
-/* #popup .title + img {float:left; width:120px; margin:10px 10px 10px 0;} */
-#popup .title {
+#popup_inner a {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px; }
+
+#popup.title {
   display: block;
   margin: 0 60px 10px 0 !important;
   font-size: 16px;
@@ -565,7 +554,7 @@ footer {
 
 .close {
   cursor: pointer;
-  background: red url("../img/fax.png") 0 0 no-repeat;
+  background: url("../img/close.png") 0 0 no-repeat;
   display: block;
   position: absolute;
   top: 5px;
@@ -581,7 +570,7 @@ footer {
   background: #000000;
   bottom: 0;
   left: 0;
-  opacity: 0.40;
+  opacity: 0.30;
   position: fixed;
   right: 0;
   top: 0;
