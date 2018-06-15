@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Apelsun test</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="telbtn">
+		<a class="callback" href="tel: +380441234567">обратный звонок</a>
+	</div>
+	<div class="wrap">
+		<div class="wrapper-section1">
+			<menu class="menu">
+				<ul>
+					<li class="show">
+						<a href="#">чартеры</a>
+						<ul class="menu-nav hide">
+							<li>
+								<a href="#">бизнес чартеры</a>
+							</li>
+							<li>
+								<a href="#">групповые чартеры</a>
+							</li>
+							<li>
+								<a href="#">грузовые чартеры</a>
+							</li>
+							<li>
+								<a class="med"href="#">медицинские чартеры</a>
+							</li>
+							<li>
+								<a class="empty" href="#">empty legs</a>
+							</li>
+							<li>
+								<a href="#">вертолеты</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">покупка/продажа</a>
+					</li><li>
+						<a href="#">менеджмент вс</a>
+					</li><li>
+						<a href="#">авиационный консалтинг</a>
+					</li><li>
+						<a href="#">услуги</a>
+					</li><li>
+						<a href="#">о компании</a>
+					</li><li>
+						<a href="#">контакты</a>
+					</li><li>
+						<a class="lang" href="#">en</a>
+					</li>
+				</ul>
+			</menu>
+			<div class="content-wrapper">
+				<div class="navmenu-section">рейсы empty legs</div>
+				<div class="explanation">
+					<div class="dash-wrap">
+						<div class="dash"></div>
+					</div>
+					<div class="info">Когда компания Company организует чартерный перелет в один конец, то зачастую самолет при возвращении на свою базу или при продолжении перелета в другое место летит пустым. Такие рейсы известны в нашем бизнесе как "Empty Legs".</div>
+					<div class="popup" onclick="popupFunction()">актуальные рейсы
+						<img src="img/arrbluesm.png" alt="arrbluesm">
+						<div class="popuptext" id="myPopup">Book your flights and discover great holiday deals to Maldives. Good luck for your booking!</div>
+					</div>
+				</div>
+				<div class="contentinfo">
+					<p>Ниже приведен список Empty Legs, актуальных на текущий момент. Для получения информации выберите мышкой понравившийся Empty Leg или же подпишитесь на информационную рассылку и получайте каждую неделю электронную почту с кратким обзором всех Empty Legs, появившихся за последние 7 дней.</p>
+					<p>Этот список, конечно, не является исчерпывающим, поэтому, если вы не находите подходящего Empty Leg на этой странице, свяжитесь с нашими специалистами напрямую и передайте им информацию о ваших регулярных маршрутах. Мы свяжемся с вами, как только какой-либо из ваших маршрутов станет доступен.</p>
+					<p>Ниже приведен список Empty Legs, актуальных на текущий момент. Для получения информации выберите мышкой понравившийся Empty Leg или же подпишитесь на информационную рассылку и получайте каждую неделю электронную почту с кратким обзором всех Empty Legs, появившихся за последние 7 дней. 
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper-section2">
+		<div class="num-wrap">
+			<div class="reasons">
+				<div class="number">
+					<div class="num">01</div>
+					<div class="dash"></div>
+				</div>
+				<div class="title-wrap title1">
+					<p class="title">большая экономия</p>
+					<p class="titleinf inf1">Ваша экономия до 75% от стоимости обычного чартера</p>
+				</div>
+			</div>
+			<div class="reasons">
+				<div class="number">
+					<div class="num">02</div>
+					<div class="dash"></div>
+				</div>
+				<div class="title-wrap title2">
+					<p class="title">широкий выбор</p>
+					<p class="titleinf inf2">Empty Legs - широкий спектр частных воздушных судов</p>
+				</div>
+			</div>
+			<div class="reasons">
+				<div class="number">
+					<div class="num">03</div>
+					<div class="dash"></div>
+				</div>
+				<div class="title-wrap title3">
+					<p class="title">актуальная информация</p>
+					<p class="titleinf inf3">Информация регулярно обновляются на нашем веб-сайте</p>
+				</div>
+			</div>
+			<div class="reasons reasons4">
+				<div class="number">
+					<div class="num">04</div>
+					<div class="dash"></div>
+				</div>
+				<div class="title-wrap title4">
+					<p class="title">оповещение клиентов</p>
+					<p class="titleinf inf4">Наши специалисты известят вас, как только появится  ваш маршрут</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper-section3">
+		<div class="actual">актуальные рейcы</div>
+		<div class="dash"></div>
+		<div class="timetable">расписание</div>
+		<div class="arr"><img src="img/arrowblue.png" alt="arrowblue"></div>
+		<table>
+			<thead>
+				<tr>
+					<th>empty legs</th>
+					<th>дата вылета</th>
+					<th>самолет</th>
+					<th>заказ</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="#">Los Angeles - Teterboro</a></td>
+					<td><a href="#">28 февраля 2018 года</a></td>
+					<td><a href="#">LearJet 45 XR</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Boca Raton - West Chicago</a></td>
+					<td><a href="#">28 февраля 2018 года</a></td>
+					<td><a href="#">LearJet 40</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Los Angeles - Teterboro</a></td>
+					<td><a href="#">28 февраля 2018 года</a></td>
+					<td><a href="#">LearJet 60 XR</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Boca Raton - West Chicago</a></td>
+					<td><a href="#">01 марта 2018 года</a></td>
+					<td><a href="#">Global 5000</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Los Angeles - Teterboro</a></td>
+					<td><a href="#">02 марта 2018 года</a></td>
+					<td><a href="#">Challenger 300</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Boca Raton - West Chicago</a></td>
+					<td><a href="#">02 марта 2018 года</a></td>
+					<td><a href="#">Challenger 850</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Los Angeles - Teterboro</a></td>
+					<td><a href="#">04 марта 2018 года</a></td>
+					<td><a href="#">P.180 Avanti II</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Boca Raton - West Chicago</a></td>
+					<td><a href="#">04 марта 2018 года</a></td>
+					<td><a href="#">LearJet 45 XR</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Los Angeles - Teterboro</a></td>
+					<td><a href="#">05 марта 2018 года</a></td>
+					<td><a href="#">LearJet 40</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Boca Raton - West Chicago</a></td>
+					<td><a href="#">07 марта 2018 года</a></td>
+					<td><a href="#">LearJet 60 XR</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Los Angeles - Teterboro</a></td>
+					<td><a href="#">07 марта 2018 года</a></td>
+					<td><a href="#">Global 5000</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Boca Raton - West Chicago</a></td>
+					<td><a href="#">07 марта 2018 года</a></td>
+					<td><a href="#">Challenger 300</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Los Angeles - Teterboro</a></td>
+					<td><a href="#">09 марта 2018 года</a></td>
+					<td><a href="#">Challenger 850</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+				<tr>
+					<td><a href="#">Boca Raton - West Chicago</a></td>
+					<td><a href="#">10 марта 2018 года</a></td>
+					<td><a href="#">P.180 Avanti II</a></td>
+					<td><a class="order" href="#">заказать рейс</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<button>
+			еще рейсы
+			<img src="img/arrowblack.png" alt="arrowblack">
+		</button>
+	</div>
+	<footer>
+		<div class="actual">свяжитесь с нами</div>
+		<div class="dash"></div>
+		<div class="contacts-wrap">
+			<div class="contacts">
+				<div class="pic">
+					<img src="img/map.png" alt="map">
+				</div>
+				<p>адрес:</p>
+				<div class="address">Киев, 03115, Украина<br>ул. Туполева, 18</div>
+			</div>
+			<div class="contacts tel">
+				<div class="pic">
+					<img src="img/phone.png" alt="phone">
+				</div>
+				<p>телефон:</p>
+				<a class="address phone" href="tel: +380441234567">+38 (044) 123-45-67</a>
+				<div class="pic fax">
+					<img src="img/fax.png" alt="fax">
+				</div>
+				<p class="fax">факс:</p>
+				<a class="address phone" href="tel: +380441234567">+38 (044) 123-45-67</a>
+			</div>
+			<div class="contacts cont">
+				<div class="pic mail">
+					<img src="img/mail.png" alt="mail">
+				</div>
+				<p>e-mail:</p>
+				<a class="address phone" href="mailto:info@company.com">info@company.com</a>
+			</div>
+		</div>
+		<div class="rights">
+			<div class="copy">&copy;  1998-2018</div>
+			<div class="logo"><img src="img/apelsun.png" alt="apelsunlogo"></div>
+			<div class="logoname">Design &amp; Development by</div>
+		</div>
+	</footer>
+	<script>
+		function popupFunction() {
+			var popup = document.getElementById("myPopup");
+			popup.classList.toggle("shown");
+		}
+
+		$('.show').on('click', function() {
+			if($('.menu-nav').hasClass('hide')){
+				$('.menu-nav').removeClass('hide');
+				$('.show').addClass('selected');
+			} else {
+				$('.show').removeClass('selected');
+				$('.menu-nav').addClass('hide');
+			}
+		});
+	</script>
+</body>
+</html>

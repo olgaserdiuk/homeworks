@@ -1,0 +1,521 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'PF Din Display Pro Regular';
+  src: url("../fonts/pfdindisplaypro-regular-webfont.eot");
+  src: url("../fonts/pfdindisplaypro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pfdindisplaypro-regular-webfont.woff2") format("woff2"), url("../fonts/pfdindisplaypro-regular-webfont.woff") format("woff"), url("../fonts/pfdindisplaypro-regular-webfont.ttf") format("truetype"), url("../fonts/pfdindisplaypro-regular-webfont.svg#pf_dindisplay_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'PF Din Display Pro Medium';
+  src: url("../fonts/pfdindisplaypro-med-webfont.eot");
+  src: url("../fonts/pfdindisplaypro-med-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pfdindisplaypro-med-webfont.woff2") format("woff2"), url("../fonts/pfdindisplaypro-med-webfont.woff") format("woff"), url("../fonts/pfdindisplaypro-med-webfont.ttf") format("truetype"), url("../fonts/pfdindisplaypro-med-webfont.svg#pf_dindisplay_promedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'PF Din Display Pro Bold';
+  src: url("../fonts/pfdindisplaypro-bold-webfont.eot");
+  src: url("../fonts/pfdindisplaypro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pfdindisplaypro-bold-webfont.woff2") format("woff2"), url("../fonts/pfdindisplaypro-bold-webfont.woff") format("woff"), url("../fonts/pfdindisplaypro-bold-webfont.ttf") format("truetype"), url("../fonts/pfdindisplaypro-bold-webfont.svg#pf_dindisplay_probold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+body {
+  width: 100%;
+  position: relative; }
+
+.telbtn {
+  width: 192px;
+  height: 65px;
+  margin-right: -64px;
+  padding-top: 34px;
+  position: absolute;
+  position: fixed;
+  top: 230px;
+  right: 0;
+  z-index: 999;
+  margin-right: -50px;
+  -moz-transform: rotate(-90deg);
+  /* ╨Ф╨╗╤П Firefox */
+  -ms-transform: rotate(-90deg);
+  /* ╨Ф╨╗╤П IE */
+  -webkit-transform: rotate(-90deg);
+  /* ╨Ф╨╗╤П Safari, Chrome, iOS */
+  -o-transform: rotate(-90deg);
+  /* ╨Ф╨╗╤П Opera */
+  transform: rotate(-90deg); }
+  .telbtn .callback {
+    display: block;
+    background: #555555;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 24px 20px;
+    vertical-align: middle;
+    font-family: 'PF Din Display Pro Bold', Arial, sans-serif;
+    font-size: 16px;
+    height: 80px;
+    width: 192px; }
+
+.wrap {
+  width: 100%;
+  background: url("../img/bkg1.png"), no-repeat; }
+
+/* MENU start*/
+.wrapper-section1 {
+  margin: 0 auto;
+  width: 1182px; }
+
+menu {
+  width: 952px;
+  margin: 0 0 180px auto;
+  padding-top: 50px;
+  height: 20px; }
+  menu ul {
+    width: 100%; }
+  menu li {
+    float: left;
+    margin: 0 16px;
+    line-height: 20px; }
+  menu li:last-child {
+    margin-right: 0;
+    margin-left: 13px; }
+  menu li:first-child {
+    margin-left: 0; }
+  menu a {
+    font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    color: #929292; }
+  menu a:hover {
+    color: #a7d2db; }
+  menu .lang {
+    font-family: 'PF Din Display Pro Bold', Arial, sans-serif;
+    color: #a7d2db; }
+  menu .menu-nav {
+    position: absolute;
+    margin-top: 48px; }
+    menu .menu-nav li {
+      width: 120px; }
+      menu .menu-nav li a {
+        display: block;
+        width: 75px;
+        margin: 0 auto; }
+      menu .menu-nav li a:first-child {
+        margin: 0; }
+
+.hide {
+  display: none; }
+
+.show:hover > .menu-nav {
+  display: block; }
+
+.menu-nav li + li:before {
+  content: "|";
+  margin-left: -42px;
+  float: left;
+  margin-top: 7px; }
+
+.med {
+  width: 92px; }
+
+.empty {
+  width: 42px; }
+
+.selected > a {
+  color: #a7d2db; }
+
+/* MENU end */
+.content-wrapper {
+  width: 1090px; }
+  .content-wrapper .navmenu-section {
+    font-family: 'PF Din Display Pro Medium', Arial, sans-serif;
+    font-size: 104px;
+    color: #555555;
+    text-transform: uppercase;
+    width: 924px;
+    margin: 0 auto 75px; }
+
+.explanation {
+  width: 812px;
+  margin: 0 auto; }
+
+.dash-wrap {
+  width: 90px;
+  height: 110px;
+  float: left; }
+
+.dash {
+  width: 70px;
+  height: 2px;
+  margin: 6px 20px 0 0;
+  background-color: #555555; }
+
+.info {
+  width: 784px;
+  font-family: 'PF Din Display Pro Medium', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #555555; }
+
+.act {
+  /* font-family: 'PF Din Display Pro Bold', Arial, sans-serif;
+  font-size: 13px;
+  color: $blue;
+  text-transform: uppercase;
+  text-decoration: underline;
+  float: right;
+  letter-spacing: 3px; */
+  /* img {
+  	margin-left: 9px;
+  } */ }
+
+.contentinfo {
+  clear: both;
+  margin: 65px auto 120px; }
+  .contentinfo p {
+    font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
+    font-weight: 100;
+    color: #555555;
+    line-height: 26px;
+    margin-top: 40px; }
+
+/* pop up start */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'PF Din Display Pro Bold', Arial, sans-serif;
+  font-size: 13px;
+  color: #a7d2db;
+  text-transform: uppercase;
+  text-decoration: underline;
+  float: right;
+  letter-spacing: 3px; }
+  .popup img {
+    margin-left: 9px; }
+
+.popuptext {
+  visibility: hidden;
+  width: 200px;
+  height: 100px;
+  background-color: #555;
+  color: #fff;
+  vertical-align: middle;
+  border-radius: 6px;
+  padding: 30px;
+  position: absolute;
+  z-index: 1;
+  top: -800%;
+  left: 120%; }
+
+.popup .shown {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* pop up end */
+.wrapper-section2 {
+  width: 100%;
+  height: 400px;
+  background-color: #a7d2db; }
+
+.num-wrap {
+  width: 1260px;
+  margin: 0 auto;
+  padding-top: 132px; }
+
+.reasons {
+  float: left;
+  margin-right: 42px; }
+
+.reasons4 {
+  margin-right: 0; }
+
+.number {
+  width: 30px;
+  height: 124px;
+  float: left;
+  margin-right: 14px; }
+  .number .num {
+    font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fefefe;
+    text-align: center;
+    -moz-transform: rotate(-90deg);
+    /* ╨Ф╨╗╤П Firefox */
+    -ms-transform: rotate(-90deg);
+    /* ╨Ф╨╗╤П IE */
+    -webkit-transform: rotate(-90deg);
+    /* ╨Ф╨╗╤П Safari, Chrome, iOS */
+    -o-transform: rotate(-90deg);
+    /* ╨Ф╨╗╤П Opera */
+    transform: rotate(-90deg); }
+  .number .dash {
+    width: 1px;
+    height: 64px;
+    background-color: #fefefe;
+    margin-left: 28px; }
+
+.title-wrap {
+  float: left; }
+  .title-wrap .title {
+    font-family: 'PF Din Display Pro Bold', Arial, sans-serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #555555; }
+  .title-wrap .titleinf {
+    font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
+    line-height: 35px;
+    font-weight: 100;
+    color: #555555; }
+
+.title1 {
+  width: 218px; }
+
+.title2 {
+  width: 186px; }
+
+.title3 {
+  width: 276px; }
+
+.title4 {
+  width: 272px; }
+
+.inf1 {
+  width: 220px; }
+
+.inf2 {
+  width: 186px; }
+
+.inf3 {
+  width: 197px; }
+
+.inf4 {
+  width: 272px; }
+
+.wrapper-section3 {
+  width: 100%;
+  background: url("../img/bkg2.png") no-repeat;
+  height: 1760px; }
+  .wrapper-section3 .dash {
+    width: 1px;
+    height: 30px;
+    background-color: #555555;
+    margin: 24px auto 26px; }
+
+.actual {
+  padding-top: 87px;
+  text-align: center;
+  font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: 21px;
+  color: #555555;
+  text-transform: uppercase; }
+
+.timetable {
+  font-family: 'PF Din Display Pro Medium', Arial, sans-serif;
+  font-size: 64px;
+  text-align: center;
+  color: #555555;
+  text-transform: uppercase; }
+
+.arr {
+  width: 30px;
+  height: 18px;
+  margin: 25px auto 0; }
+
+/* TABLE start */
+table {
+  margin: 122px auto 0;
+  width: 1215px;
+  height: 931px;
+  border-collapse: collapse;
+  border-spacing: 0; }
+  table a {
+    font-family: 'PF Din Display Pro Medium', Arial, sans-serif;
+    font-size: 21px;
+    color: #555555;
+    text-decoration: none; }
+  table .order {
+    text-transform: uppercase; }
+
+thead {
+  border-bottom: 1px solid #d9d9d9; }
+
+th {
+  font-family: 'PF Din Display Pro Bold', Arial, sans-serif;
+  text-align: left;
+  color: #555555;
+  font-size: 21px;
+  text-transform: uppercase;
+  padding: 20px 0 33px 44px;
+  border-right: 1px solid #d9d9d9; }
+
+th:last-child {
+  border-right: none; }
+
+td {
+  border-right: 1px solid #d9d9d9;
+  padding: 20px 0 33px 44px; }
+
+td:last-child {
+  border-right: none; }
+
+tr:hover a {
+  color: #a7d2db;
+  text-decoration: underline; }
+
+/* TABLE end */
+button {
+  width: 178px;
+  height: 52px;
+  display: block;
+  margin: 100px auto 116px;
+  border: 2px solid #f8f8f8;
+  background-color: #a7d2db;
+  font-family: 'PF Din Display Pro Bold', Arial, sans-serif;
+  font-size: 13px;
+  color: #555555;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer; }
+  button img {
+    display: inline-block;
+    margin-left: 24px; }
+
+/* FOOTER start */
+footer {
+  width: 100%;
+  background-color: #1c1c1c; }
+  footer .dash {
+    width: 1px;
+    height: 30px;
+    margin: 24px auto 62px;
+    background-color: #464646; }
+  footer .actual {
+    font-weight: 100;
+    color: #464646; }
+
+.contacts-wrap {
+  width: 900px;
+  margin: 0 auto; }
+
+.contacts {
+  float: left;
+  margin-right: 122px; }
+  .contacts .pic {
+    float: left;
+    margin-right: 15px;
+    width: 20px;
+    height: 30px; }
+  .contacts p {
+    font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    color: #464646;
+    text-transform: uppercase; }
+
+.cont {
+  margin-right: 0; }
+
+.address {
+  font-family: 'PF Din Display Pro Medium', Arial, sans-serif;
+  color: #7e7e7e;
+  font-size: 19px; }
+
+.phone {
+  font-size: 22px; }
+
+.mail {
+  padding-top: 7px; }
+
+.fax {
+  margin-top: 48px; }
+
+.tel {
+  margin-bottom: 170px; }
+
+.rights {
+  clear: both;
+  width: 790px;
+  margin: 0 auto;
+  padding-bottom: 43px; }
+
+.copy {
+  font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
+  color: #464646;
+  font-size: 16px;
+  float: left; }
+
+.logo {
+  width: 24px;
+  height: 24px;
+  background-color: #464646;
+  float: right;
+  margin-left: 18px;
+  margin-top: -10px; }
+
+.logoname {
+  font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
+  color: #464646;
+  font-size: 16px;
+  float: right; }
+
+/* FOOTER end */
+
+/*# sourceMappingURL=style.css.map */
