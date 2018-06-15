@@ -46,6 +46,7 @@ $footertext: #464646;
 
 body {
 	width: 100%;
+	margin: 0 auto;
 	position: relative;
 }
 
@@ -84,7 +85,7 @@ body {
 
 .wrap {
 	width: 100%;
-	background: url('../img/bkg1.png'), no-repeat;
+	background-image: url('../img/bkg1.png');
 }
 
 /* MENU start*/
@@ -399,9 +400,11 @@ menu {
 
 .wrapper-section3 {
 	width: 100%;
-	background: url("../img/bkg2.png") 0 0 no-repeat;
-	background-size: cover;
 	height: 1760px;
+	background: url("../img/bkg2.png") 0 0 no-repeat;
+	background-position: center center;
+	/* background-attachment: fixed;  - фиксируется на месте*/ 
+	background-size: cover;
 
 	.dash {
 		width: 1px;
