@@ -262,11 +262,59 @@
 			<div class="logoname">Design &amp; Development by</div>
 		</div>
 	</footer>
+
+
+
+<ul>
+    <li class="div2">
+        <img src="img/arrbluesm.png"> 
+        <div class="title">Заголовок 1</div>
+        <div class="txt">текст 1</div>
+    </li>
+    <li class="div2">
+        <img src="img/arrowblack.png"> 
+        <div class="title">Заголовок 2</div>
+        <div class="txt">текст 2</div>
+    </li>
+    <li class="div2">
+        <img src="img/arrowblue.png"> 
+        <div class="title">Заголовок 3</div>
+        <div class="txt">текст 3</div>
+    </li>
+</ul>
+
+
+
 	<script>
-		function popupFunction() {
+ $(function() {
+     /* создание попапа с кнокой закрытия и затемняющего блока  */
+  $("body").append("<div class='overlay'></div><div id='popup'><span class='close'></span><div id='popup_inner'></div></div>");
+     /* клик по элементу списка  */
+ $('li').click(function() {
+     /* очищаю содержимое попапа  */
+    $("#popup_inner").empty();
+     /* теперь по очереди переношу в сплывающий блок заголовок, картинку и текст */
+    $("#popup_inner").append($(this).html());
+    /* отображаю затемнение*/
+    $(".overlay").show();
+    /* центрирую попап по высоте, т.к. блок не фиксированной высоты и отображаю*/
+    var height = "-" + ($("#popup").height()+66)/2 + "px";
+    $("#popup").show().animate({marginTop:height}, 500);
+ 
+ });
+ /* при клике на кнопку закрыть или на затемнение попап закрывается */
+$(".overlay, #popup .close").click(function() {
+    $(".overlay, #popup").hide();
+ });
+}); 
+
+
+
+
+		/*function popupFunction() {
 			var popup = document.getElementById("myPopup");
 			popup.classList.toggle("shown");
-		}
+		}*/
 
 		$('.show').on('click', function() {
 			if($('.menu-nav').hasClass('hide')){

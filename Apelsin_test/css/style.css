@@ -517,5 +517,60 @@ footer {
   float: right; }
 
 /* FOOTER end */
+/* POPUP */
+.overlay {
+  background: #000000;
+  bottom: 0;
+  left: 0;
+  opacity: 0.30;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000; }
+
+#popup {
+  font-size: 13px;
+  line-height: 20px;
+  position: fixed;
+  background-color: #555555;
+  width: 400px;
+  padding: 40px 20px 20px;
+  top: 50%;
+  left: 50%;
+  margin: -120px 0 0 -211px;
+  z-index: 1000;
+  max-height: 80%;
+  overflow: auto; }
+
+.close {
+  cursor: pointer;
+  background: red url("../img/fax.png") 0 0 no-repeat;
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  text-indent: -10000px;
+  overflow: hidden;
+  border-radius: 3px; }
+
+.div1 {
+  width: 200px;
+  height: 100px;
+  background-color: red; }
+
+.div2 {
+  width: 200px;
+  height: 100px;
+  background-color: green; }
+
+.div3 {
+  width: 200px;
+  height: 100px;
+  background-color: yellow; }
+
+.txt {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
