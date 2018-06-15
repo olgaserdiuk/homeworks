@@ -85,7 +85,9 @@ body {
 
 .wrap {
 	width: 100%;
-	background-image: url('../img/bkg1.png');
+	background-image: url(../img/bkg1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /* MENU start*/
@@ -175,7 +177,7 @@ menu {
 	width: 92px;
 }
 
-.empty {
+.menu-nav .empty {
 	width: 42px;
 }
 
@@ -223,23 +225,10 @@ menu {
 	color: $darkgrey;
 }
 
-.act {
-	/* font-family: 'PF Din Display Pro Bold', Arial, sans-serif;
-	font-size: 13px;
-	color: $blue;
-	text-transform: uppercase;
-	text-decoration: underline;
-	float: right;
-	letter-spacing: 3px; */
-
-	/* img {
-		margin-left: 9px;
-	} */
-}
-
 .contentinfo {
 	clear: both;
-	margin: 65px auto 120px;
+	margin: 65px auto 0;
+	padding-bottom: 120px;
 
 	p {
 		font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
@@ -305,6 +294,7 @@ menu {
 	width: 100%;
 	height: 400px;
 	background-color: #a7d2db;
+	background-size: cover;
 }
 
 .num-wrap {
@@ -401,8 +391,9 @@ menu {
 .wrapper-section3 {
 	width: 100%;
 	height: 1760px;
-	background: url("../img/bkg2.png") 0 0 no-repeat;
+	background-image: url(../img/bkg2.png);
 	background-position: center center;
+	background-repeat: no-repeat;
 	/* background-attachment: fixed;  - фиксируется на месте*/ 
 	background-size: cover;
 
@@ -518,6 +509,7 @@ button {
 footer {
 	width: 100%;
 	background-color: $footerbkg;
+	background-size: cover;
 
 	.dash {
 		width: 1px;
@@ -642,7 +634,9 @@ footer {
 	a {
 		display: block;
 		font-size: 20px;
+		line-height: 40px;
 		margin-bottom: 10px;
+		color: $darkgrey;
 	}
 }
 
