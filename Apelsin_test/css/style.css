@@ -483,7 +483,8 @@ footer {
   font-size: 19px; }
 
 .phone {
-  font-size: 22px; }
+  font-size: 22px;
+  display: block; }
 
 .mail {
   padding-top: 7px; }
