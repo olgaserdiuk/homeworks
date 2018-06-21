@@ -30,7 +30,7 @@
 								<a class="med"href="#">медицинские чартеры</a>
 							</li>
 							<li>
-								<a class="empty" href="#">empty legs</a>
+								<a class="empty" href="#">empty<br>legs</a>
 							</li>
 							<li>
 								<a href="#">вертолеты</a>
@@ -57,9 +57,7 @@
 			<div class="content-wrapper">
 				<div class="navmenu-section">рейсы empty legs</div>
 				<div class="explanation">
-					<div class="dash-wrap">
-						<div class="dash"></div>
-					</div>
+					<hr class="dash">
 					<div class="info">Когда компания Company организует чартерный перелет в один конец, то зачастую самолет при возвращении на свою базу или при продолжении перелета в другое место летит пустым. Такие рейсы известны в нашем бизнесе как "Empty Legs".</div>
 					<div class="popup" onclick="popupFunction()">актуальные рейсы
 						<img src="img/arrbluesm.png" alt="arrbluesm">
@@ -77,53 +75,49 @@
 	</div>
 	<div class="wrapper-section2">
 		<div class="num-wrap">
-			<div class="reasons">
-				<div class="number">
+			<div class="reasons reasons1">
+				<div class="number1">
 					<div class="num">01</div>
-					<div class="dash"></div>
 				</div>
 				<div class="title-wrap title1">
 					<p class="title">большая экономия</p>
-					<p class="titleinf inf1">Ваша экономия до 75% от стоимости обычного чартера</p>
+					<p class="titleinf">Ваша экономия до 75% от стоимости обычного чартера</p>
 				</div>
 			</div>
-			<div class="reasons">
-				<div class="number">
+			<div class="reasons reasons2">
+				<div class="number2">
 					<div class="num">02</div>
-					<div class="dash"></div>
 				</div>
 				<div class="title-wrap title2">
 					<p class="title">широкий выбор</p>
-					<p class="titleinf inf2">Empty Legs - широкий спектр частных воздушных судов</p>
+					<p class="titleinf">Empty Legs - широкий спектр частных воздушных судов</p>
 				</div>
 			</div>
-			<div class="reasons">
-				<div class="number">
+			<div class="reasons reasons3">
+				<div class="number3">
 					<div class="num">03</div>
-					<div class="dash"></div>
 				</div>
 				<div class="title-wrap title3">
 					<p class="title">актуальная информация</p>
-					<p class="titleinf inf3">Информация регулярно обновляются на нашем веб-сайте</p>
+					<p class="titleinf">Информация регулярно обновляются на нашем веб-сайте</p>
 				</div>
 			</div>
 			<div class="reasons reasons4">
-				<div class="number">
+				<div class="number3">
 					<div class="num">04</div>
-					<div class="dash"></div>
 				</div>
-				<div class="title-wrap title4">
+				<div class="title-wrap title3">
 					<p class="title">оповещение клиентов</p>
-					<p class="titleinf inf4">Наши специалисты известят вас, как только появится  ваш маршрут</p>
+					<p class="titleinf">Наши специалисты известят вас, как только появится  ваш маршрут</p>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="wrapper-section3">
 		<div class="actual">актуальные рейcы</div>
-		<div class="dash"></div>
+		<hr class="dash dash2">
 		<div class="timetable">расписание</div>
-		<div class="arr"><img src="img/arrowblue.png" alt="arrowblue"></div>
+		<div class="arr"></div>
 		<table>
 			<thead>
 				<tr>
@@ -227,31 +221,23 @@
 	</div>
 	<footer>
 		<div class="actual">свяжитесь с нами</div>
-		<div class="dash"></div>
+		<hr class="dash dash2">
 		<div class="contacts-wrap">
 			<div class="contacts">
-				<div class="pic">
-					<img src="img/map.png" alt="map">
-				</div>
+				<div class="pic map"></div>
 				<p>адрес:</p>
 				<div class="address">Киев, 03115, Украина<br>ул. Туполева, 18</div>
 			</div>
 			<div class="contacts tel">
-				<div class="pic">
-					<img src="img/phone.png" alt="phone">
-				</div>
+				<div class="pic ph"></div>
 				<p>телефон:</p>
 				<a class="address phone" href="tel: +380441234567">+38 (044) 123-45-67</a>
-				<div class="pic fax">
-					<img src="img/fax.png" alt="fax">
-				</div>
+				<div class="pic fax"></div>
 				<p class="fax">факс:</p>
 				<a class="address phone" href="tel: +380441234567">+38 (044) 123-45-67</a>
 			</div>
 			<div class="contacts cont">
-				<div class="pic mail">
-					<img src="img/mail.png" alt="mail">
-				</div>
+				<div class="pic mail"></div>
 				<p>e-mail:</p>
 				<a class="address phone" href="mailto:info@company.com">info@company.com</a>
 			</div>
@@ -293,7 +279,7 @@
 		}
 
 		/*menu*/
-		$('.show').on('click', function() {
+		/*$('.show').on('click', function() {
 			if($('.menu-nav').hasClass('hide')){
 				$('.menu-nav').removeClass('hide');
 				$('.show').addClass('selected');
@@ -301,7 +287,7 @@
 				$('.show').removeClass('selected');
 				$('.menu-nav').addClass('hide');
 			}
-		});
+		});*/
 	</script>
 </body>
 </html>

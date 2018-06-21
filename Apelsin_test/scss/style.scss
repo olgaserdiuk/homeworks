@@ -140,14 +140,14 @@ menu {
 
 	.menu-nav {
 		position: absolute;
-		margin-top: 48px;
+		padding-top: 48px;
 
 		li {
 			width: 120px;
 
 			a {
 				display: block;
-				width: 75px;
+				width: 100px;
 				margin: 0 auto;
 			}
 
@@ -177,10 +177,6 @@ menu {
 	width: 92px;
 }
 
-.menu-nav .empty {
-	width: 42px;
-}
-
 .selected>a {
 	color: $blue;
 }
@@ -204,25 +200,22 @@ menu {
 	margin: 0 auto;
 }
 
-.dash-wrap {
-	width: 90px;
-	height: 110px;
-	float: left;
-}
-
 .dash {
+	border: none;
 	width: 70px;
-	height: 2px;
-	margin: 6px 20px 0 0;
+	height: 1.5px;
 	background-color: $darkgrey;
+	float: left;
+	margin: 15px 20px 0 0;
 }
 
 .info {
-	width: 784px;
-	font-family: 'PF Din Display Pro Medium', Arial, sans-serif;
+	width: 720px;
+	float: right;
 	font-size: 20px;
 	line-height: 30px;
 	color: $darkgrey;
+	font-family: 'PF Din Display Pro Medium', Arial, sans-serif;
 }
 
 .contentinfo {
@@ -241,11 +234,11 @@ menu {
 
 /* pop up start */
 .popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
 
-    font-family: 'PF Din Display Pro Bold', Arial, sans-serif;
+	font-family: 'PF Din Display Pro Bold', Arial, sans-serif;
 	font-size: 13px;
 	color: $blue;
 	text-transform: uppercase;
@@ -259,34 +252,34 @@ menu {
 }
 
 .popuptext {
-    visibility: hidden;
-    width: 200px;
-    height: 100px;
-    background-color: #555;
-    color: #fff;
-    vertical-align: middle;
-    border-radius: 6px;
-    padding: 30px;
-    position: absolute;
-    z-index: 1;
-    top: -800%;
-    left: 120%;
+	visibility: hidden;
+	width: 200px;
+	height: 100px;
+	background-color: #555;
+	color: #fff;
+	vertical-align: middle;
+	border-radius: 6px;
+	padding: 30px;
+	position: absolute;
+	z-index: 1;
+	top: -800%;
+	left: 120%;
 }
 
 .popup .shown {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
 }
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
+	from {opacity: 0;} 
+	to {opacity: 1;}
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
+	from {opacity: 0;}
+	to {opacity:1 ;}
 }
 /* pop up end */
 
@@ -305,87 +298,101 @@ menu {
 
 .reasons {
 	float: left;
-	margin-right: 42px;
+	margin-right: 3.6%;
+}
+
+.reasons1 {
+	width: 20.6%;
+}
+
+.reasons2 {
+	width: 18.3%;
+}
+
+.reasons3 {
+	width: 25.2%;
 }
 
 .reasons4 {
+	width: 25.1%;
 	margin-right: 0;
 }
 
-.number {
-	width: 30px;
+.number1 {
+	width: 11.5%;
 	height: 124px;
 	float: left;
-	margin-right: 14px;
+	margin-right: 5.4%;
+}
 
-	.num {
-		font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
-		font-size: 40px;
-		font-weight: bold;
-		color: $white;
-		text-align: center;
-		-moz-transform: rotate(-90deg); /* Для Firefox */
-    	-ms-transform: rotate(-90deg); /* Для IE */
-    	-webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
-    	-o-transform: rotate(-90deg); /* Для Opera */
-    	transform: rotate(-90deg);
-    }
+.number2 {
+	width: 13%;
+	height: 124px;
+	float: left;
+	margin-right: 6.1%;
+}
 
-    .dash {
-    	width: 1px;
-    	height: 64px;
-    	background-color: $white;
-    	margin-left: 28px;
-    }
+.number3 {
+	width: 9.5%;
+	height: 124px;
+	float: left;
+	margin-right: 4.4%;
+}
+
+.num {
+	font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	color: $white;
+	text-align: center;
+	-moz-transform: rotate(-90deg); /* Для Firefox */
+    -ms-transform: rotate(-90deg); /* Для IE */
+    -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-90deg); /* Для Opera */
+    transform: rotate(-90deg);
+}
+.num:before {
+	content:"";
+	border-right: 1px solid $white;
+	width: 1px;
+	height: 63px;
+	margin-left: -47px;
+	float: left;
+	-moz-transform: rotate(-90deg); /* Для Firefox */
+    -ms-transform: rotate(-90deg); /* Для IE */
+    -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-90deg); /* Для Opera */
+    transform: rotate(-90deg);
 }
 
 .title-wrap	{
-	float: left;
+   	float: left;
 
-	.title {
-		font-family: 'PF Din Display Pro Bold', Arial, sans-serif;
-		font-size: 21px;
-		text-transform: uppercase;
-		color: $darkgrey;
-	}
+    .title {
+    	font-family: 'PF Din Display Pro Bold', Arial, sans-serif;
+    	font-size: 21px;
+    	text-transform: uppercase;
+    	color: $darkgrey;
+    }
 
-	.titleinf {
-		font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
-		line-height: 35px;
-		font-weight: 100;
-		color: $darkgrey;
-	}
+    .titleinf {
+    	font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
+    	line-height: 35px;
+    	font-weight: 100;
+    	color: $darkgrey;
+    }
 }
+
 .title1 {
-	width: 218px;
+	width: 83.1%;
 }
 
 .title2 {
-	width: 186px;
+	width: 80.9%;
 }
 
 .title3 {
-	width: 276px;
-}
-
-.title4 {
-	width: 272px;
-}
-
-.inf1 {
-	width: 220px;
-}
-
-.inf2 {
-	width: 186px;
-}
-
-.inf3 {
-	width: 197px;
-}
-
-.inf4 {
-	width: 272px;
+	width: 86.1%;
 }
 
 .wrapper-section3 {
@@ -397,12 +404,17 @@ menu {
 	/* background-attachment: fixed;  - фиксируется на месте*/ 
 	background-size: cover;
 
-	.dash {
-		width: 1px;
-		height: 30px;
-		background-color: $darkgrey;
-		margin: 24px auto 26px;
-	}
+}
+.dash2 {
+	float: none;
+	margin: 25px auto;
+	width: 30px;
+	height: 1px;
+	-moz-transform: rotate(-90deg); /* Для Firefox */
+    -ms-transform: rotate(-90deg); /* Для IE */
+    -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-90deg); /* Для Opera */
+    transform: rotate(-90deg);
 }
 
 .actual {
@@ -425,8 +437,11 @@ menu {
 }
 
 .arr {
-	width: 30px;
-	height: 18px;
+	width: 0;
+	height: 0;
+	border-left: 18px solid transparent;
+	border-right: 18px solid transparent;
+	border-top: 30px solid $blue;
 	margin: 25px auto 0;
 }
 
@@ -511,13 +526,6 @@ footer {
 	background-color: $footerbkg;
 	background-size: cover;
 
-	.dash {
-		width: 1px;
-		height: 30px;
-		margin: 24px auto 62px;
-		background-color: $footertext;
-	}
-
 	.actual {
 		font-weight: 100;
 		color: $footertext;
@@ -525,12 +533,13 @@ footer {
 }
 
 .contacts-wrap {
-	width: 900px;
-	margin: 0 auto;
+	width: 1232px;
+	margin: 60px auto;
 }
 
 .contacts {
 	float: left;
+	width: 312px;
 	margin-right: 122px;
 
 	.pic {
@@ -540,6 +549,15 @@ footer {
 		height: 30px;
 
 	}
+
+	.map {
+		background: url('../img/map.png') 0 0 no-repeat;
+	}
+
+	.ph {
+		background: url('../img/phone.png') 0 0 no-repeat;
+	}
+
 	p {
 		font-family: 'PF Din Display Pro Regular', Arial, sans-serif;
 		font-size: 18px;
@@ -556,19 +574,22 @@ footer {
 .address {
 	font-family: 'PF Din Display Pro Medium', Arial, sans-serif;
 	color: #7e7e7e;
-	font-size: 19px;
+	font-size: 28px;
 }
 
 .phone {
-	font-size: 22px;
+	font-size: 36px;
 	display: block;
 }
 
-.mail {
+.contacts .mail {
 	padding-top: 7px;
+	background: url('../img/mail.png') 0 0 no-repeat;
+	width: 27px;
 }
 .fax {
 	margin-top: 48px;
+	background: url('../img/fax.png') 0 0 no-repeat;
 }
 
 .tel {
@@ -577,7 +598,7 @@ footer {
 
 .rights {
 	clear: both;
-	width: 900px;
+	width: 1232px;
 	margin: 0 auto;
 	padding-bottom: 43px;
 }
