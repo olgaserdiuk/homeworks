@@ -155,6 +155,9 @@ menu {
 .show:hover > .menu-nav {
   display: block; }
 
+.show:hover > a {
+  color: #a7d2db; }
+
 .menu-nav li + li:before {
   content: "|";
   margin-left: -42px;
@@ -164,7 +167,7 @@ menu {
 .med {
   width: 92px; }
 
-.selected > a {
+.selected a {
   color: #a7d2db; }
 
 /* MENU end */

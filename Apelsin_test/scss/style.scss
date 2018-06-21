@@ -166,6 +166,10 @@ menu {
 	display: block;
 }
 
+.show:hover>a {
+	color: $blue;
+}
+
 .menu-nav li + li:before {
 	content:"|";
 	margin-left: -42px;
@@ -177,7 +181,7 @@ menu {
 	width: 92px;
 }
 
-.selected>a {
+.selected a {
 	color: $blue;
 }
 /* MENU end */
