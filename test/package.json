@@ -9,7 +9,7 @@
   "author": "Olga Serdiuk",
   "license": "ISC",
   "dependencies": {
-    "npm": "^6.0.0"
+    "npm": "^9.6.4"
   },
   "devDependencies": {
     "browser-sync": "^2.23.7",
